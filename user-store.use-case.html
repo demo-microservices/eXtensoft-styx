@@ -1,0 +1,76 @@
+<div class="relative flex w-[calc(100%-50px)] flex-col gap-1 md:gap-3 lg:w-[calc(100%-115px)]">
+    <div class="flex flex-grow flex-col gap-3">
+        <div class="min-h-[20px] flex items-start overflow-x-auto whitespace-pre-wrap break-words flex-col gap-4">
+            <div class="markdown prose w-full break-words dark:prose-invert dark">
+                <p>
+                    User Story and Use Case are both widely used techniques in software development to capture requirements and describe system behavior. However, they differ in their structure, focus, and level of detail. Here's a
+                    comparison and contrast of User Stories and Use Cases:
+                </p>
+                <p>
+                    User Story: A User Story is a brief, high-level description of a system feature or functionality from the user's perspective. It is typically written in a simple sentence format, following the template: "As a &lt;type of
+                    user&gt;, I want &lt;goal&gt; so that &lt;reason&gt;". User Stories are commonly associated with Agile methodologies, such as Scrum, and are often written on index cards or in specialized software tools like Jira. Key
+                    characteristics of User Stories include:
+                </p>
+                <ol>
+                    <li><p>User-Centric: User Stories focus on the user's needs, goals, and desired outcomes. They emphasize the value delivered to the user and the business.</p></li>
+                    <li><p>Concise and Informal: User Stories are typically short and written in a natural language style, using everyday language that is easy to understand.</p></li>
+                    <li><p>Minimal Detail: User Stories capture the essence of a requirement without going into extensive detail. They serve as placeholders for further conversations and collaboration.</p></li>
+                    <li>
+                        <p>
+                            Card, Conversation, Confirmation: User Stories follow the "Card, Conversation, Confirmation" approach, where the story card captures the summary, conversations elaborate on the details, and confirmation criteria
+                            define acceptance criteria for the story to be considered complete.
+                        </p>
+                    </li>
+                </ol>
+                <p>
+                    Use Case: A Use Case is a more detailed description of a specific interaction or scenario between the system and its actors (users, systems, or external entities). It outlines the steps or sequences of events that occur
+                    to achieve a specific goal. Use Cases provide a structured way to capture requirements and depict system behavior. Key characteristics of Use Cases include:
+                </p>
+                <ol>
+                    <li><p>System-Centric: Use Cases focus on system behavior and describe how actors interact with the system to accomplish a goal or task.</p></li>
+                    <li>
+                        <p>
+                            Structured Format: Use Cases follow a structured format, including a title, description, actors, preconditions, main flow, alternate flows, and postconditions. They may also include diagrams like Use Case
+                            diagrams or Activity diagrams.
+                        </p>
+                    </li>
+                    <li><p>More Detailed: Use Cases provide more detailed and explicit information about system interactions, including user actions, system responses, and potential alternative paths.</p></li>
+                    <li><p>Boundary Conditions: Use Cases often describe preconditions and postconditions, defining the state of the system and actors before and after the use case execution.</p></li>
+                </ol>
+                <p>Comparison:</p>
+                <ul>
+                    <li>User Stories and Use Cases both capture requirements from the user's perspective, but User Stories are more concise and informal, while Use Cases provide a structured and detailed representation.</li>
+                    <li>User Stories are commonly used in Agile methodologies, while Use Cases have broader applicability and can be used in different software development approaches.</li>
+                    <li>User Stories focus on the value delivered to the user and are centered around goals, while Use Cases focus on system behavior and the interactions between actors and the system.</li>
+                    <li>User Stories are often used for prioritization and backlog management, while Use Cases are useful for system modeling, design, and test case generation.</li>
+                </ul>
+                <p>
+                    In practice, User Stories and Use Cases can complement each other. User Stories provide a high-level view of user needs, while Use Cases provide a more detailed understanding of system behavior and can be used for deeper
+                    analysis and design.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-between lg:block">
+        <div class="text-gray-400 flex self-end lg:self-center justify-center mt-2 gap-2 md:gap-3 lg:gap-1 lg:absolute lg:top-0 lg:translate-x-full lg:right-0 lg:mt-0 lg:pl-2 visible">
+            <button class="flex ml-auto gap-2 rounded-md p-1 hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-200 disabled:dark:hover:text-gray-400">
+                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                </svg>
+            </button>
+            <div class="flex gap-1">
+                <button class="p-1 rounded-md hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-200 disabled:dark:hover:text-gray-400">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                    </svg>
+                </button>
+                <button class="p-1 rounded-md hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-200 disabled:dark:hover:text-gray-400">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

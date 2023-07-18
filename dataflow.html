@@ -1,0 +1,64 @@
+<div class="relative flex w-[calc(100%-50px)] flex-col gap-1 md:gap-3 lg:w-[calc(100%-115px)]">
+    <div class="flex flex-grow flex-col gap-3">
+        <div class="min-h-[20px] flex items-start overflow-x-auto whitespace-pre-wrap break-words flex-col gap-4">
+            <div class="markdown prose w-full break-words dark:prose-invert dark">
+                <p>
+                    A data flow diagram (DFD) is a graphical representation of the flow of data within a system. It visually illustrates the processes, data sources, data destinations, and data flows between various components of a system.
+                    DFDs are commonly used in software development and systems analysis to understand, document, and communicate the data flow and processes within a system.
+                </p>
+                <p>
+                    The purpose of a data flow diagram is to provide a clear and concise overview of how data moves through a system, highlighting the transformations and interactions between different components. It helps in understanding
+                    the system's functional requirements, identifying data dependencies, and analyzing the system's behavior.
+                </p>
+                <p>Key aspects of a data flow diagram include:</p>
+                <ol>
+                    <li><p>Processes: Represented by circles or rectangles, processes are activities or operations that transform data. They can be manual or automated actions performed within the system.</p></li>
+                    <li>
+                        <p>
+                            Data Flows: Represented by arrows, data flows depict the movement of data between processes, data stores, external entities, or other components of the system. Data flows illustrate the direction and path of data
+                            within the system.
+                        </p>
+                    </li>
+                    <li><p>Data Stores: Represented by rectangles with parallel lines, data stores represent where data is stored within the system. They can represent databases, files, or other storage mechanisms.</p></li>
+                    <li><p>External Entities: Represented by rectangles, external entities are external sources or destinations of data interacting with the system. They can be users, other systems, or external organizations.</p></li>
+                </ol>
+                <p>Data flow diagrams can be represented at different levels of detail:</p>
+                <ul>
+                    <li><p>Level 0 DFD (Context Diagram): The highest-level diagram that provides an overview of the entire system. It shows the external entities interacting with the system and the data flows between them.</p></li>
+                    <li><p>Level 1 DFD: Represents a more detailed breakdown of the context diagram, decomposing the processes into sub-processes and showing additional data flows.</p></li>
+                    <li><p>Level 2 DFD: Further decomposition of the level 1 DFD, providing more detailed processes, data flows, and data stores.</p></li>
+                </ul>
+                <p>The utility of data flow diagrams lies in their ability to:</p>
+                <ol>
+                    <li><p>Visualize Data Flow: DFDs allow stakeholders to understand the movement and transformation of data within a system, enabling analysis and identification of potential bottlenecks or inefficiencies.</p></li>
+                    <li><p>Document System Processes: DFDs provide a clear documentation of processes and activities involved in a system, making it easier to communicate and analyze system requirements.</p></li>
+                    <li><p>Identify Data Dependencies: DFDs help in identifying dependencies between processes and data flows, enabling better system design and ensuring data consistency.</p></li>
+                    <li><p>Aid System Analysis: DFDs assist in analyzing the behavior and functionality of a system, making it easier to identify areas for improvement or optimization.</p></li>
+                </ol>
+                <p>Overall, data flow diagrams serve as a powerful tool for system analysis, design, and communication, allowing stakeholders to gain a holistic understanding of the data flow and processes within a system.</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-between lg:block">
+        <div class="text-gray-400 flex self-end lg:self-center justify-center mt-2 gap-2 md:gap-3 lg:gap-1 lg:absolute lg:top-0 lg:translate-x-full lg:right-0 lg:mt-0 lg:pl-2 visible">
+            <button class="flex ml-auto gap-2 rounded-md p-1 hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-200 disabled:dark:hover:text-gray-400">
+                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                </svg>
+            </button>
+            <div class="flex gap-1">
+                <button class="p-1 rounded-md hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-200 disabled:dark:hover:text-gray-400">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                    </svg>
+                </button>
+                <button class="p-1 rounded-md hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-200 disabled:dark:hover:text-gray-400">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

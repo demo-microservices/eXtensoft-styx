@@ -1,0 +1,155 @@
+Generic Template
+	System
+		Id
+		Name
+		ValueProposition
+		Stakeholder[]
+		ProductInfo: Product with current lifecycle
+		SLA
+		Technology
+			Compliance & Mandates
+				Security
+				Assessibility
+				Technology {platform,language,OS,Datastore,etc}
+			Stack[]{Platform,Tier,Layer,BatchJob,ETL,etc}
+			Design
+				Description (narrative)
+				Category[]
+					(Realtime,TimeSequence,Transactional,Command-Query, CurrentState-CRUD}
+				Artifact[]
+					Scope
+					Dataflow, Context
+					Level-0 E/R
+					Persona[]
+					UserStory[]
+					Requirement[]{functional, non-functional}
+				Security
+					Authentication
+					Authorization
+			DisasterRecovery
+				Strategy
+			Dependency[]
+				Adjacent System[]
+					Name
+					Type: {Service API, Datastore, MF, BatchJob}
+				Package[]
+				License[]
+			Features
+				UseCase[] {Id, Grouping, UserStoryMapping, Name,Description,Actor[],Step[]}
+		Features
+			Persona[]
+			UserStory[]
+	
+	
+	Product Lifecycle
+		Stage[]
+			Introduction
+			Growth
+			Maturity
+			Decline
+	
+	System Lifecycle
+		Stage[]
+			Design
+			Commission
+			Operation
+			Decommission
+
+	System Migration
+		vOriginal 
+			TechnologyStack[]
+		vNext
+			TechnologyStack[]
+		
+		SeriveAPI
+			Restful vs RPC
+			Taxonomy vs AdHoc
+			HttpStatus[] {allowed & meaning}
+			ServiceContract[]
+				Endpoint
+					Url
+					HttpMethod
+						DataContract
+							Input
+							Output
+					Validation Messaging
+		
+
+Catalog vOriginal API
+	endpoints, shape of data, response codes, validation response info
+	
+	
+XCC (Cross-cutting Concerns)
+	Logging
+		Reporting, Aggregation, Forensics
+	SLA Visibility
+	Health/Liveness
+	Performance Metrics
+	Caching
+	Communication
+		email
+		notifications {push,etc}
+	Maintenance (down-time behavior & messaging)
+	Security
+	Thread Assessment/remediation
+	
+	Concerns
+		Functional (domain-specific}
+		Non-functional ('ability')
+		Policy (workflow...)
+		System (hardware, software monitoring)
+		Organizational (ISO, MFA, 508)
+		Cross-cutting
+			Audit-logging
+			Monitoring
+			Security
+			Caching
+			(Data) validation
+			Exception detection/reporting
+			Attack detection/reporting
+			Configuration management
+			Secrets management
+			localization/globalization
+			508,HIPAAA,etc
+
+Web Application
+	SPA vs Server (client rendering vs server rendering)
+	Caching
+		read-aside, read-through, pre-warm cache, output-caching (invalidation strategy)
+	Communication Pattern[]
+		Request-response, web-sockets
+		data: xml, json, g...
+	Sitemap
+	TechnologyStack[]{LAMP,etc}
+	DataAccess Strategy
+		ORM{EF,etc}
+		ADO.Net, JPM
+
+Configuration Management
+	secrets management, stage-dependent variables
+
+F5 considerations
+
+Delivery
+	CICD, Azure Devops, etc
+
+
+Architectural Patterns
+	Request-Response
+	CRUD CurrentState, Audit
+	RPC
+	CQRS
+	Event-Source
+	Command-Query
+	Data-Table Gateway
+
+API
+	AUTH
+		Throttling
+	Gateway
+	Resiliency
+
+			
+					
+					
+				
