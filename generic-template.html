@@ -1,0 +1,312 @@
+<div class="markdown prose w-full break-words dark:prose-invert dark">
+    <p>Sure, I've organized the provided list into a hierarchical format. Here it is:</p>
+    <ol>
+        <li>
+            <p>Generic Template</p>
+            <ul>
+                <li>
+                    System
+                    <ul>
+                        <li>Id</li>
+                        <li>Name</li>
+                        <li>Value Proposition</li>
+                        <li>Stakeholder[]</li>
+                        <li>ProductInfo: Product with current lifecycle</li>
+                        <li>SLA</li>
+                        <li>
+                            Technology
+                            <ul>
+                                <li>
+                                    Compliance &amp; Mandates
+                                    <ul>
+                                        <li>Security</li>
+                                        <li>Accessibility</li>
+                                        <li>Technology {platform, language, OS, Datastore, etc.}</li>
+                                    </ul>
+                                </li>
+                                <li>Stack[]{Platform, Tier, Layer, BatchJob, ETL, etc.}</li>
+                                <li>
+                                    Design
+                                    <ul>
+                                        <li>Description (narrative)</li>
+                                        <li>
+                                            Category[]
+                                            <ul>
+                                                <li>Realtime</li>
+                                                <li>TimeSequence</li>
+                                                <li>Transactional</li>
+                                                <li>Command-Query</li>
+                                                <li>CurrentState-CRUD</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            Artifact[]
+                                            <ul>
+                                                <li>Scope</li>
+                                                <li>Dataflow, Context</li>
+                                                <li>Level-0 E/R</li>
+                                                <li>Persona[]</li>
+                                                <li>UserStory[]</li>
+                                                <li>Requirement[]{functional, non-functional}</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            Security
+                                            <ul>
+                                                <li>Authentication</li>
+                                                <li>Authorization</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    DisasterRecovery
+                                    <ul>
+                                        <li>Strategy</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Dependency[]
+                                    <ul>
+                                        <li>
+                                            Adjacent System[]
+                                            <ul>
+                                                <li>Name</li>
+                                                <li>Type: {Service API, Datastore, MF, BatchJob}</li>
+                                            </ul>
+                                        </li>
+                                        <li>Package[]</li>
+                                        <li>License[]</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Features
+                                    <ul>
+                                        <li>UseCase[] {Id, Grouping, UserStoryMapping, Name, Description, Actor[], Step[]}</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Features
+                            <ul>
+                                <li>Persona[]</li>
+                                <li>UserStory[]</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>Product Lifecycle</p>
+            <ul>
+                <li>
+                    Stage[]
+                    <ul>
+                        <li>Introduction</li>
+                        <li>Growth</li>
+                        <li>Maturity</li>
+                        <li>Decline</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>System Lifecycle</p>
+            <ul>
+                <li>
+                    Stage[]
+                    <ul>
+                        <li>Design</li>
+                        <li>Commission</li>
+                        <li>Operation</li>
+                        <li>Decommission</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>System Migration</p>
+            <ul>
+                <li>
+                    vOriginal
+                    <ul>
+                        <li>TechnologyStack[]</li>
+                    </ul>
+                </li>
+                <li>
+                    vNext
+                    <ul>
+                        <li>TechnologyStack[]</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>Service API</p>
+            <ul>
+                <li>Restful vs RPC</li>
+                <li>Taxonomy vs AdHoc</li>
+                <li>HttpStatus[] {allowed &amp; meaning}</li>
+                <li>
+                    ServiceContract[]
+                    <ul>
+                        <li>
+                            Endpoint
+                            <ul>
+                                <li>Url</li>
+                                <li>
+                                    HttpMethod
+                                    <ul>
+                                        <li>
+                                            DataContract
+                                            <ul>
+                                                <li>Input</li>
+                                                <li>Output</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Validation Messaging</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>Catalog vOriginal API</p>
+            <ul>
+                <li>Endpoints</li>
+                <li>Shape of data</li>
+                <li>Response codes</li>
+                <li>Validation response info</li>
+            </ul>
+        </li>
+        <li>
+            <p>XCC (Cross-cutting Concerns)</p>
+            <ul>
+                <li>
+                    Logging
+                    <ul>
+                        <li>Reporting, Aggregation, Forensics</li>
+                    </ul>
+                </li>
+                <li>
+                    SLA Visibility
+                    <ul>
+                        <li>Health/Liveness</li>
+                        <li>Performance Metrics</li>
+                    </ul>
+                </li>
+                <li>Caching</li>
+                <li>
+                    Communication
+                    <ul>
+                        <li>Email</li>
+                        <li>Notifications {push, etc.}</li>
+                    </ul>
+                </li>
+                <li>Maintenance (down-time behavior &amp; messaging)</li>
+                <li>
+                    Security
+                    <ul>
+                        <li>Thread Assessment/remediation</li>
+                    </ul>
+                </li>
+                <li>
+                    Concerns
+                    <ul>
+                        <li>Functional (domain-specific)</li>
+                        <li>Non-functional ('ability')</li>
+                        <li>Policy (workflow...)</li>
+                        <li>System (hardware, software monitoring)</li>
+                        <li>Organizational (ISO, MFA, 508)</li>
+                        <li>
+                            Cross-cutting
+                            <ul>
+                                <li>Audit-logging</li>
+                                <li>Monitoring</li>
+                                <li>Security</li>
+                                <li>Caching</li>
+                                <li>(Data) validation</li>
+                                <li>Exception detection/reporting</li>
+                                <li>Attack detection/reporting</li>
+                                <li>Configuration management</li>
+                                <li>Secrets management</li>
+                                <li>Localization/globalization</li>
+                                <li>508, HIPAA, etc.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>Web Application</p>
+            <ul>
+                <li>SPA vs Server (client rendering vs server rendering)</li>
+                <li>
+                    Caching
+                    <ul>
+                        <li>Read-aside, read-through, pre-warm cache, output-caching (invalidation strategy)</li>
+                    </ul>
+                </li>
+                <li>
+                    Communication Pattern[]
+                    <ul>
+                        <li>Request-response, web-sockets</li>
+                        <li>Data: XML, JSON, g...</li>
+                    </ul>
+                </li>
+                <li>Sitemap</li>
+                <li>TechnologyStack[]{LAMP, etc.}</li>
+                <li>
+                    DataAccess Strategy
+                    <ul>
+                        <li>ORM{EF, etc.}</li>
+                        <li>ADO.Net, JPM</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>Configuration Management</p>
+            <ul>
+                <li>Secrets management</li>
+                <li>Stage-dependent variables</li>
+            </ul>
+        </li>
+        <li><p>F5 considerations</p></li>
+        <li><p>Delivery</p></li>
+    </ol>
+    <ul>
+        <li>CICD, Azure DevOps, etc.</li>
+    </ul>
+    <ol start="12">
+        <li>Architectural Patterns</li>
+    </ol>
+    <ul>
+        <li>Request-Response</li>
+        <li>CRUD CurrentState, Audit</li>
+        <li>RPC</li>
+        <li>CQRS</li>
+        <li>Event-Source</li>
+        <li>Command-Query</li>
+        <li>Data-Table Gateway</li>
+    </ul>
+    <ol start="13">
+        <li>API</li>
+    </ol>
+    <ul>
+        <li>
+            AUTH
+            <ul>
+                <li>Throttling</li>
+            </ul>
+        </li>
+        <li>Gateway</li>
+        <li>Resiliency</li>
+    </ul>
+</div>
