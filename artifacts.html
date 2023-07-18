@@ -1,132 +1,113 @@
-<div class="markdown prose w-full break-words dark:prose-invert dark">
-    <p>Sure! Here's the same bulleted list formatted using Markdown:</p>
-    <ul>
-        <li>
-            <p><strong>Deprivation Motivation:</strong></p>
+<div class="min-h-[20px] flex items-start overflow-x-auto whitespace-pre-wrap break-words flex-col gap-4">
+   <div class="markdown prose w-full break-words dark:prose-invert dark">
+      <p>Certainly! Here's an updated bulleted list of design artifacts associated with software development, including the requested additions:</p>
+      <ul>
+         <li>
+            <p>User Interface (UI) Design:</p>
             <ul>
-                <li>Loss of irreparable technical expertise.</li>
-                <li>Inability to maintain the system due to the loss of key personnel.</li>
+               <li>Wireframes: Visual representations of the layout and structure of user interfaces.</li>
+               <li>Mockups: Detailed visual designs of the user interfaces, showcasing the look and feel of the software.</li>
+               <li>Prototypes: Interactive models or simulations of the software interfaces to demonstrate functionality.</li>
+               <li>User flow diagrams: Diagrams illustrating the steps and paths a user takes within the software.</li>
+               <li>Style guides: Guidelines for maintaining consistency in UI design, including fonts, colors, and element styles.</li>
             </ul>
-        </li>
-        <li>
-            <p><strong>POC (Proof of Concept):</strong></p>
+         </li>
+         <li>
+            <p>Database Design:</p>
             <ul>
-                <li>Successfully validated the efficacy of the replacement by DB2 (no alternatives discussed/listed).</li>
+               <li>Entity-Relationship Diagrams (ERDs): Visual representations of entities, relationships, and attributes in a database.</li>
+               <li>Database schemas: Structure and organization of tables, fields, and relationships in the database.</li>
+               <li>Data dictionaries: Documentation specifying data types, descriptions, and usage of database elements.</li>
+               <li>Index and query optimization plans: Strategies to optimize database performance through indexing and query tuning.</li>
             </ul>
-        </li>
-        <li>
-            <p><strong>Scope:</strong></p>
+         </li>
+         <li>
+            <p>System Architecture Design:</p>
             <ul>
-                <li>All currently supported major master files.</li>
+               <li>High-level system architecture diagrams: Overview of the software system's components and their interactions.</li>
+               <li>Component diagrams: Visual representation of the software's modular components and their dependencies.</li>
+               <li>Deployment diagrams: Illustration of how software components are deployed across hardware or cloud infrastructure.</li>
+               <li>Infrastructure design: Planning the required hardware, servers, networking, and storage for the software system.</li>
+               <li>Integration patterns: Strategies and patterns for integrating different software components or services.</li>
             </ul>
-        </li>
-        <li>
-            <p><strong>Project Schedule:</strong></p>
+         </li>
+         <li>
+            <p>Software Design:</p>
             <ul>
-                <li>Numident/Alphadent.</li>
-                <li>Master Earnings File.</li>
-                <li>Supplemental Security Record.</li>
-                <li>Master Beneficiary Record.</li>
+               <li>Class diagrams: Visualization of classes, their attributes, methods, and relationships in object-oriented programming.</li>
+               <li>Sequence diagrams: Visual representation of interactions between objects or components in a specific scenario.</li>
+               <li>State diagrams: Modeling the different states and transitions of an object or system during its lifecycle.</li>
+               <li>Use case diagrams: Illustration of actors, use cases, and their relationships to describe system functionality.</li>
+               <li>Activity diagrams: Flowcharts depicting the workflow or process of a system through various activities.</li>
+               <li>Dataflow diagrams: Graphical representation of how data moves through a system, showing processes, inputs, and outputs.</li>
+               <li>Context diagrams: Overview of the system's boundary, external entities, and data flows with the outside world.</li>
+               <li>Scope diagrams: Visualization of the system's boundaries, interfaces, and components within the defined scope.</li>
+               <li>User stories: Brief, high-level descriptions of system features or functionality from a user's perspective.</li>
+               <li>Use cases: Descriptions of interactions between actors and the system to accomplish specific goals or tasks.</li>
+               <li>State diagrams: Models the behavior of an object or system by capturing its different states and transitions.</li>
             </ul>
-        </li>
-        <li>
-            <p><strong>Scope of Work Effort:</strong></p>
+         </li>
+         <li>
+            <p>API Design:</p>
             <ul>
-                <li>Logical modeling of each master file.</li>
-                <li>Hierarchical decomposition of each record structure.</li>
-                <li>Design RMDBS (Relational Database Management System) data structures and mappings from the master file.</li>
-                <li>No changes while conversion takes place.</li>
-                <li>Data Service Interface stabilized.</li>
-                <li>Client calls Interface, MADAM switches to DB2 Strategy (Facade).</li>
+               <li>API specification documents (e.g., OpenAPI/Swagger): Documentation defining the structure and functionality of APIs.</li>
+               <li>API contract definitions (e.g., JSON Schema): Standards or formats that describe the structure of API payloads.</li>
+               <li>Endpoint definitions: Specification of API endpoints, including their URLs, methods, and parameters.</li>
+               <li>Request/response examples: Sample payloads illustrating expected data formats for API requests and responses.</li>
+               <li>API versioning strategy: Approach to versioning APIs to manage backward compatibility and changes.</li>
             </ul>
-        </li>
-        <li>
-            <p><strong>POC:</strong></p>
+         </li>
+         <li>
+            <p>Security Design:</p>
             <ul>
-                <li>SSR chosen as the test domain due to more fulsome testing scenarios (selected over Numident), more representative of expected database challenges.</li>
-                <li>Developed methods of validating correctness/completeness of data, including profiling vOriginal for type, size, anomaly.</li>
+               <li>Security architecture diagrams: Visual representation of security controls and components within the software system.</li>
+               <li>Threat models: Identification and assessment of potential security threats and vulnerabilities.</li>
+               <li>Authentication and authorization mechanisms: Techniques and protocols for user authentication and access control.</li>
+               <li>Encryption protocols and algorithms: Methods for encrypting data in transit or at rest to ensure confidentiality.</li>
+               <li>Access control lists (ACLs): Lists specifying permissions and privileges for users or groups.</li>
             </ul>
-        </li>
-        <li>
-            <p><strong>Technical Artifacts:</strong></p>
+         </li>
+         <li>
+            <p>Testing Design:</p>
             <ul>
-                <li>DB2 logical database design.</li>
-                <li>DB2 physical database design.</li>
-                <li>Conversion Software (ETL).</li>
-                <li>DB2 Application Programming Interface.</li>
-                <li>DB2 instance after ETL from the master file.</li>
-                <li>Validation Strategy for Application using new DataAccess software.</li>
-                <li>Backup &amp; Recovery strategy (DRE).</li>
+               <li>Test plans: Detailed strategies and approaches for testing the software system.</li>
+               <li>Test cases: Specific scenarios or conditions to be tested to ensure software functionality and reliability.</li>
+               <li>Test scripts: Step-by-step instructions for executing tests and validating expected outcomes.</li>
+               <li>Test data sets: Predefined sets of data used to perform tests and verify the software's behavior.</li>
+               <li>Test environments configuration: Preparation and setup of dedicated environments for testing activities.</li>
             </ul>
-        </li>
-        <li>
-            <p><strong>Technical Considerations:</strong></p>
+         </li>
+         <li>
+            <p>Documentation:</p>
             <ul>
-                <li>
-                    Application Changes:
-                    <ul>
-                        <li>Online Changes: No application source code changes.</li>
-                        <li>Batch Changes.</li>
-                        <li>DEC Changes.</li>
-                        <li>Utility Processing.</li>
-                        <li>Security.</li>
-                    </ul>
-                </li>
+               <li>System documentation: Comprehensive documentation covering system architecture, components, and usage.</li>
+               <li>Technical specifications: Detailed documentation describing the technical aspects of the software system.</li>
+               <li>User manuals: Guides or instructions aimed at end-users to help them understand and use the software.</li>
+               <li>API documentation (e.g., API reference, developer guides): Documentation specifically focused on APIs, including reference documentation and guidance for developers.</li>
+               <li>Release notes: Documentation highlighting changes, bug fixes, and new features in software releases.</li>
             </ul>
-        </li>
-        <li>
-            <p><strong>Validation Testing:</strong></p>
+         </li>
+         <li>
+            <p>Performance and Scalability Design:</p>
             <ul>
-                <li>Side-by-side process results comparison.</li>
-                <li>Integration Testing.</li>
+               <li>Performance test plans: Strategies and methodologies for testing and measuring the performance of the software system.</li>
+               <li>Load balancing strategies: Techniques for distributing workload across multiple servers or resources to improve performance.</li>
+               <li>Caching mechanisms: Methods for storing frequently accessed data to enhance system performance.</li>
+               <li>Horizontal and vertical scaling approaches: Strategies for scaling the software system either by adding more servers (horizontal) or enhancing existing resources (vertical).</li>
+               <li>Resource utilization monitoring: Techniques to measure and monitor the consumption of system resources such as CPU, memory, and disk.</li>
             </ul>
-        </li>
-        <li>
-            <p><strong>Transition Strategy:</strong></p>
+         </li>
+         <li>
+            <p>Error Handling and Logging Design:</p>
             <ul>
-                <li>Parallel Run Period (Transition Strategy).</li>
-                <li>Big Bang Transition.</li>
-                <li>Contemporaneous execution, dual execution/processing, lazy-load conversion-transition.</li>
+               <li>Error handling strategies: Approaches to manage and handle errors or exceptions that occur during software execution.</li>
+               <li>Exception handling guidelines: Rules and practices for catching, handling, and reporting exceptions in the software.</li>
+               <li>Logging formats and levels: Specification of log formats and the level of detail to be captured in log messages.</li>
+               <li>Log aggregation and analysis mechanisms: Tools and techniques for collecting and analyzing logs to identify issues or patterns.</li>
+               <li>Error reporting and notification systems: Methods for reporting errors or sending notifications to system administrators or users.</li>
             </ul>
-        </li>
-        <li>
-            <p><strong>Stakeholder Involvement and Application Validation:</strong></p>
-            <ul>
-                <li>Must enumerate stakeholders/personas.</li>
-            </ul>
-        </li>
-        <li>
-            <p><strong>Total workload divided into logical chunks (Master File):</strong></p>
-            <ul>
-                <li>Each master file has its own conversion schedule, independent of peers.</li>
-            </ul>
-        </li>
-        <li>
-            <p><strong>Batch Job Info:</strong></p>
-            <ul>
-                <li>Batch Job Name.</li>
-                <li>Online Transaction Name.</li>
-                <li>CICS Region name(s).</li>
-                <li>Process Owner.</li>
-                <li>Description of Process.</li>
-                <li>Type of access (direct, sequential, utilities used).</li>
-                <li>Execution Frequency.</li>
-                <li>Processing volume during execution (expected resource consumption: CPU, RAM, disk, network, human).</li>
-            </ul>
-        </li>
-        <li>
-            <p><strong>Master File Documentation:</strong></p>
-            <ul>
-                <li>
-                    Name.
-                    <ul>
-                        <li>Logical Model.</li>
-                        <li>Physical Model.</li>
-                        <li>Conceptual Model (if available).</li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-    </ul>
-    <p>You can copy and paste the above Markdown list into a Markdown editor or render it as HTML to display it properly.</p>
+         </li>
+      </ul>
+      <p>Please note that the inclusion of design artifacts may vary based on project requirements and the specific software development methodology used.</p>
+   </div>
 </div>
