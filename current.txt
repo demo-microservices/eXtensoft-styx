@@ -1,0 +1,197 @@
+
+	Technical Debt
+		System deprication
+		Component deprication
+
+	System Development
+		Concept/Purpose
+		Feasability/Scope/Efficacy
+		Construction
+		Transition
+			movement to release
+			stabilization/monitoring
+	
+	Playbook (system reincarnation)
+		Id
+		Name
+		Motivation/Value Proposition
+			Clear concise statement of motivation, purpose, expected value
+		Scope (high level statement/diagram of what's in, what's out)
+		StakeHolders
+		
+		Risk Management
+			Identify Risks (NOT SDLC risks)
+				Personnel
+				Organizational (no team exists?)
+				Business
+				Cost/Time
+				Complexity
+			Risk Abatement
+				how identified risks are to be addressed
+		Transition Strategy
+			- abrupt cutover, stop-start
+			- gradual weaning
+			- facade cutover
+			- piecemeal, component by component, part by part
+			- (lookup known strategies)
+			Transition Plan with estimated sequence/schedule
+			
+		Validation
+			Scope/Size/Quality threshholds, metrics (success/failure)
+			Validation Plan
+				what activities need to be performed
+			Validation Reporting
+				compare to threshholds
+		Communication
+			Training
+				- user, admin, system training
+			Transition sequence visibility & messaging
+		
+		
+		Playbook Stages
+			Inception
+				Assemble System Info (original system)
+					Assemble understanding of original system
+				Assemble System Info (vNext system)
+					Identify Stakeholders (Product Owner, Technology Leader)
+					Identify Risks (organizational,team,design/architecture,scope,size,complexity)
+				
+				
+							Identify design/architecture/platform risks (scope,size,complexity)
+							Identify organizational risks
+								adjacent organizations, team size/competency
+							Estimate Shirtsize
+							Estimate Complexity, overall & categorize(if applicable & possible)
+				Determine Stakeholders (Playbook stakeholders NOT SDLC stakeholders)
+					Product Owner
+					Technology Leader (architect,team lead)
+					[EA Architect,Mentor]
+					Playbook Facilitator
+
+				Deliverable
+					Playbook Plan
+						Motivation
+						Scope
+			
+			Elaboration
+				vOriginal
+					finalize 
+						Assemble System Info
+				vNext
+					finalize System Info
+						Stakeholders
+						Technology Stack
+						Compliance & Mandates (adherence to)
+						Artifacts
+							Level-0 architectural design
+						Compliance & Mandate
+							applicability & alignment
+					Refresh & Update
+						Risk List
+						
+					Update/refresh/confirm
+						Risk List	
+					Address architectural/technology/platform risk
+						Architectural POC (prove out design)
+
+					Construction Planning
+						Team Composition & Roles, Team competencies
+						Development & Integration environments
+						Quality/Validation strategy
+						Construction Phases with timetables & milestone deliverables
+
+				Stakeholder Signoffs
+				Schedule commencement of next Playbook Stage
+				Execute appropriate step of Communications plan
+				
+			Construction (of vNext)
+				
+				periodic review of progress by Playbook Stakeholders
+					as respects Transition Execution
+						update/refresh/confirm Transition Strategy
+						update/refresh/confirm Transition Validation Plan
+				
+				test Transition Validation Plan and prove it actually works
+				Schedule commencement of next Playbook Stage
+				Execute appropriate step of Communications plan
+				Stakeholder Signoffs
+			
+			Transition Execution
+				repeat until complete:
+					Execute Transition Plan and Validation Plan
+					Monitor Transition Metrics and Validation Metrics
+					Perform Transition adjustments as needed
+				Aggregate metrics
+				
+				Stakeholder Signoffs
+				Schedule commencement of next Playbook Stage
+			
+			Assessment
+				Perform overall assessment of the performance/quality metrics of the transition
+				Assemble a Lessons Learned artifact
+					what went well
+					what went not so well
+					any plan omissions, extraneous things
+					what would i do different next time
+			
+						
+					
+				
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	System Info
+		Name
+		Value Proposition
+		Stakeholders
+			Product Owner
+			Technical Lead/Architect
+			Champion
+		Artifacts
+			Level-0 Architecture
+			Personas
+			User Stories/Use Cases
+			Deployment diagram
+			...
+		Service Level Agreement
+		
+		Scope
+			size of user base
+		Adjacent Concerns
+			Service APIs
+			Maintenance/Deployment systems/teams
+			Health (SLA compliance)
+		Reporting
+			Periodic, Annual, AdHoc
+		Security
+			Authentication/Authorization
+				MFA,Windows,etc
+				AD Group based Auth, Custom Auth
+			
+		Disaster Recovery
+		
+		Compliance & Mandates
+			DR
+			Deployment (Azure Devops,MDE,etc)
+			PII, HIPAA, Section 508, etc
+			EA technology
+				Platform, OS,  hosting (DESEI), Datastore
+		
+			
+		
+		
+		
