@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <title>PageTitle</title>
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="../css/site.css" />
+
+</head>
+
+<body>
+  <!-- h-100 takes the full height of the body-->
+  <div class="container-fluid h-100">
+    <!-- h-100 takes the full height
+				of the container-->
+    <div class="row h-100">
+			<div class="col-2" id="green">
+				<a href="../index.html">Home</a>
+        <hr/>
+				<!-- Navigation links in sidebar-->
+				<a href="introduction.html">Introduction</a><br />
+				<br />
+        <a href="master-file.html">Master File to DB2</a><br/>
+        <br/>       
+				<a href="lifecycles.html">Lifecycles</a><br />
+        <br/>
+    		<a href="artifacts.html">Artifacts</a><br />
+				<br />    
+        <a href="playbook.html">Playbook</a><br />
+				<br />
+
+ 
+			</div>
+      <div class="col-10" style="padding: 0;">
+        <!-- Top navbar -->
+        <nav class="navbar navbar-expand-lg
+								navbar-light bg-primary">
+					<a class="navbar-brand" href="../index.html">Home</a>
+					<!-- Hamburger button that toggles the navbar-->
+					<button class="navbar-toggler" type="button"
+						data-toggle="collapse"
+						data-target="#navbarNavAltMarkup"
+						aria-controls="navbarNavAltMarkup"
+						aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<!-- navbar links -->
+					<div class="collapse navbar-collapse"
+						id="navbarNavAltMarkup">
+						<div class="navbar-nav">
+							<a class="nav-item nav-link
+								active" href="resources.html">
+							Resources
+							</a>
+							<a class="nav-item nav-link" href="software-development-lifecycle.html">SDLC</a>
+              <a class="nav-item nav-link" href="patterns-practices.html">Patterns & Practices</a>
+							<a class="nav-item nav-link" href="getting-started.html">Getting Started</a>
+						</div>
+					</div>
+				</nav>
+        <!-- Contains the main content of the webpage-->
+        <div class="container container-content">
+
+
+          <div>
+            <ol>
+              <li>
+                <p>Comprehensive Assessment:</p>
+                <ul>
+                  <li>
+                    <p>Perform a thorough assessment of the current software system, analyzing its functionality,
+                      architecture, and dependencies.</p>
+                  </li>
+                  <li>
+                    <p>Common activities/concerns:</p>
+                    <ul>
+                      <li>Conduct interviews with stakeholders to gather insights and understand business requirements.
+                      </li>
+                      <li>Review existing documentation and system artifacts.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p>Artifacts/Deliverables:</p>
+                    <ul>
+                      <li>System architecture diagram</li>
+                      <li>Data flow diagram</li>
+                      <li>
+                        Technology Stack
+                        <ul>
+                          <li>Platform</li>
+                          <li>Datastore</li>
+                          <li>Caching</li>
+                          <li>Application</li>
+                        </ul>
+                      </li>
+                      <li>Current system documentation (if available)</li>
+                      <li>Wireframes and UI mockups (Web app)</li>
+                      <li>API documentation (Service API)</li>
+                      <li>Entity-Relationship Diagram (ERD) (RDBMS)</li>
+                      <li>Dataflow diagrams and job schedules (ETL and Batch Jobs)</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p>Unique activities/concerns:</p>
+                    <ul>
+                      <li>Web app: Evaluate the user interface design and user experience (UX) aspects.</li>
+                      <li>Service API: Assess the API endpoints, their functionality, and data contracts.</li>
+                      <li>RDBMS: Analyze the database schema, relationships, and normalization.</li>
+                      <li>ETL and Batch Jobs: Evaluate the data integration processes and job dependencies.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p>Reasons for Decommissioning:</p>
+                <ul>
+                  <li>
+                    <p>Identify and document the reasons for decommissioning, considering factors such as outdated
+                      technology, lack of scalability, or changing business requirements.</p>
+                  </li>
+                  <li>
+                    <p>Common activities/concerns:</p>
+                    <ul>
+                      <li>Conduct a cost-benefit analysis to evaluate the financial implications of the replacement.
+                      </li>
+                      <li>Assess the impact of the decommissioning on existing users and stakeholders.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p>Artifacts/Deliverables:</p>
+                    <ul>
+                      <li>Cost-benefit analysis report</li>
+                      <li>Stakeholder impact assessment report</li>
+                      <li>Compatibility matrix (Web app)</li>
+                      <li>Performance and scalability analysis report (Service API)</li>
+                      <li>Database performance analysis report (RDBMS)</li>
+                      <li>Batch job analysis report (ETL and Batch Jobs)</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p>Unique activities/concerns:</p>
+                    <ul>
+                      <li>Web app: Evaluate the compatibility with modern web standards, browsers, and devices.</li>
+                      <li>Service API: Analyze the performance and scalability limitations of the existing API.</li>
+                      <li>RDBMS: Assess the data growth and performance issues related to the current database.</li>
+                      <li>ETL and Batch Jobs: Evaluate the inefficiencies in data processing and long-running batch
+                        jobs.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p>Define Goals and Objectives:</p>
+                <ul>
+                  <li>
+                    <p>Define clear goals and objectives for the replacement software system, considering desired
+                      improvements and addressing limitations of the current system.</p>
+                  </li>
+                  <li>
+                    <p>Common activities/concerns:</p>
+                    <ul>
+                      <li>Conduct workshops or meetings with key stakeholders to gather requirements and align
+                        expectations.</li>
+                      <li>Prioritize goals based on business value and feasibility.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p>Artifacts/Deliverables:</p>
+                    <ul>
+                      <li>Requirements documentation</li>
+                      <li>Goal prioritization matrix</li>
+                      <li>User experience design document (Web app)</li>
+                      <li>API performance and scalability requirements document (Service API)</li>
+                      <li>Database design document (RDBMS)</li>
+                      <li>ETL process design document (ETL and Batch Jobs)</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p>Unique activities/concerns:</p>
+                    <ul>
+                      <li>Web app: Define the desired user experience, responsiveness, and accessibility goals.</li>
+                      <li>Service API: Specify the expected response times, scalability requirements, and security
+                        considerations.</li>
+                      <li>RDBMS: Define the desired data integrity, normalization, and query performance goals.</li>
+                      <li>ETL and Batch Jobs: Determine the desired data processing speeds, data quality goals, and
+                        error handling requirements.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p>Data Migration Requirements:</p>
+                <ul>
+                  <li>
+                    <p>Analyze existing data and identify requirements for migrating data from the old system to the new
+                      system.</p>
+                  </li>
+                  <li>
+                    <p>Common activities/concerns:</p>
+                    <ul>
+                      <li>Perform data profiling and data cleansing activities to ensure data quality.</li>
+                      <li>Plan for data mapping and transformation.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p>Artifacts/Deliverables:</p>
+                    <ul>
+                      <li>Data profiling report</li>
+                      <li>Data mapping document</li>
+                      <li>Data storage requirements document (Web app)</li>
+                      <li>API data mapping document (Service API)</li>
+                      <li>Database migration strategy document (RDBMS)</li>
+                      <li>ETL job design document (ETL and Batch Jobs)</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p>Unique activities/concerns:</p>
+                    <ul>
+                      <li>Web app: Determine the data storage requirements for user accounts, preferences, or session
+                        data.</li>
+                      <li>Service API: Identify the data transfer methods, mapping of endpoints, and backward
+                        compatibility concerns.</li>
+                      <li>RDBMS: Plan the data migration strategy, including schema mapping, data transformation, and
+                        data validation.</li>
+                      <li>ETL and Batch Jobs: Assess the data sources, data cleansing and transformation requirements,
+                        and scheduling considerations.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p>Evaluation of Replacement Options:</p>
+                <ul>
+                  <li>
+                    <p>Evaluate available replacement options, considering factors such as technology stack,
+                      scalability, maintainability, and alignment with business requirements.</p>
+                  </li>
+                  <li>
+                    <p>Common activities/concerns:</p>
+                    <ul>
+                      <li>Conduct proof of concept (POC) exercises to validate the feasibility and fit of the
+                        replacement options.</li>
+                      <li>Perform a risk assessment to identify potential risks and mitigation strategies.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p>Artifacts/Deliverables:</p>
+                    <ul>
+                      <li>POC evaluation report</li>
+                      <li>Risk assessment and mitigation plan</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p>Unique activities/concerns:</p>
+                    <ul>
+                      <li>Web app: Assess the frontend frameworks, libraries, and design patterns suitable for the
+                        desired user interface.</li>
+                      <li>Service API: Evaluate the API frameworks, security mechanisms, and performance optimization
+                        techniques.</li>
+                      <li>RDBMS: Consider the database management systems suitable for the workload, scalability, and
+                        data</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
