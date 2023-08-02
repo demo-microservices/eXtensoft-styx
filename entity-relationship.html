@@ -25,23 +25,23 @@
     <!-- h-100 takes the full height
 				of the container-->
     <div class="row h-100">
-			<div class="col-2" id="green">
-				<a href="../../index.html">Home</a>
-        <hr/>
-				<!-- Navigation links in sidebar-->
-				<a href="../introduction.html">Introduction</a><br />
-				<br />
-        <a href="../master-file.html">Master File to DB2</a><br/>
-        <br/>       
-				<a href="../lifecycles.html">Lifecycles</a><br />
-        <br/>
-    		<a href="../artifacts.html">Artifacts</a><br />
-				<br />    
+      <div class="col-2" id="green">
+        <a href="../../index.html">Home</a>
+        <hr />
+        <!-- Navigation links in sidebar-->
+        <a href="../introduction.html">Introduction</a><br />
+        <br />
+        <a href="../master-file.html">Master File to DB2</a><br />
+        <br />
+        <a href="../lifecycles.html">Lifecycles</a><br />
+        <br />
+        <a href="../artifacts.html">Artifacts</a><br />
+        <br />
         <a href="../playbook.html">Playbook</a><br />
-				<br />
+        <br />
 
- 
-			</div>
+
+      </div>
       <div class="col-10" style="padding: 0;">
         <!-- Top navbar -->
         <nav class="navbar navbar-expand-lg
@@ -67,83 +67,174 @@
         </nav>
         <!-- Contains the main content of the webpage-->
         <div class="container container-artifact">
-          <img src="../../images/architecture-high-level.PNG" class="col-md-7 float-md-end mb-6 ms-md-6 artifact-diagram" alt="..."/>
-          
-          <div class="markdown prose w-full break-words dark:prose-invert dark">
-            <p>
-              A data flow diagram (DFD) is a graphical representation of the flow of data within a system. It visually
-              illustrates the processes, data sources, data destinations, and data flows between various components of a
-              system.
-              DFDs are commonly used in software development and systems analysis to understand, document, and
-              communicate the data flow and processes within a system.
-            </p>
-            <p>
-              The purpose of a data flow diagram is to provide a clear and concise overview of how data moves through a
-              system, highlighting the transformations and interactions between different components. It helps in
-              understanding
-              the system's functional requirements, identifying data dependencies, and analyzing the system's behavior.
-            </p>
-            <p>Key aspects of a data flow diagram include:</p>
-            <ol>
-              <li>
-                <p>Processes: Represented by circles or rectangles, processes are activities or operations that
-                  transform data. They can be manual or automated actions performed within the system.</p>
-              </li>
-              <li>
-                <p>
-                  Data Flows: Represented by arrows, data flows depict the movement of data between processes, data
-                  stores, external entities, or other components of the system. Data flows illustrate the direction and
-                  path of data
-                  within the system.
-                </p>
-              </li>
-              <li>
-                <p>Data Stores: Represented by rectangles with parallel lines, data stores represent where data is
-                  stored within the system. They can represent databases, files, or other storage mechanisms.</p>
-              </li>
-              <li>
-                <p>External Entities: Represented by rectangles, external entities are external sources or destinations
-                  of data interacting with the system. They can be users, other systems, or external organizations.</p>
-              </li>
-            </ol>
-            <p>Data flow diagrams can be represented at different levels of detail:</p>
+
+          <dt>Entity-Relationship (E/R) Diagram:</dt>
+          <dd>
+              The multi-faceted utility of the E/R diagram:
             <ul>
               <li>
-                <p>Level 0 DFD (Context Diagram): The highest-level diagram that provides an overview of the entire
-                  system. It shows the external entities interacting with the system and the data flows between them.
-                </p>
+                Intuitive: With their graphical format, E/R diagrams illustrate the relationships between various
+                entities, their attributes, and the cardinality of those relationships.
               </li>
               <li>
-                <p>Level 1 DFD: Represents a more detailed breakdown of the context diagram, decomposing the processes
-                  into sub-processes and showing additional data flows.</p>
+                Documentation: E/R diagrams are powerful tools in the realm of software engineering and database
+                design, enabling a visual and structured representation of the logical structure of a database system.
               </li>
               <li>
-                <p>Level 2 DFD: Further decomposition of the level 1 DFD, providing more detailed processes, data flows,
-                  and data stores.</p>
+                Understanding: The E/R diagrams are crucial to understanding the entities and their interactions within
+                a given
+                domain, aiding in both documenting existing database structures and facilitating business analysis.
+              </li>
+              <li>
+                Agility: E/R diagrams transcend static representation and serve as a proactive solution to tackle the
+                dynamic nature of business needs, empowering organizations to manage changing requirements over time.
+                
+
               </li>
             </ul>
-            <p>The utility of data flow diagrams lies in their ability to:</p>
-            <ol>
-              <li>
-                <p>Visualize Data Flow: DFDs allow stakeholders to understand the movement and transformation of data
-                  within a system, enabling analysis and identification of potential bottlenecks or inefficiencies.</p>
-              </li>
-              <li>
-                <p>Document System Processes: DFDs provide a clear documentation of processes and activities involved in
-                  a system, making it easier to communicate and analyze system requirements.</p>
-              </li>
-              <li>
-                <p>Identify Data Dependencies: DFDs help in identifying dependencies between processes and data flows,
-                  enabling better system design and ensuring data consistency.</p>
-              </li>
-              <li>
-                <p>Aid System Analysis: DFDs assist in analyzing the behavior and functionality of a system, making it
-                  easier to identify areas for improvement or optimization.</p>
-              </li>
-            </ol>
-            <p>Overall, data flow diagrams serve as a powerful tool for system analysis, design, and communication,
-              allowing stakeholders to gain a holistic understanding of the data flow and processes within a system.</p>
+          </dd>
+
+          <hr />
+
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-contrast-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-contrast" type="button" role="tab" aria-controls="pills-contrast"
+                aria-selected="true">Comparison</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-document-datastore-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-document-datastore" type="button" role="tab"
+                aria-controls="pills-document-datastore" aria-selected="false">Documenting Datastore</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-business-analysis-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-business-analysis" type="button" role="tab"
+                aria-controls="pills-business-analysis" aria-selected="false">Business Analysis</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-business-agility-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-business-agility" type="button" role="tab" aria-controls="pills-business-agility"
+                aria-selected="false">Business Agility</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-takeaways-tab" data-bs-toggle="pill" data-bs-target="#pills-takeaways"
+                type="button" role="tab" aria-controls="pills-takeaways" aria-selected="false">Takeaways</button>
+            </li>
+
+
+          </ul>
+
+          <hr />
+
+          <div class="tab-content" id="pills-tabContent">
+
+            <div class="tab-pane fade show active" id="pills-contrast" role="tabpanel"
+              aria-labelledby="pills-contrast-tab">
+              <div class="tabcontent">
+
+                <table>
+                  <tr>
+                    <th>Aspect</th>
+                    <th>Documenting Datastore</th>
+                    <th>Business Analysis</th>
+                  </tr>
+                  <tr>
+                    <td>Purpose</td>
+                    <td>The E/R diagram is primarily used to visually document the existing structure of a database,
+                      illustrating entities, attributes, and relationships within the datastore.</td>
+                    <td>The E/R diagram is employed to model and analyze key business entities and their associations,
+                      focusing on capturing real-world business objects and their attributes.</td>
+                  </tr>
+                  <tr>
+                    <td>Focus</td>
+                    <td>Emphasizes database schema, data integrity, data flow, and relationships between existing
+                      entities.</td>
+                    <td>Concentrates on understanding business requirements, identifying essential business entities,
+                      and their interactions to design a data model that aligns with business needs.</td>
+                  </tr>
+                  <tr>
+                    <td>Audience</td>
+                    <td>Targeted at database administrators, developers, and stakeholders involved in maintaining and
+                      working with the database system.</td>
+                    <td>Designed for business analysts and stakeholders from various business units seeking insights
+                      into the data structure and its impact on business processes.</td>
+                  </tr>
+                  <tr>
+                    <td>Data Perspective</td>
+                    <td>Focuses on the physical representation of data in the database system, encompassing tables,
+                      fields, and relationships.</td>
+                    <td>Emphasizes the conceptual understanding of business entities, attributes, and relationships,
+                      abstracted from the underlying data storage.</td>
+                  </tr>
+                  <tr>
+                    <td>Change Management</td>
+                    <td>Primarily concerned with documenting the existing database structure and its complexities, with
+                      less emphasis on accommodating future changes.</td>
+                    <td>Proactively anticipates and accommodates potential future changes in business requirements,
+                      ensuring a data model that is flexible and adaptable over time.</td>
+                  </tr>
+                  <tr>
+                    <td>Data Integrity and Redundancy</td>
+                    <td>Aids in maintaining data integrity and identifying data redundancies within the existing
+                      datastore.</td>
+                    <td>Focuses on understanding business rules and relationships between entities to ensure data
+                      integrity and consistency in the data model.</td>
+                  </tr>
+                  <tr>
+                    <td>Data Management vs. Business Understanding</td>
+                    <td>Provides insights into data management and database architecture, facilitating database
+                      maintenance and optimization.</td>
+                    <td>Facilitates understanding of business processes and requirements, helping to design an effective
+                      data model that aligns with business objectives.</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-document-datastore" role="tabpanel"
+              aria-labelledby="pills-document-datastore-tab">
+              <div class="tabcontent">
+
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-business-analysis" role="tabpanel"
+              aria-labelledby="pills-business-analysis-tab">
+              <div class="tabcontent">
+
+
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-business-agility" role="tabpanel"
+              aria-labelledby="pills-business-agility-tab">
+              <div class="tabcontent">
+                <p>
+                  By incorporating savvy software and database design that accounts for both static and dynamic business
+                  entity relationships, organizations can achieve graceful and lower-impact system changes that promptly
+                  respond to the evolving demands of the business.
+
+                  E/R diagrams play an invaluable role in fostering organizational agility, ensuring that software
+                  systems
+                  remain responsive and resilient in the face of ever-changing business scenarios. They stand as a vital
+                  asset, enabling businesses to navigate the complexities of continuous change while maintaining data
+                  integrity and system efficiency.</p>
+
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-takeaways" role="tabpanel" aria-labelledby="pills-takaways-tab">
+              <div class="tabcontent">
+
+              </div>
+            </div>
+
+
           </div>
+
+
+
         </div>
 
       </div>
