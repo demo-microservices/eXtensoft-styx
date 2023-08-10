@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Custom Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <style>
+        .page-header {
+            height: 100px;
+            /* Header height */
+            background-color: #f0f0f0;
+        }
+
+        .page-footer {
+            height: 50px;
+            /* Footer height, half of header */
+            background-color: #f0f0f0;
+        }
+
+        #sidebar {
+            position: fixed;
+            top: 150px;
+            /* Match header height */
+            bottom: 50px;
+            /* Match footer height */
+            left: 0;
+            width: 250px;
+            /* You can adjust this width */
+            overflow-y: auto;
+            /* Display scrollbar only if needed */
+            overflow-x: hidden;
+            /* Prevent horizontal scrolling */
+        }
+
+        #content {
+            margin-left: 250px;
+            /* Match sidebar width */
+            overflow-x: hidden;
+            flex-grow: 1;
+        }
+
+        body {
+            overflow-x: hidden;
+            /* Prevent horizontal scrolling */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1 0 auto;
+            display: flex;
+            /* Apply flex layout */
+            flex-direction: column;
+            /* Apply flex layout */
+        }
+
+        footer {
+            flex-shrink: 0;
+        }
+
+        .bg-primary {
+            background-color: transparent !important;
+        }
+    </style>
+    <script src="data/lessons-learned.js"></script>
+
+</head>
+
+<body>
+    <header class="page-header bg-primary text-white p-3">
+        <!-- Page Header Content Here -->
+        <div class="page-header"></div>
+    </header>
+    <main class="container-fluid">
+        <div class="row">
+            <nav id="sidebar" class="bg-light sidebar col-md-4">
+                <!-- Navigation Items -->
+                <ul id="navbar" class="nav flex-column">
+                    <!-- Generated from JS -->
+                </ul>
+            </nav>
+            <div id="content" class="col-md-8">
+                <!-- Content Here -->
+                <!-- Inject content with JavaScript -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Filter Buttons -->
+                        <div id="filter-buttons" class="btn-group mb-2">
+                            <!-- Generated from JS -->
+                        </div>
+                        <!-- Content Header -->
+                        <div id="content-header" class="mt-3 mb-3">
+                            <!-- Generated from JS -->
+                        </div>
+                        <!-- Content Card -->
+                        <div id="content-card" class="card">
+                            <div id="content-title" class="card-header"></div>
+                            <div class="card-body">
+                                <p id="content-description"></p>
+                                <p id="content-content"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer bg-dark text-white p-2 text-center">
+        <!-- Page Footer Content Here -->
+    </footer>
+    <script>
+        var distinctDomains = new Set();
+
+        data.forEach((item) => {
+            if (Array.isArray(item.domain)) {
+                item.domain.forEach((domain) => {
+                    if (!domain.startsWith('category:') && domain !== 'Page') {
+                        distinctDomains.add(domain);
+                    }
+                });
+            } else {
+                distinctDomains.add(item.domain);
+            }
+        });
+
+        var navbar = document.getElementById('navbar');
+        var filterButtons = document.getElementById('filter-buttons');
+
+        // Add 'All' filter button
+        var allButton = document.createElement('button');
+        allButton.textContent = 'All';
+        allButton.className = 'btn btn-secondary btn-sm';
+        allButton.onclick = () => filterNavbar();
+        filterButtons.appendChild(allButton);
+
+        distinctDomains.forEach((domain) => {
+            var button = document.createElement('button');
+            button.textContent = domain;
+            button.className = 'btn btn-secondary btn-sm';
+            button.onclick = () => filterNavbar(domain);
+            filterButtons.appendChild(button);
+        });
+
+        function filterNavbar(domain) {
+            Array.from(navbar.children).forEach((li) => {
+                li.style.display = (!domain || li.dataset.domain.includes(domain)) ? '' : 'none';
+            });
+            if (domain) {
+                displayCategoryHeader('category:' + domain);
+            }
+        }
+
+        function displayCategoryHeader(categoryDomain) {
+            var header = data.find(item => item.domain.includes(categoryDomain));
+            if (header) {
+                document.getElementById('content-title').textContent = header.title;
+                document.getElementById('content-description').textContent = header.description;
+                if (header.isHtml) {
+                    document.getElementById('content-content').innerHTML = header.content;
+                } else {
+                    document.getElementById('content-content').textContent = header.content;
+                }
+
+            }
+        }
+
+        data.forEach((item) => {
+            if (item.domain.includes('Page')) {
+                // Set up page header
+                document.title = item.title;
+                // Additional page header content can be added here
+            } else if (!item.domain.some(str => str.startsWith('category:'))) {
+                //} else if (!item.domain.includes('category:')) {
+                var li = document.createElement('li');
+                li.className = 'nav-item';
+                li.dataset.domain = item.domain.join(',');
+                var a = document.createElement('a');
+                a.className = 'nav-link';
+                a.href = '#';
+                a.textContent = item.title;
+                a.title = item.blurb;
+                a.onclick = () => {
+                    document.getElementById('content-title').textContent = item.title;
+                    document.getElementById('content-description').textContent = item.description;
+                    if (item.isHtml) {
+                        document.getElementById('content-content').innerHTML = item.content;
+                    } else {
+                        document.getElementById('content-content').textContent = item.content;
+                    }
+                };
+                li.appendChild(a);
+                navbar.appendChild(li);
+            }
+        });
+
+        // Default display of first non-category item
+        //var firstItem = data.find(item => !item.domain.includes('category:') && item.domain.includes('Page'));
+        var firstItem = data.find(item => item.domain.includes('Page'));
+        if (firstItem) {
+            document.getElementById('content-title').textContent = firstItem.title;
+            document.getElementById('content-description').textContent = firstItem.description;
+            if (firstItem.isHtml) {
+                document.getElementById('content-content').innerHTML = firstItem.content;
+            } else {
+                document.getElementById('content-content').textContent = firstItem.content;
+            }
+        }
+    </script>
+</body>
+
+</html>

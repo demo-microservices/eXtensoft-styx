@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Item Editor</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+  <style>
+    body {
+          font-family: Arial, sans-serif;
+          background: #f5f5f5;
+          margin: 0;
+        }
+        #app {
+          display: flex;
+          flex-direction: row;
+          height: 100vh;
+        }
+        #sidebar {
+          position: relative;
+          width: 250px;
+          padding: 20px;
+          background: #607b96;
+          color: #ecf0f1;
+          overflow-y: auto;
+          overflow-x: hidden;
+        }
+        #editor {
+          flex: 1;
+          padding: 40px;
+          background: #ecf0f1;
+        }
+        .nav-item {
+          padding: 8px;
+          cursor: pointer;
+          border-bottom: 1px solid #34495e;
+          font-weight: bold;
+        }
+        .nav-item:hover {
+          background-color: #34495e;
+        }
+        button {
+          background-color: #3498db;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          cursor: pointer;
+          font-size: 16px;
+          border-radius: 5px;
+          transition: background 0.3s ease;
+        }
+        button:hover {
+          background-color: #2980b9;
+        }
+        #item-form label,
+        #item-form input,
+        #item-form textarea {
+          display: block;
+          margin-bottom: 15px;
+          width: 100%;
+          font-size: 18px;
+        }
+        #item-form input,
+        #item-form textarea {
+          padding: 10px;
+          border: 1px solid #bdc3c7;
+          border-radius: 5px;
+        }
+        #item-form textarea {
+          height: 150px;
+          resize: vertical;
+          font-size: 14px;
+        }
+        #item-form input[type="checkbox"] {
+          width: auto;
+        }
+        #sidebar button {
+            margin-right: 10px;
+        }
+        #editor.disabled {
+            pointer-events: none;
+            opacity: 0.5;
+        }
+  
+        li {
+          margin-bottom: 10px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+        }
+        li span {
+          margin-right: 10px;
+        }
+        li span:first-child {
+          color: red;
+          cursor: pointer;
+        }
+
+        span span {
+          margin-right: 10px;
+        }
+
+        span span:first-child{
+          color: red;
+          cursor: pointer;
+        }
+ 
+        #buttonContainer {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 20px; /* Add some space between the buttons and the Create button */
+        }
+        
+        #loadSaveButtons {
+          display: flex;
+          justify-content: space-between;
+        }
+        
+        button.loadSave {
+          background-color: #f0f0f0; /* Subdued color */
+          border: 1px solid #ccc;
+          padding: 5px 10px; /* Smaller height */
+          margin-right: 10px; /* Space between the buttons */
+          color: #555; /* Subdued text color */
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+
+        button.addItem {
+          background-color: rgb(39, 119, 108);
+          padding: 5px 10px;
+          color: #555;
+          cursor: pointer;
+        }
+        
+        button.loadSave:hover {
+          background-color: #e0e0e0; /* Subdued hover color */
+        }
+        
+        button.loadSave:disabled {
+          cursor: not-allowed;
+          color: #aaa; /* Subdued disabled color */
+        }
+
+        .domain-list {
+          display: flex;
+          flex-wrap: wrap;
+          margin-bottom: 10px;
+        }
+        
+        .domain-item {
+          display: flex;
+          align-items: center;
+          background: #ecf0f1;
+          border: 1px solid #bdc3c7;
+          border-radius: 5px;
+          padding: 5px;
+          margin-right: 10px;
+          margin-bottom: 10px;
+        }
+
+        .remove-domain {
+          color: red;
+          cursor: pointer;
+          margin-right: 10px;
+        }
+
+        #item-form label {
+          display: inline-block; /* Change display property */
+          width: auto; /* Allow labels to take their natural width */
+          margin-right: 10px; /* Add space between label and content */
+        }
+        
+        #domain-list {
+          display: inline-flex; /* Use inline-flex to create a horizontal list */
+          flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+          align-items: center; /* Vertically align the items */
+        }
+        
+        #domain-list span {
+          margin-right: 5px; /* Add space between domains */
+        }
+        
+        .domain-tag {
+          display: inline-block;
+          background-color: gray;
+          color: white;
+          padding: 5px 10px;
+          margin: 2px;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 14px;
+        }
+
+        #resizer {
+          cursor: ew-resize;
+          width: 50px;
+          height: 100%;
+          position: absolute;
+          right: -25px;
+          top: 0;
+          display: flex;
+          justify-content: center;
+        }
+        
+        #resizer::before,
+        #resizer::after {
+          content: "";
+          background-color: #333;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          position: absolute;
+        }
+        
+        #resizer::before {
+          top: 0;
+        }
+        
+        #resizer::after {
+          bottom: 0;
+        }
+        
+        #resizer > div {
+          background-color: #333;
+          width: 50px;
+          flex-grow: 1;
+        }
+
+        .tooltip-container {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .tooltip {
+          visibility: hidden;
+          width: 100px;
+          background-color: #555;
+          color: #fff;
+          text-align: center;
+          padding: 5px;
+          border-radius: 6px;
+          position: absolute;
+          z-index: 100; /* Adjust as needed */
+          top: 100%; /* Position below the button */
+          left: 50%; /* Center align */
+          transform: translateX(-50%); /* Center align */
+          margin-top: 5px; /* Space between the tooltip and the button */
+          opacity: 0;
+          transition: opacity 0.3s; /* 0.3s duration, no delay */
+        }
+        
+        .tooltip-container:hover .tooltip {
+          visibility: visible;
+          opacity: 1;
+          transition: opacity 0.3s 1s; /* 0.3s duration, 1s delay */
+        }
+
+  
+    </style>
+</head>
+
+<body>
+  <div id="app">
+    <div id="sidebar">
+      <div id="resizer"></div>
+
+      <div id="buttonContainer">
+          <div id="loadSaveButtons">
+            <button class="loadSave" @click="loadFile" :disabled="isLoadDisabled">Load</button>
+            <button class="loadSave" @click="saveFile" :disabled="isSaveDisabled">Save</button>
+          </div>
+          <div class="tooltip-container"> <!-- Add this wrapper div -->
+            <button class="addItem" @click="createNewItem">Create</button>
+            <span class="tooltip">Press F1</span> <!-- Add this tooltip span -->
+          </div>
+        </div>
+
+
+      <hr />
+      <ul>
+        <li v-for="(item, index) in items" :key="index">
+          <span @click.stop="removeItem(index)">X</span>
+          <span @click="selectItem(index)">{{ item.title.substring(0, 20) }}</span>
+        </li>
+      </ul>
+    </div>
+    <div id="editor" :class="{disabled: isEditorDisabled}">
+      <!-- Editor Content -->
+      <div id="item-form">
+        <label for="title">Title:</label>
+        <input type="text" v-model="selectedItem.title" required ref="titleInput" />
+
+
+        <label for="blurb">Blurb:</label>
+        <input type="text" v-model="selectedItem.blurb" required />
+
+        <label for="description">Description:</label>
+        <input type="text" v-model="selectedItem.description" required />
+
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <label for="content">Content:</label>
+          <div style="display: flex; align-items: center;">
+            <input type="checkbox" v-model="selectedItem.isHtml" />
+            <label for="isHtml" style="margin-right: 5px;">HTML</label>
+          </div>
+        </div>
+        <textarea v-model="selectedItem.content" required></textarea>
+
+
+        <div style="display: flex; align-items: center;">
+          <label for="domain" style="margin-right: 10px;">Domains:</label>
+          <select v-model="newDomain" @change="addDomain" style="margin-right: 10px;">
+            <option value="---">---</option>
+            <option v-for="domain in distinctDomains" :value="domain">{{ domain }}</option>
+            <option value="add-new">Add New</option>
+          </select>
+          <span class="domain-tag" v-for="(domain, index) in selectedItem.domain" :key="index">
+            <span @click.stop="removeDomain(index)" style="cursor: pointer;">X</span>
+            <span>{{ domain }}</span>
+          </span>
+
+          <input v-if="isNewDomain" type="text" v-model="newDomainValue" @keyup.enter="addNewDomainValue" style="margin-right: 10px;" />
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+    new Vue({
+      el: '#app',
+      data: {
+        items: [],
+        selectedItem: {
+          title: 'title',
+          blurb: '',
+          description: '',
+          isHtml: false,
+          content: '',
+          domain: []
+        },
+        newDomain: '---',
+        newDomainValue: '',
+        isNewDomain: false,
+        newDomainValue: '',
+        distinctDomains: [],
+        isLoadDisabled: false,
+        isSaveDisabled: true,
+        isEditorDisabled: true
+      },
+      mounted() {
+        document.addEventListener('keydown', this.keydownHandler);
+      },
+      beforeDestroy() {
+        document.removeEventListener('keydown', this.keydownHandler); // Cleanup
+      },
+      methods: {
+        keydownHandler(e) {
+          if (e.key === 'F1') {
+            e.preventDefault(); // Prevent any default behavior (like opening browser help)
+            this.createNewItem();
+          }
+        },
+        loadFile() {
+          const fileInput = document.createElement('input');
+          fileInput.type = 'file';
+          fileInput.accept = '.json'; // Optional, to only allow JSON files
+          fileInput.addEventListener('change', event => {
+            const file = event.target.files[0];
+            if (file) {
+              const reader = new FileReader();
+              reader.onload = e => {
+                this.items = JSON.parse(e.target.result);
+                this.distinctDomains = [...new Set(this.items.flatMap(item => item.domain))];
+              };
+              reader.readAsText(file);
+            }
+          });
+          fileInput.click(); // Trigger file selection dialog
+        },
+        saveFile() {
+          const data = JSON.stringify(this.items);
+          const blob = new Blob([data], { type: 'application/json' });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = 'items.json';
+          a.click();
+          URL.revokeObjectURL(url);
+
+          this.isEditorDisabled = true;
+          this.selectedItem = {
+            title: 'title',
+            blurb: '',
+            description: '',
+            isHtml: false,
+            content: '',
+            domain: []
+          };
+        },
+        selectItem(index) {
+          this.selectedItem = this.items[index];
+          this.isEditorDisabled = false;
+        },
+        createNewItem() {
+          const newItem = {
+            title: 'title',
+            blurb: '',
+            description: '',
+            isHtml: false,
+            content: '',
+            domain: []
+          };
+          this.items.push(newItem);
+          this.selectItem(this.items.length - 1);
+          this.isSaveDisabled = false;
+          this.$nextTick(() => {
+            const titleInput = this.$refs.titleInput;
+            titleInput.focus();
+            titleInput.select(); // Select the text inside the input
+          });
+        },
+        removeItem(index) {
+          this.items.splice(index, 1);
+          this.isEditorDisabled = true;
+          this.selectedItem = {
+            title: 'title',
+            blurb: '',
+            description: '',
+            isHtml: false,
+            content: '',
+            domain: []
+          };
+        },
+        selectDomain() {
+          if (this.newDomain === 'add-new') {
+            this.isNewDomain = true;
+          } else {
+            this.isNewDomain = false;
+          }
+        },
+        addDomainlegacy() {
+          if (this.newDomain === '---') return;
+          if (this.isNewDomain) {
+            this.selectedItem.domain.push(this.newDomainValue);
+            this.distinctDomains.push(this.newDomainValue);
+            this.newDomainValue = '';
+            this.isNewDomain = false;
+          } else {
+            this.selectedItem.domain.push(this.newDomain);
+          }
+        },
+        addDomain() {
+          if (this.newDomain === 'add-new') {
+            this.isNewDomain = true;
+          } else if (this.newDomain !== '---') {
+            this.selectedItem.domain.push(this.newDomain);
+            this.newDomain = '---'; // Reset to default selection
+          }
+        },
+        addNewDomainValue() {
+          if (this.newDomainValue.trim() !== '') {
+            this.selectedItem.domain.push(this.newDomainValue.trim());
+            this.newDomainValue = ''; // Clear the new domain input
+            this.isNewDomain = false; // Hide the new domain input
+          }
+        },
+        removeDomain(index) {
+          this.selectedItem.domain.splice(index, 1);
+        }
+      }
+    });
+
+   let lastX = 0;
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const sidebar = document.getElementById('sidebar');
+      const resizer = document.getElementById('resizer');
+      let isResizing = false;
+  
+      resizer.addEventListener('mousedown', function (e) {
+        isResizing = true;
+        lastX = e.clientX;
+        document.addEventListener('mousemove', handleMouseMove);
+        document.addEventListener('mouseup', () => {
+          isResizing = false;
+          document.removeEventListener('mousemove', handleMouseMove);
+        });
+      });
+  
+      function handleMouseMove(e) {
+        if (isResizing) {
+          const delta = e.clientX - lastX;
+          const computedStyle = getComputedStyle(sidebar);
+          const currentWidth = parseInt(computedStyle.width, 10);
+          const newWidth = currentWidth + delta;
+          sidebar.style.width = `${newWidth}px`;
+          lastX = e.clientX;
+        }
+      }
+    });
+
+
+  </script>
+</body>
+
+</html>
