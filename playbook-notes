@@ -1,0 +1,450 @@
+technical debt
+	architectural/technology debt
+	
+	architectural/design misalignment
+		- E/R Analysis
+		- expected change in business activities
+		- non-functional requirements
+	
+Technical Debt Perspective
+	Retire
+		what aspects?
+			CF - platform,architecture
+			poor alignment - domain E/R, non-func - design
+	
+	Replace
+		platform, language, technology choices (EA guidance)
+		alignment
+		code quality
+		static analysis, gateways
+		code coverage
+	
+	
+Technology Replacement Model (TRiM) TRiP Playbook? journey or obstacle
+
+
+
+from the EA interests
+	Security
+	Platform & Technology (within guidance)
+	Technical Debt
+	Compliance & Mandates
+
+from the Project Owner
+	Functional & Non-functional requirements met
+	Schedule & Cost
+
+from the System Architect/Tech lead
+	Domain Analysis
+	Existing System Info
+	Remediate Technical/Design Risk
+	formally respond to EA interests, Project Owner interests
+
+from the SDLC Manager
+	EA Signoff of Architect/Tech design & alignment
+	Monitor progress, address roadblocks
+	Ensure sufficient Development,QA,Devops team
+	Communicate progress, bottlenecks, roadblocks, overall health
+	
+
+from the Devops Engineer
+	Deployment (manual/pipeline)
+
+
+
+EA Stakeholders
+	Product Manager
+		Product Owner
+			Assist Product Management Team
+				Product Vision & Goals
+			With Product Management (Customer & Product discovery)
+				Maintain prioritized Product Backlog of High-level capabilities
+			With Analysts & Stakeholders to define User Stories
+				and at least first two construction sprints
+			With Development Team
+				Identify Adjacent Systems/Stakeholder interests
+				Ensure adequate understanding of the Business Domain
+				Refine User Stories (Use Cases?)
+				Develop Product roadmap for releases
+			During Construction
+				participate in daily scrums
+				perform sprint planning & execution
+				remove roadblocks
+			Accountable for meeting business needs
+	Project Manager
+		Is a core decision maker
+		Responsible for successful, ontime delivery in budget/scope
+			according to Product roadmap
+		Aligning business objectives with approved/available technology
+		Overseas all aspects of project
+			sets deadlines, assigns responsibilites
+			monitors progress, manages communications with Stakeholders
+		Develop & Manage Project timeline, 
+			risks, issues, resource allocation (human resources?)
+		Coordinates with Product Manager, Product Owner, Solutions Architect/Tech
+		Ensure Stakeholder alignment (scope,timeline,status)
+		
+	
+
+What's the plays angle
+Where does it fit into the SDLC
+
+What should be considered
+What must be done
+Who needs to do it
+
+Prompts and Questions
+
+Need a SDLC R&R cheetsheet
+
+
+1.	Many Viewpoint Vectors on a lifecycle
+	-	Technical Debt
+	-	Compliance & Mandates
+	-	EA Governance 
+		-	Security
+		-	Quality
+		-	Delivery
+		-	Technology Stack
+		-	Patterns of Architecture
+			-	
+	-	Business
+		-	Features/Scope
+		-	Time
+		-	Value Propostion
+
+2.	Stakeholders
+		- Project
+		- Product
+		- Technical
+		- Infrastructure
+			- Devops
+			- DBA
+			- Network
+		- Support
+
+3.	Lifecycle
+
+
+4.	Role Responsibilities accross Vectors & Lifecycle
+
+
+Likely readers of the Playbook
+	Lead Developer
+	Project Manager
+	
+	Want to know
+		1.	What needs to happen in what order
+		2.	Who needs to make it happen, who must be consulted
+		3.	What should/may be considered
+		4. Getting started (step-by-step)
+
+
+  ------------------------------
+
+  https://confluence.aci.is.cl.ssa.gov/display/~146379/TRiM+%28Tech+Retirement+Model%29+Playbook+for+App+Teams
+
+
+provide feedback
+
+Technical Debt
+	
+	Platform/language/
+	
+	
+	
+Technology Retirement Model (TRiM)
+
+	Retire & Replace
+	
+	Rearchitect/Redesign
+	
+	Refactor & Test
+
+click and comment
+add 
+
+wear my Application Developer Team HAT (TUSHAR)
+
+	
+	
+	TRiM thoughts
+		Plays list page
+				https://confluence.aci.is.cl.ssa.gov/display/~146379/TRiM+%28Tech+Retirement+Model%29+Playbook+for+App+Teams
+		
+			Identify and Assign Roles and Responsibilities
+			
+			Perform Risk Analysis and Mitigation
+			
+			Select a Modernaized Technology Stack
+			
+			Gather Requirements
+			
+			Set up a Development Environment for the Modernized System
+			
+			Implement the Modernized System
+			
+			Deploy the Modernized System
+			
+			Prevent Future Technical Debt
+		
+					Identify and Assign Roles and Responsibilities
+			
+			[thoughts]
+				-	Stakeholders (project & sdlc)
+					Ensure SDLC roles/responsibilites & team-members 
+				-	Risk (business,technical) project mgr/product owner, architect/tech lead
+				-	(select modernized stack) EA Guidance & Compliance/Mandates
+				-	Gether Requirements (understand the business, domain analysis)
+				-	Setup Dev Environment
+					prove out delivery/deploy & configuration mgt DEV/INT/QA (UAT/STAGING/PROD)
+				-	(implement the Modernized System)
+					perform migrations (communication plan)
+					construct, integrate, deploy to QA in phases with milestones
+						(group backlogs)
+					
+				where is Plan Construction?
+				where is Prove Alignment
+				where is get EA stamp of approval?
+				
+				
+				always the red-headed step-children
+					Security
+					Devops
+					health/liveness monitoring
+					logging, performance monitoring (forensics,
+					SLA with client
+			Plays are a mixture of steps, activities, goals
+					Perform Risk Analysis and Mitigate..., Gather Requirements (multifaceted and generalized group of activities)
+					Select a Modernized Technology (this is a choice)
+					Set up a Development Environmenbt (this is a task/activity)
+					Prevent Future Technical Debt (this is a goal)
+					
+		------------------------------------
+		Identify and Assign Roles and Responsibilities
+				https://confluence.aci.is.cl.ssa.gov/display/~146379/Identify+and+Assign+Roles+and+Responsibilities
+			Role (responsibilities) not positions instead of individuals
+			(some team sizes cannot accommodate the whole side)
+			Product Owner (makes decisions about what is important, not)
+			Devops (someone responsible for delivery, configuration mgt)
+			
+			
+		------------------------------------
+		Perform Risk Analysis and Mitigation
+				https://confluence.aci.is.cl.ssa.gov/display/~146379/Perform+Risk+Analysis+and+Mitigation
+			include list of categories of risk
+				and within those categories, the most common actual risks
+					(included/not limited to)
+				- Business Impact Analysis
+					[Continuity of services] Adjacent Systems/Stakeholders
+					[Transition Plan] how to cut over with Communication Plan
+				- Stakeholder Analysis
+				- Data Migration
+					(User migration, user retraining, etc)
+				- Technical Compatibility
+			
+				- System Dependencies
+				- Security and Compliance
+				- Vendor Management
+				- Scalability & Future Growth
+				- Training and Knowledge Transfer
+				- User Acceptance Testing
+				- Change Management
+				- Contingency Planning
+				- Project Governance (roles/responsibilities/decision)
+					monitor risk, track progress, communicate with stakeholders
+				- Communication & Transparency
+				- Documentation and Knowledge Management
+			Mixed Bag, catch all
+				
+		------------------------------------
+		Select a Modernaized Technology Stackc
+				https://confluence.aci.is.cl.ssa.gov/display/~146379/Select+a+Modernized+Technology+Stack
+			Linux/Windows, Postgres/Greenplum/SqlServer, WebFocus8/Tableau, React,Angular/Pega
+			
+		------------------------------------
+		Gather Requirements
+				https://confluence.aci.is.cl.ssa.gov/display/~146379/Gather+Requirements
+			NEED minimum viable requirements
+			NEED suggested list of sources
+				User Stories/Use Cases
+				Workflows
+				Dataflows
+				Adjacencies
+				Inputs/Outputs to system
+				Reporting, periodic/ad hoc
+		------------------------------------
+		Set up a Development Environment for the Modernized System
+				https://confluence.aci.is.cl.ssa.gov/display/~146379/Set+up+a+Development+Environment+for+the+Modernized+System
+			DEV & INTEGRATTION & QA delivery (automated) plus Configuration Mgt
+			
+		------------------------------------
+		Implement the Modernized System
+				https://confluence.aci.is.cl.ssa.gov/display/~146379/Implement+the+Modernized+System
+			Develop, Integrate, Deploy, QA Test
+			Ensure code quality (Code Review, Static Analysis, unit test, integration test)
+			Perform Data/User/etc migration
+			Obtain UAT acceptence
+		------------------------------------
+		Deploy the Modernized System
+				https://confluence.aci.is.cl.ssa.gov/display/~146379/Deploy+the+Modernized+System
+			
+		------------------------------------
+		Prevent Future Technical Debt
+				https://confluence.aci.is.cl.ssa.gov/display/~146379/Prevent+Future+Technical+Debt
+			leave technology stack behind
+			code quality (static analysis)
+			[no mention of misalignment]
+				
+		------------------------------------
+		[Transition Plan]
+			complex enough to be it's own topic, impacts multiple stakeholders
+			requires coordination with any Data/User Migrations
+			must have workable strategy (gradual,etl/cutover)
+			requires Communication Plan
+			
+			- Training and Knowledge Transfer (users/support staff)
+			- Application Testing (UAT, run side-by-side with legacy)
+			- Change Management
+			- Contingency Planning (backup strategies to mitigate risks of rollout)
+				disruptions/downtimes, rollbacks
+			- Document and Knowledge Management
+			
+
+	The more focused (not expansive) and cohesive, the better
+	Each play should be centered around a single idea, or group of related ideideas
+		after reading the purpose, the reader should understand WHAT (scope) of idea
+			importance of idea, and benefit to THEM of the idea
+		Checklist can be list of steps (sequential,or parallel) critical to success
+			or of essential activities. perhaps indicate which stakeholder may perform the activity
+		Key Questions are prompts, igniting thoughtful consideration, or remider
+		
+		
+	Software Development has good number of Interests, Categories, Vectors:
+		Quality
+		Risk 
+		Stakeholder Interests
+		Governance
+			Security, Compliance & Mandates, Technology guidance (platform,pattern)
+	
+	Orchestration/Coordination of Stakeholder Activities
+	
+		Stakeholders
+			Business
+				SME, 
+				Product Owner
+				Users
+			Technical
+				Domain Analysis
+				Architecture/Design
+				
+			Managerial
+				Project Manager
+				Facilitator/Scrum Master
+			Advisory
+			
+		Development Lifecyle Phases
+		
+			Understanding the Business Domain, Organize the Lifecycle
+			Designing the System, Mitigate Risk, Planning Construction
+			Executing Construction, preparing for Transition
+			Transition to New System, Monitor & Adjust til Stabile
+
+Anatomy of a Play
+	Introduction and Purpose {html}
+	Desired Outcome {html}
+	Checklist [] [GROUPED,CATEGORIZED] (things to do, things to check off)
+	Key Questions []
+	Links to existing EA Knowlegebase
+	MI/BI/KPIs
+	Links to existing EA knowledgebase
+
+ ------------------------------
+
+ meeting notes 8/9/2023
+
+Dan Parry wanted clarification on scope
+	already decided on deprication YES
+
+Lester Diamon
+David H
+David M
+Tushar Rathod
+Kalpana Vadarevu
+
+KV
+	met with andreas
+	Opportunities to reform into
+		simpler, actionable Playbook
+	tomorrow AM at 8:30am
+	
+list of Plays
+	high level description of Playbook
+	checklist of Plays
+		completed/not completed/not
+	must be simple/actionable
+	
+	after adoption/feedback we will
+	change it.
+	
+
+add [Funding] (existing, org deprication)
+as a point in the lifecycle?
+or at least review, confirm?
+
+i think it should be a part of the Stakeholder evaluation and Signoff
+
+funding concerns, when mixed in with Lifecycles
+really mucks it up.
+
+Estimate,Priority,Cost evaluation at each Stage,
+at least in Inception and Elaboration
+
+
+Decision Made, vs Decision Pending
+
+DAN thinks the hard part is
+thinking through ways to do this that are doable
+simple/actionable and DOABLE
+
+Strategic Plan
+	Tactical Plan
+
+If you spend Distributed Sizing/Scoping activity
+
+maybe have Replacement team do sizing/scoping
+
+instead of Technical Lead, Technical Team?
+
+what is the risk based decision model
+
+DP you start out with POC to get funding approved
+
+How to Start
+
+What Planning is needed
+	Understanding Legacy System
+	Designing Replacement System
+	Enumerating, Assessing, Remediating Risks
+	Estimating Cost, Priority, Sizing, Complexity
+
+
+
+Who should be involved?
+
+Where is the Funding coming from?
+
+Lester
+How to fund it, if no benefit, then why fund it?
+Lester is focused on why do it, how to pay.
+
+	will make gereralizable list
+	Dan, list based upon decision has been made
+	then, HOW to get funding.
+
+	follow up with Kavita
+
+
+
+
+-----
