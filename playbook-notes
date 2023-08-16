@@ -142,7 +142,7 @@ Likely readers of the Playbook
 
   ------------------------------
 
-  https://confluence.aci.is.cl.ssa.gov/display/~146379/TRiM+%28Tech+Retirement+Model%29+Playbook+for+App+Teams
+  
 
 
 provide feedback
@@ -170,8 +170,7 @@ wear my Application Developer Team HAT (TUSHAR)
 	
 	TRiM thoughts
 		Plays list page
-				https://confluence.aci.is.cl.ssa.gov/display/~146379/TRiM+%28Tech+Retirement+Model%29+Playbook+for+App+Teams
-		
+				
 			Identify and Assign Roles and Responsibilities
 			
 			Perform Risk Analysis and Mitigation
@@ -222,7 +221,7 @@ wear my Application Developer Team HAT (TUSHAR)
 					
 		------------------------------------
 		Identify and Assign Roles and Responsibilities
-				https://confluence.aci.is.cl.ssa.gov/display/~146379/Identify+and+Assign+Roles+and+Responsibilities
+				
 			Role (responsibilities) not positions instead of individuals
 			(some team sizes cannot accommodate the whole side)
 			Product Owner (makes decisions about what is important, not)
@@ -231,7 +230,7 @@ wear my Application Developer Team HAT (TUSHAR)
 			
 		------------------------------------
 		Perform Risk Analysis and Mitigation
-				https://confluence.aci.is.cl.ssa.gov/display/~146379/Perform+Risk+Analysis+and+Mitigation
+				
 			include list of categories of risk
 				and within those categories, the most common actual risks
 					(included/not limited to)
@@ -259,12 +258,12 @@ wear my Application Developer Team HAT (TUSHAR)
 				
 		------------------------------------
 		Select a Modernaized Technology Stackc
-				https://confluence.aci.is.cl.ssa.gov/display/~146379/Select+a+Modernized+Technology+Stack
+				
 			Linux/Windows, Postgres/Greenplum/SqlServer, WebFocus8/Tableau, React,Angular/Pega
 			
 		------------------------------------
 		Gather Requirements
-				https://confluence.aci.is.cl.ssa.gov/display/~146379/Gather+Requirements
+			
 			NEED minimum viable requirements
 			NEED suggested list of sources
 				User Stories/Use Cases
@@ -275,23 +274,23 @@ wear my Application Developer Team HAT (TUSHAR)
 				Reporting, periodic/ad hoc
 		------------------------------------
 		Set up a Development Environment for the Modernized System
-				https://confluence.aci.is.cl.ssa.gov/display/~146379/Set+up+a+Development+Environment+for+the+Modernized+System
+				
 			DEV & INTEGRATTION & QA delivery (automated) plus Configuration Mgt
 			
 		------------------------------------
 		Implement the Modernized System
-				https://confluence.aci.is.cl.ssa.gov/display/~146379/Implement+the+Modernized+System
+				
 			Develop, Integrate, Deploy, QA Test
 			Ensure code quality (Code Review, Static Analysis, unit test, integration test)
 			Perform Data/User/etc migration
 			Obtain UAT acceptence
 		------------------------------------
 		Deploy the Modernized System
-				https://confluence.aci.is.cl.ssa.gov/display/~146379/Deploy+the+Modernized+System
+				
 			
 		------------------------------------
 		Prevent Future Technical Debt
-				https://confluence.aci.is.cl.ssa.gov/display/~146379/Prevent+Future+Technical+Debt
+
 			leave technology stack behind
 			code quality (static analysis)
 			[no mention of misalignment]
