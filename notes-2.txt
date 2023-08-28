@@ -1,0 +1,79 @@
+Personas
+	Product Manager
+		Directly manage the Product Owner
+	Product Owner
+		Work with Development Team to maximize product value
+		Define vision & goals
+		Assemble and Prioritize high level product backlog of capabilities
+		Assemble User Stories
+		Assemble Risk list (non-technical risks)
+		
+		Discovery & Development
+			Customer Discovery
+			Product Discovery
+			Technical Discovery
+			Product Development
+		
+		
+	
+	Project Manager: The buck stops here! 
+		Responsible for ontime, successful delivery according to Product Roadmap
+		Meet customer needs according to 
+	
+	EA Roles
+
+
+
+	1.	Business Objectives
+			Understand the Business
+			Identify Stakeholders & Compliance/Mandates
+			Estimate Sizing, Complexity, Feasibility
+				
+	2.	Risk Remediation & Planning
+			Triage/Prioritize Product Backlog
+			Complete Technical Architecture & Design
+			Organize Dev/QA/Devops Teams
+			Plan Construction phases with milestones & deliverables
+	
+	3.	Construction, Integration, Migration
+			Perform Construction, Integration, QA Testing 
+			Perform, verify & validate Migration (opt), communicate metrics to Stakeholders
+			Devops pipeline delivery & Configuration Management
+			Ensure Quality: Code Reviews, Unit Test Coverage, Static Analysis
+			Earn UAT Acceptance
+	
+	4.	Rollout & Stabilization
+			Deliver solution to Production, manage configuration
+			Deploy critical modifications as necessary
+			Monitor performance, usage, exceptions
+			Achieve stability
+			Commence support activities
+			
+	5.	Retrospective
+			Identify sucesses, failures, unexpected challenges, 
+			lessons learned, recommendations
+			
+
+
+Okay so let's see...
+we have a finite list of "Angles" or "Vectors"
+			Mandate & Compliance
+			Technical Debt
+			Risks & Remediation
+			Requirements: Non-functional
+			Requirements: Functional
+			Architecture & Design
+			EA Guidance
+			Alignment (Business Objectives to Architecture/Design)
+			Delivery, secrets & Configuration Management
+			Operational Support
+			
+An Interest is an aspect of an Angle for a given Persona
+
+Activity
+		A specific Action by Stakeholder(s) for an Angle, (grouped in a Lifecycle phase)
+			
+			may be ?, follow-up, primary step/phase
+	
+	
+			
