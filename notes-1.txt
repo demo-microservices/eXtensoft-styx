@@ -1,0 +1,260 @@
+Assumes decistion to Retire & Replace
+Funding Approval may/may not be based on Cost/Benefit calculation that is dependent on fleshing out Scope, Complexity, Estimated Effort
+
+
+
+R&R Lifecycle
+	Inception
+		Objectives
+			Articulate Motivation/Purpose, Goals, Value Proposition
+			Identify Stakeholders, Risks, Compliance & Mandate Constraints
+			Estimate Size, Complexity, Cost, Feasibility
+			Comprehend Legacy System Domain
+			Define Scope (what's in, what's out)
+			Communication Plan (stakeholders)
+			SDLC Inception: Domain Analysis, System Understanding
+		Activities
+			Stakeholder review, go-no-go
+		Questions
+	
+	Elaboration
+		Objectives
+			Remediate Risk to acceptable levels
+			Demonstrate architectural/design efficacy
+			Transition Plan (progress,quality,metrics) etc
+			SDLC Elaboration Completeness			
+		Activities			
+			Stakeholder review, go-no-go
+		Questions
+
+	Execution
+		Objectives
+			Adjust Risk, Cost, Progress, Delivery Schedule		
+		Activities
+			Monitor SDLC Execution Progress, Velocity
+			Monitor SDLC Transition Plan Execution, V & V metrics
+			Adjust Estimated Cost, Delivery Schedule
+			Inform Stakeholders of progress, challenges, overall R&R health				
+		Questions
+
+	Retrospection
+		Objectives
+			Evaluate Success and Failure Factors
+			Analyze Performance Metrics
+			Identify Lessons Learned
+			Determine Opportunities for Future Improvement
+			Ensure Knowledge Transfer
+		Activities
+			Conduct Final Stakeholders Review
+			Analyze Project Metrics and Performance
+			Document lessons Learned and Recommendations
+			Facilitate Knowledge Transfer
+		Questions
+			What were the key success and failure factors for this project?
+			How did the project perform against the established  metrics and objectives?
+			What lessons were learned, and how may they be applied in future projects?
+			What are the recommendations for future improvements, and how will knowledge be transfered within the organization?
+			
+			
+			
+		
+		
+
+SDLC 
+	Inception
+		Objectives
+			Compliance & Mandates
+			Comprehend Domain
+				informs architecture,design, change/time
+			Identify Legacy System -> Domain alignment gaps
+				(informs scope, architecture/design)
+			Discover Operational Environment
+				Adjacent System(s) dependencies
+				Inflows,Outflows
+			SLA
+				Understand & enumerate availability & performance expectations
+		Activities
+			Perform Domain Analysis using various methods and sources
+			Determine current system gaps, successes, and expectations
+			Discover dependent systems, dependencies on adjacent systems
+			Uncover expected deltas in the near & medium term (domain changes, user population changes, expected functional & non-functional changes)
+			
+		Questions
+			How are compliance and mandates being addressed?
+			What insights have been gained about the domain?
+			How are alignment gaps identified and addressed?
+			What are the operational environment details, including dependencies
+	
+	Elaboration
+		Objectives
+			Risk list Refinement & Remediation
+			Construction Plan
+				Phases, Milestones, Deliverables
+			Dev & QA Team Members, Roles, Responsibilites
+				ramp up, familiarization & planning
+			Transition Plan
+				Devise transition execution strategy
+					measure progress, correctness/completeness, exceptional events
+			Deployment Pipeline & Environment
+			Compliance & Mandate (alignment with)
+			Architecture/Design Acceptence
+				design alignment to Domain E/R analysis
+				design alignment to Non-functional expectations
+			Risk list refinement, Risk Remediation
+			Scope refinement
+			Populate a product backlog of components/features to be implemented
+			Construction Planning
+				Quality Assurance
+					publish/share coding guidelines (Coding Standards,Naming Conventions, Best Practices)
+					set unit test code coverage thresholds, expectations
+					Plan code review strategies
+				group product backlog items into construction phases
+				define construction phase deliverables & milestones
+			Setup development, integration, testing/qa/uat environments as appropriate
+			Setup deployment process or pipeline
+								
+		Activities
+			Design a working architectural prototype to remediate design risk
+			Prove architectural/design choice alignment with Domain E/R analysis
+			Ensure Security risks and threats are adequately addressed
+		Questions
+			How are risks identified and mitigated?
+			What are the construction and transition plans?
+			How are roles and responsibilites defined for the Dev and QA teams?
+			How is compliance ensured, and architecture/design accepted?
+	
+	Execution
+		Construction
+			Objectives
+				Build, Test, Integrate
+			Activities
+				Code Implementation
+				testing (Unit,Integration)
+				Review and Integrate Changes
+			Questions
+				What is the devleopment and testing process?
+				How are milestones tracked and met?
+				What quality assurance measures are in place?
+		
+		Transition
+			Objectives
+				Migrate Data
+				Transition Users
+				Monitor Transition Progress
+			Activities
+				What is the strategy for data migration?
+				How are users transitioned, and their training ensured?
+				How is the integrity of the transition validated?
+			Questions
+		
+		Deployment
+			Objectives
+				Deploy to Target Environment
+				Validate Deployment Success
+				Ensure SLA Compliance
+			Activities
+				Deploy Artifacts
+				Monitor Deployment Success
+				Validate Performance Metrics
+			Questions
+				What is the deployment process?
+				How is the success/failure of the deployment validated?
+				How are SLA compliance and performance metrics ensured?
+		
+		Stabilization
+			Objectives
+				Ensure System Stability
+				Optimize Performance
+				Resolve any Outstanding Issues
+			Activities
+				Monitor System Stability
+				Optimize as Needed
+				Address Any Post-Deployment issues
+			Questions
+				How is system stability ensured?
+				What measures are taken to optimize performance?
+				How are post-deployment issues resolved?
+	
+	Retrospection
+		Objectives
+		Activities
+		Questions
+
+
+
+Stakeholder Review 
+	Deltas & Acceptence
+		Risks, Risk Remediation
+		Cost/Benefit
+		Scope (what's in, what's out)
+
+------------------------
+
+Domain Analysis
+	Persona[]
+	Role[]			Acting as
+	User Story[]	As a [Persona(s)] I want to [Action] so that [Reason/Purpose]
+	Workflow[]		how to accomplish a use case
+	E/R Analysis	Entity (sub-types), Relationships
+						Static & Dynamic
+						Data Consistency (realtime, near-realtime, lag, eventual)
+		
+		
+		
+		
+System Analysis
+	Security
+		Authentication
+		Authorization
+			Roles, Members, Permissions
+	Cross Cutting
+		Logging
+			Semantic Logging (forensics troubleshooting)
+		Caching
+			Policy: vary by (entity,client,etc)
+			Invalidation: time, sliding, etc
+			Pre-load, Lazy load
+			Read-aside, Read-through
+			In Memory, datastore backing
+		Communication
+			Email
+			Notifications (push notifications, polling)
+		health/wellness
+	SLA
+		Availability
+		
+	Load
+		Frequency & weight of activity/usage
+	Size  & Scale
+		Users
+			Total
+			Average per per(day,week,month,reporting-period)
+		Transactions
+			Request/Response per(day,week,month,reporting-period)
+			Use Case execution per(day,week,month,reporting-period)
+			Usage
+				Peek times,days,weeks,etc
+				lows
+	Data
+		Protection
+			PII, PHI, Financial, Secrets
+		Staleness, Consistency, Availability
+			Eventual Consistency, Immediate Consistency
+		Storage
+			Datastore type [RDBMS,Document,Key-Pair,Graph]
+			Backup/Restore
+	Reporting
+		Ad hoc
+		Periodic
+	
+	
+	
+	Disaster Recovery
+			
+	Usage Characteristics
+		Days of week
+		Hours of day
+		
+
+---------------------------
+
