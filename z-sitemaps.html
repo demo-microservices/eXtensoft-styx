@@ -1,4 +1,75 @@
 <div class="markdown prose w-full break-words dark:prose-invert light">
+    <p>Here's the equivalent documentation of <code>GET</code> and <code>POST</code> methods using OpenAPI in XML format:</p>
+    <pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>xml</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">openapi</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/ns/markdown"</span> <span class="hljs-attr">xmlns:api</span>=<span class="hljs-string">"http://openai.org/ns/markdown/api"</span> <span class="hljs-attr">version</span>=<span class="hljs-string">"3.0.0"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">info</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Sample API<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.0.0<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">info</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">paths</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">path</span>=<span class="hljs-string">"/users"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">get</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>Get list of users<span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">responses</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">response</span> <span class="hljs-attr">status</span>=<span class="hljs-string">"200"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>Successful response<span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">content</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">contentItem</span> <span class="hljs-attr">mediaType</span>=<span class="hljs-string">"application/json"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">schema</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">ref</span>&gt;</span>#/components/schemas/User<span class="hljs-tag">&lt;/<span class="hljs-name">ref</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">schema</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">contentItem</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">content</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">response</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">responses</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">get</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">post</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>Create a new user<span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">requestBody</span> <span class="hljs-attr">required</span>=<span class="hljs-string">"true"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">content</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">contentItem</span> <span class="hljs-attr">mediaType</span>=<span class="hljs-string">"application/json"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">schema</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">ref</span>&gt;</span>#/components/schemas/User<span class="hljs-tag">&lt;/<span class="hljs-name">ref</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">schema</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">contentItem</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">content</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">requestBody</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">responses</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">response</span> <span class="hljs-attr">status</span>=<span class="hljs-string">"201"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>User created successfully<span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">content</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">contentItem</span> <span class="hljs-attr">mediaType</span>=<span class="hljs-string">"application/json"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">schema</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">ref</span>&gt;</span>#/components/schemas/User<span class="hljs-tag">&lt;/<span class="hljs-name">ref</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">schema</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">contentItem</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">content</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">response</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">response</span> <span class="hljs-attr">status</span>=<span class="hljs-string">"400"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>Invalid request data<span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">response</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">responses</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">post</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">paths</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">components</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">schemas</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">schema</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"User"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"object"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"id"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"integer"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"string"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">schema</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">schemas</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">components</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">openapi</span>&gt;</span>
+</code></div></div></pre>
+    <p>
+        In this XML representation of the OpenAPI specification, the <code>/users</code> endpoint is documented for both <code>GET</code> and <code>POST</code> methods. It provides details about the summary, request bodies (for
+        <code>POST</code>), and expected responses, including their respective status codes and response schemas. The <code>&lt;ref&gt;</code> element is used to maintain consistency and reusability across the specification.
+    </p>
+</div>
+
+
+<div class="markdown prose w-full break-words dark:prose-invert light">
     <p><strong>Introduction: Navigating the Web with Sitemaps</strong></p>
     <p>
         In the intricate world of websites, finding one's way through a maze of content can be akin to searching for a needle in a haystack. This is where sitemaps step in as essential guides, offering a clear path for users and search
