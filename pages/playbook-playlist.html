@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <title>BrainStorm</title>
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="../css/site.css" />
+
+</head>
+
+<body>
+  <!-- h-100 takes the full height of the body-->
+  <div class="container-fluid h-100">
+    <!-- h-100 takes the full height
+				of the container-->
+    <div class="row h-100">
+      <div class="col-2" id="green">
+        <a href="../index.html">Home</a>
+        <hr />
+        <!-- Navigation links in sidebar-->
+        <a href="introduction.html">Introduction</a><br />
+        <br />
+        <a href="lifecycles.html">Lifecycles</a><br />
+        <br />
+        <a href="artifacts.html">Artifacts</a><br />
+        <br />
+        <a href="playbook.html">Playbook</a><br />
+        <div class="hierarchical-nav" style="margin-left: 1em;">
+          <a href="playbook-play.html">The Play</a><br />
+          <a href="playbook-playlist.html" class="selected">Playlist</a><br />
+        </div>
+        <br />
+        <a href="resources.html">Resources</a>
+        <br />
+
+      </div>
+      <div class="col-10" style="padding: 0;">
+        <!-- Top navbar -->
+        <nav class="navbar navbar-expand-lg
+        navbar-light bg-primary">
+          <a class="navbar-brand" href="../index.html">Home</a>
+          <!-- Hamburger button that toggles the navbar-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link
+        active" href="resources.html">
+                Resources
+              </a>
+              <a class="nav-item nav-link" href="software-development-lifecycle.html">SDLC</a>
+              <a class="nav-item nav-link" href="patterns-practices.html">Patterns & Practices</a>
+              <a class="nav-item nav-link" href="getting-started.html">Getting Started</a>
+            </div>
+          </div>
+        </nav>
+        <!-- Contains the main content of the webpage-->
+        <div class="container container-artifact">
+          <a href="javascript:history.back()" class="back-button">&larr;</a>
+          <div class="markdown prose w-full break-words dark:prose-invert light">
+            <p>
+                Each Playbook encompasses a set of Plays that act as the building blocks for each phase of your software development lifecycle. From the initial "Purpose &amp; Discovery" phase to the concluding aspects of "Construction &amp;
+                Migration," every Playbook serves as a comprehensive guide, ensuring that each facet of the project is well-accounted for.
+            </p>
+            <p>
+                Moreover, our Cross-Cutting Concerns Playbook addresses issues that span across multiple phases, providing specialized guidance in areas such as stakeholder communication, technical debt management, and security compliance. These
+                Playbooks and their constituent Plays act as both a roadmap and a toolkit, designed to keep stakeholders aligned and informed throughout the project's lifecycle. With this structure, you have a holistic and adaptable strategy to
+                navigate the complex terrain of software development.
+            </p>
+        </div>
+         
+        <div class="markdown prose w-full break-words dark:prose-invert light">
+            <h3>Purpose &amp; Discovery Playbook</h3>
+            <ul>
+                <li><a href="plays/domain-analysis-play.html"><strong>Domain Analysis Play</strong></a>: Understand the context and constraints of the business domain to create effective solutions. <span class="perspective">[Technical Perspective]</span></li>
+                <li><a href="plays/stakeholders-play.html"><strong>Stakeholders Play</strong></a>: Identify and engage key parties involved in the project for better communication and success rates. <span class="perspective">[Project Perspective]</span></li>
+                <li><a href="plays/product-backlog-play.html"><strong>Product Backlog Play</strong></a>: Create and prioritize a list of features, tasks, and technical work needed <span class="perspective">[Business Perspective]</span></li>
+                <li><a href="plays/scope-play.html"><strong>Scope Play</strong></a>: Define what is in and out of the project boundaries to set realistic expectations. <span class="perspective">[Project Perspective]</span></li>
+                <li><a href="plays/system-analysis-play.html"><strong>System Analysis Play</strong></a>: Evaluate the existing systems in place and their functionalities. <span class="perspective">[Technical Perspective]</span></li>
+                <li><a href="plays/governance-play.html"><strong>Governance Play</strong></a>: Establish the rules, policies, and procedures for project management. <span class="perspective">[Business Perspective]</span></li>
+                <li><a href="plays/technology-play.html"><strong>Technology Play</strong></a>: Choose the appropriate technologies and tools for the project. <span class="perspective">[Technical Perspective]</span></li>
+            </ul>
+            <h3>Planning &amp; Risk Mitigation Playbook</h3>
+            <ul>
+                <li><a href="plays/architecture-design-play.html"><strong>Architecture &amp; Design Play</strong></a>: Validate the technical feasibility and alignment of design choices with non-functional requirements and domain. <span class="perspective">[Technical Perspective]</span></li>
+                <li><a href="plays/construction-planning-play.html"><strong>Construction Planning Play</strong></a>: Organize the development work into sprints, setting milestones and deliverables. <span class="perspective">[Construction Perspective]</span></li>
+                <li><a href="plays/delivery-planning-play.html"><strong>Delivery Planning Play</strong></a>: Set up the stages, pipelines, and management of configurations and secrets. <span class="perspective">[Technical Perspective]</span></li>
+                <li><a href="plays/migration-planning-play.html"><strong>Migration Planning Play</strong></a>: Strategize the transition of users and data, along with verification and validation steps. <span class="perspective">[Construction Perspective]</span></li>
+            </ul>
+            <h3>Construction &amp; Migration Playbook</h3>
+            <ul>
+                <li><a href="plays/code-development-play.html"><strong>Code Development Play</strong></a>: Implement the functionalities as per the design specifications. <span class="perspective">[Construction Perspective]</span></li>
+                <li><a href="plays/testing-strategy-play.html"><strong>Testing Strategy Play</strong></a>: Establish and conduct various types of testing to ensure code quality. <span class="perspective">[Technical Perspective]</span></li>
+                <li><a href="plays/integration-merge-play.html"><strong>Integration &amp; Merge Play</strong></a>: Combine code from different team members and validate it as a collective unit. <span class="perspective">[Construction Perspective]</span></li>
+                <li><a href="plays/deployment-preparation-play.html"><strong>Deployment Preparation Play</strong></a>: Get the codebase and environment ready for final deployment. <span class="perspective">[Technical Perspective]</span></li>
+            </ul>
+            <h3>Cross-Cutting Concerns Playbook (CCC)</h3>
+            <ul>
+                <li><a href="plays/stakeholder-communication-play.html"><strong>Stakeholder Communication Play</strong></a>: Facilitate transparent and effective communication among project stakeholders. <span class="perspective">[Business Perspective]</span></li>
+                <li><a href="plays/technical-debt-play.html"><strong>Technical Debt Play</strong></a>: Manage and mitigate the accumulation of suboptimal code or systems. <span class="perspective">[Technical Perspective]</span></li>
+                <li><a href="plays/quality-assurance-play.html"><strong>Quality Assurance Play</strong></a>: Ensure that the product meets the required quality standards. <span class="perspective">[Construction Perspective]</span></li>
+                <li><a href="plays/security-compliance-play.html"><strong>Security Compliance Play</strong></a>: Validate that the project adheres to established security protocols. <span class="perspective">[Technical Perspective]</span></li>
+                <li><a href="plays/data-governance-play.html"><strong>Data Governance Play</strong></a>: Establish and follow guidelines for data quality, security, and compliance. <span class="perspective">[Business Perspective]</span></li>
+                <li><a href="plays/monitoring-alerting-play.html"><strong>Monitoring &amp; Alerting Play</strong></a>: Implement systems to monitor key performance indicators and alert for anomalies. <span class="perspective">[Technical Perspective]</span></li>
+                <li><a href="plays/incident-response-play.html"><strong>Incident Response Play</strong></a>: Prepare for and manage unplanned issues or crises. <span class="perspective">[Construction Perspective]</span></li>
+                <li><a href="plays/feedback-loop-play.html"><strong>Feedback Loop Play</strong></a>: Collect and analyze user feedback for continuous improvement. <span class="perspective">[Business Perspective]</span></li>
+                <li><a href="plays/scalability-optimization-play.html"><strong>Scalability &amp; Optimization Play</strong></a>: Plan for growth and performance optimization. <span class="perspective">[Technical Perspective]</span></li>
+                <li><a href="plays/logging-play.html"><strong>Logging Play</strong></a>: Implement logging for visibility, diagnostics, and forensics. <span class="perspective">[Technical Perspective]</span></li>
+            </ul>
+            <h5>Enterprise Architecture Playbook</h5>
+            <ul>
+              <li><a href="plays/application-value-assessment-play.html"><strong>Application Value Assessment Play</strong></a>: Evaluate the business value of each application. Consider factors like how critical it is to operations, how often it's used, and the impact on the business if it were to be retired</li>
+                <li><a href="plays/migration-feasibility-play.html"><strong>Migration Feasibility Play</strong></a>: Investigate the feasibility, costs, and benefits of migrating the application to a modern technology stack versus retiring it and potentially replacing it with a new solution.
+                </li>
+                <li><a href="plays/operational-cost-play.html"><strong>Operational Cost Play</strong></a>: Examine the ongoing operational costs of the application, including licensing, support, and infrastructure costs, and compare this to the cost of retirement and potential replacement.</li>
+                <li><a href="plays/stakeholder-impact-communication.html"><strong>Stakeholder Impact and Communication Play</strong></a>: Understand the impact of application retirement on various stakeholders, both internal and external. Develop a plan to communicate the potential changes, gather feedback, and ensure a smooth transition if the decision to retire is made.</li>
+           
+            </ul>
+        </div>
+        
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
