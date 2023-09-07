@@ -1,0 +1,333 @@
+
+html,
+body {
+  height: 100%;
+}
+#green {
+  height: 100%;
+  background: #6681ab;
+  text-align: center;
+  color: rgb(7, 7, 7);
+  padding: 15px;
+}
+#green a {
+  display: inline-block;
+  padding: 0.5em;
+  margin: 0px;
+  background-color: #6c83a9;
+  color: gainsboro;
+  text-align: center;
+  text-decoration: none;
+
+  border-radius: 0.25em;
+
+  transition: background-color 0.3s ease;
+}
+#green a:hover {
+  background-color: #78a1e2;
+  color:white;
+}
+#green a.selected {
+  background-color: #2e5eab;
+}
+
+div.container-artifact {
+
+
+  padding: 1em 3em;
+}
+
+div.container-content {
+  padding: 1em 3em;
+}
+
+.lifecycle-tabular {
+  font-size: 0.8em;
+}
+
+div.tab-content{
+  padding: 1em 3em;
+}
+div.tab-content dt {
+  margin-bottom: 1em;
+}
+img.artifact-diagram {
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+ul.category-list > li {
+  margin-bottom: 2em;
+}
+
+ul.category-list > li > p {
+  margin-bottom: 0.5em;
+}
+
+ul.category-list  ul  ul {
+  margin-bottom: 0em;;
+}
+
+ul.checklist li {
+  overflow: visible;
+padding-left: 17px;
+position: relative;
+}
+
+ul.checklist li:before {
+  content: “\2610”;
+  left: 0;
+  position: absolute;
+}
+
+ul.hierarchical-nav, ul.hierarchical-nav ul  {
+  list-style: none;
+  margin-left: 1em
+}
+
+ul.hierarchical-nav- > li {
+  margin-left: 1em;
+}
+ol.category-list a {
+  text-decoration: none;
+}
+ol.category-list  p:nth-last-of-type(1) {
+  margin-left: 2em;
+  font-size: 0.8em;
+}
+
+ol.category-list ul {
+  margin-bottom: 1em; 
+}
+
+
+ul.card-list > li {
+  background-color: ghostwhite;
+  margin: 2em 1em;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 0;
+}
+ul.cardlist {
+  list-style: none;
+}
+
+ul.card-list li div {
+  background-color: gainsboro;
+  padding: 1em 3em 0.25em 3em;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+ul.card-list li ul {
+
+  margin: 1em  3em;
+}
+
+ol.card-list>li {
+  background-color: ghostwhite;
+  margin: 2em 1em;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 0;
+}
+
+ol.cardlist {
+  list-style: none;
+}
+
+ol.card-list li div {
+  background-color: gainsboro;
+  padding: 1em 3em 0.25em 3em;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+ol.card-list li ul {
+
+  margin: 1em 3em;
+}
+div.card-header {
+  margin: 1em 3em;
+}
+
+div.card-body {
+  margin: 1em;
+}
+
+
+tr td.indent-0 {
+  padding-left: 1em;
+  font-weight: bold;
+}
+tr td.indent-1:first-child {
+  padding-left: 2em;
+}
+tr td.indent-2:first-child {
+  padding-left: 4em;
+}
+tr.group-header {
+  background-color: rgb(164, 164, 164);
+}
+
+.phase-1 {
+  background-color: #73AD21;
+}
+.phase-2 {
+  background-color: rosybrown;
+}
+.phase-3 {
+  background-color: bisque;
+}
+.phase-4 {
+  background-color: yellow;
+}
+.phase-5 {
+  background-color: red;
+}
+
+
+table.checkmarx span::before {
+  content: "\2713";
+  font-size: 1.2em;
+  color: green;
+  font-weight: bolder;
+}
+
+.no-display {
+  display: none;
+}
+
+.list-item-link {
+  background-color: gainsboro;
+  margin-left: 1em;
+}
+
+div.card button.nav-link {
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-primary {
+  background-color: #5f88c4!important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #5f88c4;
+}
+.nav-pills .nav-link.active:hover, .nav-pills .show>.nav-link:hover {
+  color: #fff;
+  background-color: #5f88c4;
+}
+
+.nav-pills .nav-link:hover, .nav-pills .show>.nav-link:hover {
+  color: gainsboro;
+  background-color: #84d0fb;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+  color: gainsboro;
+}
+
+.navbar-light .navbar-nav .nav-link.active:hover, .navbar-light .navbar-nav .show>.nav-link:hover {
+  color: slategray;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: gainsboro;
+}
+
+nav.navbar a {
+  display: inline-block;
+  margin-left: 0.5em;
+  color: #fff;
+  background-color: #5f88c4;
+  color: gainsboro;
+  text-align: center;
+  text-decoration: none;
+
+  border-radius: 0.25em;
+
+  transition: background-color 0.3s ease;
+}
+nav.navbar a:hover {
+  color: #fff;
+  background-color: #84d0fb;
+}
+
+
+nav.navbar a.selected {
+  background-color: #2e5eab;
+}
+
+.welcome-container {
+  margin-top:20%;
+  text-align: center;
+}
+
+.welcome-text {
+  font-size: 2rem;
+  color: #c6c3c3;
+}
+
+.big-text {
+  font-size: 10rem;
+  color: #bbc6d8;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: gainsboro;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.25em;
+  padding: 0em 0.25em 0.25em 0.25em;
+  height: 0.7em;
+  font-size: 2.5em;
+  font-weight: bolder;
+  transition: background-color 0.5s ease;
+  margin-left: -1em;
+  margin-top: -0.5em;
+}
+
+.back-button:hover {
+  background-color: rgb(100, 119, 172);
+  color: white;
+}
+
+span.hljs-attr {
+  font-weight: bold;
+}
+
+div.bg-black {
+  background-color: gainsboro;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+div.rounded-md {
+  border-radius: 3em;
+}
+
+.perspective {
+  font-style:italic;
+  font-size: 0.7em;
+}
