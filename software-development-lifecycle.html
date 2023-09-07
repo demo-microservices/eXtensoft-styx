@@ -1,0 +1,2608 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <title>BrainStorm</title>
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="../css/site.css" />
+
+</head>
+
+<body>
+  <!-- h-100 takes the full height of the body-->
+  <div class="container-fluid h-100">
+    <!-- h-100 takes the full height
+				of the container-->
+    <div class="row h-100">
+      <div class="col-2" id="green">
+        <a href="../index.html">Home</a>
+        <hr />
+        <!-- Navigation links in sidebar-->
+        <a href="introduction.html">Introduction</a><br />
+        <br />
+        <a href="lifecycles.html">Lifecycles</a><br />
+        <br />
+        <a href="artifacts.html">Artifacts</a><br />
+        <br />
+        <a href="playbook.html" >Playbook</a><br />
+        <div class="hierarchical-nav" style="margin-left: 1em;">
+          <a href="playbook-play.html">The Play</a><br />
+          <a href="playbook-playlist.html">Playlist</a><br />
+        </div>
+        <br />
+        <a href="resources.html">Resources</a>
+        <br />
+
+      </div>
+      <div class="col-10" style="padding: 0;">
+        <!-- Top navbar -->
+        <nav class="navbar navbar-expand-lg
+								navbar-light bg-primary">
+          <a class="navbar-brand" href="../index.html">Home</a>
+          <!-- Hamburger button that toggles the navbar-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link
+								active" href="resources.html">
+                Resources
+              </a>
+              <a class="nav-item nav-link selected" href="software-development-lifecycle.html">SDLC</a>
+              <a class="nav-item nav-link" href="patterns-practices.html">Patterns & Practices</a>
+              <a class="nav-item nav-link" href="getting-started.html">Getting Started</a>
+            </div>
+          </div>
+        </nav>
+        <!-- Contains the main content of the webpage-->
+        <div class="container container-artifact">
+          <a href="javascript:history.back()" class="back-button">&larr;</a>
+          <!-- BEGIN CONTAINER CONTENT -->
+
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-one-tab" data-bs-toggle="pill" data-bs-target="#pills-one"
+                type="button" role="tab" aria-controls="pills-one" aria-selected="true">Introduction</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-two-tab" data-bs-toggle="pill" data-bs-target="#pills-two"
+                type="button" role="tab" aria-controls="pills-two" aria-selected="false">Stakeholders</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-three-tab" data-bs-toggle="pill" data-bs-target="#pills-three"
+                type="button" role="tab" aria-controls="pills-three" aria-selected="false">Phases</button>
+            </li>              
+
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-overview-four-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-overview-four" type="button" role="tab" aria-controls="pills-overview-four"
+                aria-selected="false">Overview</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-five-tab" data-bs-toggle="pill" data-bs-target="#pills-five"
+                type="button" role="tab" aria-controls="pills-five" aria-selected="false">Technical Debt</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-six-tab" data-bs-toggle="pill" data-bs-target="#pills-six"
+                type="button" role="tab" aria-controls="pills-six" aria-selected="false">Takeaways</button>
+            </li>
+
+          </ul>
+
+
+          <div class="tab-content" id="pills-tabContent">
+            <!-- BEGIN TAB CONTENT-->
+
+            <div class="tab-pane fade show active" id="pills-one" role="tabpanel" aria-labelledby="pills-one-tab">
+              <div class="tabcontent">
+
+                <p>
+                  Software development is a multifaceted endeavor that goes far beyond just writing code. Success in
+                  any software development project hinges on a holistic approach that integrates various
+                  <strong>Perspectives</strong>,
+                  engages multiple <strong>Stakeholders</strong>,
+                  and navigates through different <strong>Phases</strong>, all while adhering to
+                  <strong>Governance</strong> norms and managing
+                  <strong>Technical Debt</strong>. Each of these components is a critical piece of the larger puzzle,
+                  and ignoring any
+                  of them can significantly hamper the
+                  quality, timeliness, and cost-effectiveness of a project.
+                </p>
+
+                <div>
+                  <div class="card-header">
+                    <h5>Perspectives</h5>
+                    <p>
+                      Building software is a multifaceted endeavor that extends beyond mere code creation. It's a
+                      symphony
+                      of diverse inputs, strategies, and executions that must harmonize to create a product that not
+                      only
+                      works but also delivers value.
+                      Regardless of the methodology employed—be it Waterfall, Agile, Kanban, or any other—there are
+                      critical considerations that must be addressed for a software project to be deemed successful.
+                      Overlooking any of these can result in
+                      degraded performance, increased costs, delayed timelines, or even outright failure. These crucial
+                      aspects can be broadly categorized into four major perspectives: <strong>Business</strong>,
+                      <strong>Project</strong>, <strong>Technical</strong>, and <strong>Construction</strong>. Each
+                      grouping
+                      represents a cluster of perspectives and concerns that play an indispensable role in shaping the
+                      project from its nascent stage to completion and beyond. Ignoring any of these can compromise the
+                      integrity of the project, diminishing its chances of success and potentially costing the
+                      organization both time and money.
+                    </p>
+                    <div class="list-item-link">
+                      <p>
+                        <a class="list-item-link" data-bs-toggle="collapse" href="#list-item-perspectives" role="button"
+                          aria-expanded="false" aria-controls="list-item-perspectives">
+                          More...
+                        </a>
+                      </p>
+                      <div class="collapse" id="list-item-perspectives">
+                        <div class="card card-body">
+                          <ul class="category-list">
+                            <li>
+                              <div class="markdown prose w-full break-words dark:prose-invert light">
+                                <p><strong>Business Perspective</strong>: Business strategy and evaluation</p>
+                                <p>
+                                  No matter the approach or methodology employed in software development, attention to
+                                  key
+                                  Business aspects is non-negotiable for a project's success. Conducting a thorough
+                                  Domain
+                                  Entity-Relationship (E/R) Analysis alongside an
+                                  understanding of expected business growth lays the foundation for architectural and
+                                  design
+                                  decisions that are not just technically sound but also aligned with the business
+                                  strategy.
+                                  This ensures that the software can adapt and scale
+                                  according to evolving business needs. User Stories, Use Cases, Personas, and Workflows
+                                  provide
+                                  invaluable insights into the needs, challenges, and expectations of the end-users.
+                                  They
+                                  are
+                                  instrumental in creating a user-centric
+                                  design and functionality, thereby increasing the likelihood of the product meeting or
+                                  exceeding user expectations. Additionally, maintaining a prioritized backlog helps in
+                                  focusing
+                                  the development efforts on features and
+                                  functionalities that offer the most business value and are most urgent. Failure to
+                                  adequately
+                                  consider these business aspects will not only result in software that's misaligned
+                                  with
+                                  user
+                                  needs but also with business objectives,
+                                  leading to wasted efforts and resources.
+                                </p>
+                              </div>
+                              <div class="list-item-link no-display">
+                                <p>
+                                  <a class="list-item-link" data-bs-toggle="collapse" href="#list-item-one"
+                                    role="button" aria-expanded="false" aria-controls="list-item-one">
+                                    More...
+                                  </a>
+                                </p>
+                                <div class="collapse" id="list-item-one">
+                                  <div class="card card-body">
+
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="markdown prose w-full break-words dark:prose-invert light">
+                                <p><strong>Project Perspective</strong>: Project execution and management</p>
+                                <p>
+                                  When it comes to successfully managing a software development project, neglecting the
+                                  Project aspects such as funding, estimates, signoffs, stakeholder involvement, and
+                                  risk
+                                  management can lead to catastrophic failure,
+                                  irrespective of the development methodology employed. Adequate funding is the backbone
+                                  that
+                                  supports all activities, from initial planning to final deployment. Closely tied to
+                                  this
+                                  is
+                                  the accuracy of project estimates, which
+                                  directly impacts timelines and budgeting. Gaining formal signoffs at critical
+                                  milestones
+                                  is
+                                  crucial for ensuring alignment between business objectives and development efforts,
+                                  thereby
+                                  preventing scope creep and misdirection.
+                                  Stakeholder involvement cannot be overstated; it is the active engagement and feedback
+                                  from
+                                  those who have a vested interest in the project that often determine its success or
+                                  failure.
+                                  Last but not least, effective risk management
+                                  identifies potential stumbling blocks early enough to either avoid them or develop
+                                  contingency
+                                  plans. These fundamental project considerations serve as the guardrails that keep the
+                                  software
+                                  development process on track, regardless
+                                  of whether you're using Agile, Waterfall, or any other approach.
+                                </p>
+                              </div>
+                              <div class="list-item-link no-display">
+                                <p>
+                                  <a class="list-item-link" data-bs-toggle="collapse" href="#list-item-two"
+                                    role="button" aria-expanded="false" aria-controls="list-item-two">
+                                    More...
+                                  </a>
+                                </p>
+                                <div class="collapse" id="list-item-two">
+                                  <div class="card card-body">
+
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="markdown prose w-full break-words dark:prose-invert light">
+                                <p><strong>Technical Perspective</strong>: Technical alignment, maintainabliity and
+                                  performance</p>
+                                <p>
+                                  When it comes to Technical Alignment, neglecting this critical area can be a
+                                  recipe for disaster, no matter how proficient a team is in coding or how clear the
+                                  business
+                                  requirements are. The first thing to consider is
+                                  Mandates, Compliance, and Governance. Any software developed must adhere to industry
+                                  standards, regional laws, and internal policies. This could range from data protection
+                                  laws to
+                                  accessibility standards like Section 508. Ignoring
+                                  these can result in legal repercussions and can severely affect user trust and
+                                  business
+                                  reputation.
+                                </p>
+                                <p>
+                                  Understanding Adjacent Systems and their dependencies is another vital aspect. Your
+                                  software
+                                  does not exist in a vacuum; it will often need to interact with other software,
+                                  databases, or
+                                  services. Failure to consider these
+                                  dependencies can result in integration nightmares and functionality issues down the
+                                  line.
+                                </p>
+                                <p>
+                                  Finally, the importance of Architecture and Design cannot be overstated. It serves as
+                                  the
+                                  blueprint for your entire project. A well-thought-out architecture considers not only
+                                  the
+                                  current needs but also future scalability and
+                                  maintainability. Skipping this step or treating it as an afterthought can result in a
+                                  system
+                                  that's difficult to manage, maintain, or scale, thereby creating a ticking time bomb
+                                  of
+                                  technical debt.
+                                </p>
+                                <p>In summary, overlooking the technical alignment aspects could lead to software that
+                                  is
+                                  misaligned with legal requirements, business ecosystems, and long-term sustainability,
+                                  making
+                                  it a high-risk venture.</p>
+                              </div>
+                              <div class="list-item-link no-display">
+                                <p>
+                                  <a class="list-item-link" data-bs-toggle="collapse" href="#list-item-three"
+                                    role="button" aria-expanded="false" aria-controls="list-item-three">
+                                    More...
+                                  </a>
+                                </p>
+                                <div class="collapse" id="list-item-three">
+                                  <div class="card card-body">
+
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="markdown prose w-full break-words dark:prose-invert light">
+                                <p><strong>Construction Perspective</strong>: Collaboration, integration, delivery,
+                                  quality and acceptance</p>
+                                <p>
+                                  When it comes to Construction, the considerations are just as crucial, although they
+                                  are
+                                  often heavily execution-focused. The team composition, including the skillsets of
+                                  personnel and the development
+                                  environments they will use, sets the stage for how efficiently and effectively the
+                                  coding and testing phases will occur. Mismatched skill sets or inadequate environments
+                                  can severely hamper the progress, introducing delays and
+                                  quality issues.
+                                </p>
+                                <p>
+                                  Then there are the planning elements, such as defining sprints, milestones, and
+                                  deliverables. Without a well-structured plan, the construction phase can easily become
+                                  chaotic. This can result in scope creep, missed deadlines, and
+                                  subpar quality. This part of the process ensures that the project remains focused,
+                                  measurable, and achievable within the set timeline and budget.
+                                </p>
+                                <p>
+                                  Delivery and Configuration Management often serve as the unsung heroes of software
+                                  construction. Properly tracking which versions of code are deployed where and ensuring
+                                  that configurations are correct across environments can mean
+                                  the difference between a smooth rollout and a buggy release.
+                                </p>
+                                <p>
+                                  Finally, Quality and User Acceptance are non-negotiable elements. Regardless of how
+                                  well
+                                  the software is coded or how quickly it is delivered, if it doesn’t meet the quality
+                                  benchmarks or if the users don't accept it, then the
+                                  project can hardly be considered successful.
+                                </p>
+                                <p>
+                                  In conclusion, ignoring any of these 'Construction' aspects can have severe
+                                  implications
+                                  on the project outcome. They serve as the backbone of the execution phase, ensuring
+                                  that
+                                  what has been conceptualized and planned is
+                                  effectively brought to life, and accepted by the users for whom it was intended.
+                                </p>
+                              </div>
+                              <div class="list-item-link no-display">
+                                <p>
+                                  <a class="list-item-link" data-bs-toggle="collapse" href="#list-item-four"
+                                    role="button" aria-expanded="false" aria-controls="list-item-four">
+                                    More...
+                                  </a>
+                                </p>
+                                <div class="collapse" id="list-item-four">
+                                  <div class="card card-body">
+
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-header">
+                    <h5>Stakeholders</h5>
+                    <p>
+                      The concept of stakeholders is integral to any software development project and cannot be
+                      overemphasized. In the most general sense, stakeholders are individuals, teams, or entities who
+                      have
+                      a vested interest in the
+                      outcome of the project. They can affect or be affected by the project’s objectives, deliverables,
+                      processes, and outcomes. Their involvement is critical at every stage of the software development
+                      life cycle (SDLC) because they bring
+                      a variety of perspectives that influence requirements, constraints, risks, and solutions.
+                    </p>
+                    <div class="list-item-link">
+                      <p>
+                        <a class="list-item-link" data-bs-toggle="collapse" href="#list-item-stakeholders" role="button"
+                          aria-expanded="false" aria-controls="list-item-stakeholders">
+                          More...
+                        </a>
+                      </p>
+                      <div class="collapse" id="list-item-stakeholders">
+                        <div class="card card-body">
+                          <p><strong>Why Are Stakeholders Important?</strong></p>
+                          <ol>
+                            <li>
+                              <p>
+                                <strong>Clarification of Requirements</strong>: Stakeholders like business analysts,
+                                product owners, and users are often the sources of functional and non-functional
+                                requirements. Their insights ensure that the project
+                                starts on the right foot, aligned with business needs and user expectations.
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Decision-making and Governance</strong>: High-level stakeholders, often from the
+                                enterprise architecture and project management sectors, are vital for making crucial
+                                decisions regarding resource allocation,
+                                timelines, and methodologies to be employed.
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Technical Expertise</strong>: Technical stakeholders like architects,
+                                developers,
+                                and QA testers provide the skills and knowledge required to turn requirements into a
+                                working product. They make decisions about the
+                                technical stack, architecture, and ensure that the product meets quality standards.
+                              </p>
+                            </li>
+                            <li>
+                              <p><strong>Business Alignment</strong>: Stakeholders from the business side help in
+                                ensuring
+                                that the project is not just technically sound but also aligned with business
+                                objectives,
+                                contributing to growth and profitability.</p>
+                            </li>
+                            <li>
+                              <p><strong>Risk Management</strong>: Stakeholders from various teams help in
+                                identifying, assessing, and mitigating risks. This collective wisdom often leads to more
+                                resilient project plans.</p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Feedback and Validation</strong>: Stakeholders are crucial for providing ongoing
+                                feedback, enabling iterative development that stays aligned with evolving needs and
+                                constraints. They also play a key role in
+                                validating and accepting the final deliverables.
+                              </p>
+                            </li>
+                            <li>
+                              <p><strong>Compliance and Regulation</strong>: Certain stakeholders ensure that the
+                                project
+                                complies with legal requirements, standards, and best practices, thus protecting the
+                                organization from legal repercussions.</p>
+                            </li>
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-header">
+                    <h5>Phases</h5>
+                    <div class="markdown prose w-full break-words dark:prose-invert light">
+                      <p>
+                        Understanding the universal phases of the Software Development Life Cycle (SDLC) is crucial to
+                        navigating any software project, irrespective of the methodologies or frameworks adopted. These
+                        phases represent the collective wisdom
+                        accrued over decades of both successful and failed projects. They serve as waypoints that orient
+                        teams, reminding them of core concerns and activities that must be addressed for a project's
+                        success. They are not bound to any
+                        specific methodology like Agile, Waterfall, or Scrum but are instead a set of governing
+                        principles
+                        that underpin all methodologies.
+                      </p>
+                      <p>
+                        The notion of "phases" should not be viewed as an extra layer of process but as a roadmap that
+                        helps to focus attention on what genuinely matters at different stages of the life cycle.
+                        Whether
+                        an organization chooses to be strictly
+                        regimented or lean and iterative in its approach, these phases are invariant. They act as
+                        guideposts to ensure that all essential aspects, from defining the purpose and planning for
+                        contingencies, to constructing the solution and
+                        reflecting on the journey, are adequately addressed.
+                      </p>
+                      <p>In essence, these phases offer a meta-framework for thinking about software projects, cutting
+                        through the noise of buzzwords and methodologies to focus on core truths that hold regardless of
+                        the project's specific context.</p>
+                    </div>
+                    <div class="list-item-link">
+                      <p>
+                        <a class="list-item-link" data-bs-toggle="collapse" href="#list-item-phases" role="button"
+                          aria-expanded="false" aria-controls="list-item-phases">
+                          More...
+                        </a>
+                      </p>
+                      <div class="collapse" id="list-item-phases">
+                        <div class="card card-body">
+                          <div class="markdown prose w-full break-words dark:prose-invert light">
+                            <ol class="category-list">
+                              <li>
+                                <p>
+                                  <strong>Purpose &amp; Discovery</strong>: This is where you establish the need for a
+                                  new
+                                  software solution and determine its feasibility. The critical importance of this phase
+                                  lies in setting the course; an ill-defined
+                                  purpose can lead to wasted resources and eventual failure.
+                                </p>
+                              </li>
+                              <li>
+                                <p>
+                                  <strong>Planning &amp; Risk Mitigation</strong>: Here, stakeholders decide the scope,
+                                  deadlines, and resource allocation. Planning well prevents scope creep and wasted
+                                  effort, while risk mitigation prepares you for
+                                  challenges, reducing the impact of unforeseen issues.
+                                </p>
+                              </li>
+                              <li>
+                                <p>
+                                  <strong>Construction &amp; Migration</strong>: This phase encompasses the development
+                                  and initial testing of the actual software. The quality of the work here directly
+                                  affects the usability, reliability, and overall success
+                                  of the software. Missing this mark can be costly in terms of both time and money.
+                                </p>
+                              </li>
+                              <li>
+                                <p>
+                                  <strong>Deployment &amp; Stabilization</strong>: This involves releasing the software
+                                  to
+                                  users and addressing any immediate issues. Failure to stabilize effectively can result
+                                  in a poor user experience and decreased trust in
+                                  the software, potentially leading to project failure.
+                                </p>
+                              </li>
+                              <li>
+                                <p>
+                                  <strong>Retrospective</strong>: A look back at what went well and what didn't, in
+                                  order
+                                  to improve future projects. This phase is critical for organizational learning and
+                                  growth; skipping it can mean repeating the same
+                                  mistakes in future projects.
+                                </p>
+                              </li>
+                            </ol>
+                            <p>
+                              Each phase has its own critical importance and neglecting any one of these can result in a
+                              suboptimal or failed project. They serve as a comprehensive checklist, ensuring that no
+                              vital aspect of software development is overlooked.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-header">
+                    <h5>Governance</h5>
+
+                    <p>Governance stands as the keystone to software success, providing a structured framework that
+                      guides
+                      and
+                      oversees all aspects of software development and implementation. With strategic alignment, value
+                      delivery, performance management, risk mitigation, compliance, and resource optimization at its
+                      core,
+                      governance ensures that software solutions not only meet current business needs but also possess
+                      the
+                      agility to adapt to ever-changing requirements. By fostering collaboration, minimizing risks, and
+                      aligning IT endeavors with broader business objectives, governance empowers organizations to build
+                      resilient, reliable, and compliant software systems that stand the test of time, ultimately
+                      driving
+                      success and mitigating the likelihood of failure in the dynamic world of software development.</p>
+                    <div>
+                      <div class="list-item-link">
+                        <p>
+                          <a class="list-item-link" data-bs-toggle="collapse" href="#list-item-governance" role="button"
+                            aria-expanded="false" aria-controls="list-item-governance">
+                            More...
+                          </a>
+                        </p>
+                        <div class="collapse" id="list-item-governance">
+                          <div class="card card-body">
+                            <p><strong>Governance</strong> is the Key Driver of Success in Software Systems</p>
+                            <ul class="category-list">
+                              <li>
+                                <strong>Strategic Alignment:</strong> Governance ensures that IT activities, including
+                                software
+                                solutions, are aligned with and contribute to the achievement of the organization's
+                                broader business
+                                objectives. It ensures that
+                                technology investments and initiatives are driven by the organization's strategic
+                                vision.
+                              </li>
+                              <li>
+                                <strong>Value Delivery:</strong> Successful software solutions must deliver value by
+                                meeting existing
+                                business needs effectively and efficiently. Moreover, governance must enable
+                                adaptability
+                                to
+                                gracefully and quickly respond to
+                                changing business requirements over time.
+                              </li>
+                              <li>
+                                <strong>Performance Management:</strong> Governance should consider non-functional
+                                aspects
+                                of
+                                software solutions, such as performance, scalability, reliability, and security, while
+                                driving design
+                                decisions. Addressing these factors
+                                is crucial to meet performance expectations and provide a positive user experience.
+                              </li>
+                              <li>
+                                <strong>Risk Management:</strong> IT governance involves identifying and managing
+                                various
+                                risks
+                                associated with software solutions, including organizational, business, technological,
+                                and
+                                security
+                                risks. This proactive risk
+                                management approach minimizes potential issues and disruptions.
+                              </li>
+                              <li>
+                                <strong>Compliance:</strong> Governance ensures that IT deliverables, including software
+                                solutions,
+                                adhere to legal regulations, security standards, accessibility guidelines, and
+                                organizational
+                                mandates. Compliance is essential for
+                                maintaining the organization's reputation and avoiding potential legal or financial
+                                consequences.
+                              </li>
+                              <li>
+                                <strong>Resource Management:</strong> Governance is responsible for proper management of
+                                hardware
+                                resources, network resources, virtual environments, and other technology assets.
+                                Efficient
+                                resource
+                                management contributes to cost
+                                optimization and smooth software operations.
+                              </li>
+
+                            </ul>
+                            <p>
+                              In summary, the statement emphasizes the critical role that governance plays in the
+                              success
+                              of
+                              software solutions. By aligning IT activities with business objectives, delivering value,
+                              managing
+                              performance, mitigating risks,
+                              ensuring compliance, and optimizing resource utilization, governance ensures that software
+                              solutions
+                              are well-positioned to meet the needs of the organization and respond to evolving demands
+                              over time.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="card-header">
+                    <h5>Technical Debt</h5>
+                    <p>
+                      Technical debt is a concept that captures the long-term costs associated with taking shortcuts or
+                      making suboptimal decisions during the software development process. While it's often tempting to
+                      prioritize speed over
+                      quality—especially in fast-paced, agile environments—such decisions tend to accumulate as "debt"
+                      that must eventually be "repaid" in the form of extra work.
+                    </p>
+                    <div class="list-item-link">
+                      <p>
+                        <a class="list-item-link" data-bs-toggle="collapse" href="#list-item-technical-debt"
+                          role="button" aria-expanded="false" aria-controls="list-item-technical-debt">
+                          More...
+                        </a>
+                      </p>
+                      <div class="collapse" id="list-item-technical-debt">
+                        <div class="card card-body">
+                          <p>
+                            Technical debt isn't inherently bad; it can be a strategic choice to speed up the delivery
+                            of a project or to meet a crucial deadline. But like financial debt, it comes with
+                            "interest," which manifests as increased maintenance
+                            costs, slower feature development, reduced code quality, and a more fragile application
+                            ecosystem.
+                          </p>
+                          
+                          <p><strong>Impact on Technology</strong></p>
+                          <ul class="category-list">
+                            <li>
+                              <p>
+                                <strong>Inefficiency</strong>: The more technical debt you accumulate, the slower your
+                                development process will be. Every new feature or fix becomes more complicated as
+                                developers have to navigate the labyrinthine codebase.
+                              </p>
+                            </li>
+                            <li>
+                              <p><strong>Reduced Quality</strong>: As technical debt accrues, the quality of the
+                                codebase diminishes, making the system increasingly prone to bugs and other issues.</p>
+                            </li>
+                            <li>
+                              <p><strong>Security Risks</strong>: Outdated components, poor error handling, and lack of
+                                data validation are examples of debts that could compromise your application's security.
+                              </p>
+                            </li>
+                            <li>
+                              <p><strong>Limitation on Future Growth</strong>: A system bogged down by technical debt is
+                                less flexible and adaptable to embracing new technologies or scaling with increased
+                                demand.</p>
+                            </li>
+                          </ul>
+                          <p><strong>Impact on Business Utility</strong></p>
+                          <ul class="category-list">
+                            <li>
+                              <p>
+                                <strong>Increased Costs</strong>: The longer you put off addressing technical debt, the
+                                more costly it becomes to fix it later, consuming resources that could be better spent
+                                on developing new features or improving existing
+                                ones.
+                              </p>
+                            </li>
+                            <li>
+                              <p><strong>Reduced Agility</strong>: Accumulated technical debt can drastically slow down
+                                your ability to respond to market changes, customer demands, or emerging opportunities.
+                              </p>
+                            </li>
+                            <li>
+                              <p><strong>Customer Satisfaction</strong>: Technical debt often leads to poor performance,
+                                bugs, or security issues that directly impact the user experience and, consequently,
+                                customer satisfaction.</p>
+                            </li>
+                            <li>
+                              <p><strong>Competitive Disadvantage</strong>: Failing to address technical debt can leave
+                                your organization lagging behind competitors who invest in keeping their tech stack and
+                                codebase modern and efficient.</p>
+                            </li>
+                            <li>
+                              <p><strong>Reputation Risk</strong>: Over time, consistent issues stemming from technical
+                                debt can erode customer trust and tarnish an organization’s reputation.</p>
+                            </li>
+                          </ul>
+                          <p>
+                            In summary, technical debt is a reality of software development that, if managed poorly, can
+                            derail even the most promising projects. Just as with financial debt, the key is responsible
+                            management. By being aware of the different
+                            types of technical debt and their impact, both from a technology and a business perspective,
+                            you can make informed decisions that balance short-term gains with long-term sustainability.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+
+
+
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-two" role="tabpanel" aria-labelledby="pills-two-tab">
+              <div class="tabcontent">
+                <div>
+                  <h4>Stakeholders</h4>
+                  <ul class="category-list">
+                    <li>
+                      <p><strong>Business</strong></p>
+                      <ul>
+                        <li><strong>Product Owner:</strong> The individual responsible for defining and prioritizing
+                          the
+                          product backlog, ensuring the team is working on tasks that deliver maximum business value.
+                        </li>
+                        <li><strong>Product Manager:</strong> Manages the product lifecycle, bridges the gap between
+                          technical and non-technical teams, and ensures the product aligns with business goals.</li>
+                        <li><strong>Business Analyst:</strong> Analyzes business processes and works closely with the
+                          product owner to define requirements for system changes or enhancements.</li>
+                        <li><strong>Subject Matter Expert:</strong> Person with comprehensive and authoritative
+                          knowledge in a specific area.</li>
+                        <li><strong>Users:</strong> The end-users who interact with the application or system.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><strong>Project</strong></p>
+                      <ul>
+                        <li><strong>Project Manager:</strong> Responsible for planning, executing, and closing
+                          projects,
+                          ensuring they are completed on time and within scope and budget.</li>
+                        <li><strong>Facilitator/Scrum Master:</strong> Ensures the agile team follows agile practices,
+                          removes impediments, and ensures effective communication within the team.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><strong>Enterprise Architecture</strong></p>
+                      <ul>
+                        <li><strong>Enterprise Architect:</strong> Provides an overall vision for the enterprise's
+                          strategy and ensures alignment between the business's needs and IT architecture.</li>
+                        <li><strong>Solution Architect:</strong> Plans, designs, and manages the solution architecture
+                          for specific business problems.</li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <p><strong>Technical</strong></p>
+                      <ul>
+                        <li><strong>Domain Analyst:</strong> Specialist in analyzing a specific business domain,
+                          understanding its intricacies, and translating them into technical requirements.</li>
+                        <li><strong>Architect/Technical Lead:</strong> Guides the technical team, ensures the
+                          technical
+                          solution aligns with architectural standards and addresses business needs.</li>
+                        <li><strong>Application Developer:</strong> Writes code and builds the application or system
+                          based on requirements.</li>
+                        <li><strong>Devops Engineer:</strong> Integrates development and operations, focusing on
+                          automating the software delivery process.</li>
+                        <li><strong>Database Admin:</strong> Manages and maintains the database systems, ensuring data
+                          consistency, integrity, and availability.</li>
+                        <li><strong>QA Tester:</strong> Ensures the quality of the application through systematic
+                          testing.</li>
+                        <li><strong>UAT Tester:</strong> End-users who validate the solution in the User Acceptance
+                          Testing phase.</li>
+                        <li><strong>Development Manager:</strong> Leads the development team, ensuring they have the
+                          tools, resources, and processes to deliver the application efficiently.</li>
+                      </ul>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-three" role="tabpanel" aria-labelledby="pills-three-tab">
+              <div class="tabcontent">
+                <div>
+                  <h4>Phases</h4>
+
+                  <ul class="category-list">
+                    <li>
+                      <p><strong>Purpose & Discovery</strong>: <em>Understanding the Need</em></p>
+                      <div class="card">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-inception-one-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-inception-one" type="button" role="tab"
+                              aria-controls="pills-inception-one" aria-selected="true">Description</button>
+                          </li>
+                          
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-inception-two-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-inception-two" type="button" role="tab"
+                              aria-controls="pills-inception-two" aria-selected="false">Phase</button>
+                          </li>
+                          <!--
+                            
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-inception-three-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-inception-three" type="button" role="tab"
+                              aria-controls="pills-inception-three" aria-selected="false">Three</button>
+                          </li>                            
+                          -->
+
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-inception-four-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-inception-four" type="button" role="tab"
+                              aria-controls="pills-inception-four" aria-selected="false">Plays</button>
+                          </li>
+
+                        </ul>
+
+
+                        <div class="tab-content" id="pills-tabContent">
+
+                          <div class="tab-pane fade show active" id="pills-inception-one" role="tabpanel"
+                            aria-labelledby="pills-inception-one-tab">
+                            <div class="tabcontent">
+                              <div>
+                                <p>
+                                  During the <strong>Purpose &amp; Discovery</strong> phase, the core objective is to
+                                  clearly
+                                  understand and define the business needs and challenges. It initiates with recognizing
+                                  the
+                                  potential project's value proposition,
+                                  encompassing both tangible and intangible requirements. This phase involves both
+                                  high-level
+                                  feasibility analysis and detailed requirement gathering. Here, the focus is on
+                                  discerning user
+                                  stories or functional specifications and
+                                  identifying any potential constraints and dependencies. Regular interactions with
+                                  stakeholders
+                                  and end-users ensure that the goals align with business objectives and users' needs.
+                                  By the
+                                  end
+                                  of this phase, the team should have a
+                                  clear and shared understanding of the project's purpose and the challenges it aims to
+                                  address.
+                                </p>
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tab-pane fade" id="pills-inception-two" role="tabpanel"
+                            aria-labelledby="pills-inception-two-tab">
+                            <div class="tabcontent">
+
+                              <div class="markdown prose w-full break-words dark:prose-invert light">
+                                <h3>Purpose &amp; Discovery</h3>
+                                <h4>Objectives</h4>
+                                <ul>
+                                  <li>
+                                    <p>
+                                      <strong>Articulate Motivation/Purpose, Goals, Value Proposition</strong>: Before
+                                      you begin, it's essential to clearly define why the project exists, what
+                                      objectives it aims to achieve, and the value it brings to the
+                                      organization or users.
+                                    </p>
+                                  </li>
+                                  <li>
+                                    <p>
+                                      <strong>Identify Stakeholders, Risks, Compliance &amp; Mandate
+                                        Constraints</strong>: Early identification of everyone involved or affected, as
+                                      well as understanding the legal and organizational boundaries, can mitigate risks
+                                      and avoid future complications.
+                                    </p>
+                                  </li>
+                                  <li>
+                                    <p>
+                                      <strong>Estimate Size, Complexity, Cost, Feasibility</strong>: Gain a high-level
+                                      understanding of the scale of the project in terms of size, technical complexity,
+                                      estimated costs, and overall feasibility to ensure alignment
+                                      with business and technical capabilities.
+                                    </p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Comprehend Legacy System Domain</strong>: Understanding existing systems
+                                      that will interface or be replaced by the new system is crucial for seamless
+                                      transition and integration.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Define Scope (what's in, what's out)</strong>: Clearly outline the
+                                      project boundaries, features that will be included, and those that won't be part
+                                      of the project.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Communication Plan (stakeholders)</strong>: Establish a plan for how and
+                                      when stakeholders will be informed and consulted throughout the project.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Understand &amp; Enumerate Availability &amp; Performance
+                                        Expectations</strong>: Early identification of system performance and
+                                      availability requirements will guide subsequent design and development activities.
+                                    </p>
+                                  </li>
+                                </ul>
+                                <h4>Activities</h4>
+                                <ul>
+                                  <li>
+                                    <p><strong>Perform Domain Analysis using Various Methods and Sources</strong>:
+                                      Utilize tools like SWOT analysis, market research, and stakeholder interviews to
+                                      understand the domain thoroughly.</p>
+                                  </li>
+                                  <li>
+                                    <p>
+                                      <strong>Determine Current System Gaps, Successes, and Expectations</strong>:
+                                      Perform a detailed analysis to understand what is lacking in the current system,
+                                      what is working well, and what stakeholders expect the new system
+                                      to accomplish.
+                                    </p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Discover Dependent Systems, Dependencies on Adjacent Systems</strong>:
+                                      Map out how the new system will interact with existing systems and identify any
+                                      dependencies that need to be addressed.</p>
+                                  </li>
+                                  <li>
+                                    <p>
+                                      <strong>Uncover Expected Deltas in the Near &amp; Medium Term (Domain Changes,
+                                        User Population Changes, Expected Functional &amp; Non-functional
+                                        Changes)</strong>: Anticipate future changes in user needs, domain shifts, and
+                                      technology trends to build a more future-proof solution.
+                                    </p>
+                                  </li>
+                                </ul>
+                                <h4>Questions</h4>
+                                <ul>
+                                  <li>
+                                    <p><strong>How are Compliance and Mandates Being Addressed?</strong>: Ensure that
+                                      all legal and organizational policies and mandates are being considered and
+                                      planned for.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>What Insights Have Been Gained About the Domain?</strong>: Recap what has
+                                      been learned about the business or operational domain where the system will exist.
+                                    </p>
+                                  </li>
+                                  <li>
+                                    <p><strong>How are Alignment Gaps Identified and Addressed?</strong>: Establish
+                                      methods for spotting and resolving discrepancies between stakeholder expectations
+                                      and project deliverables.</p>
+                                  </li>
+                                  <li>
+                                    <p>
+                                      <strong>What are the Operational Environment Details, Including
+                                        Dependencies?</strong>: Document the system's operational requirements,
+                                      including hardware, software, and network dependencies, to ensure that all
+                                      necessary
+                                      resources are available for successful deployment.
+                                    </p>
+                                  </li>
+                                </ul>
+                                <p>This phase sets the foundation for the entire project, and its thorough execution is
+                                  critical for the success of all subsequent phases.</p>
+                              </div>
+
+
+                            </div>
+                          </div>
+<!--
+                          <div class="tab-pane fade" id="pills-inception-three" role="tabpanel"
+                            aria-labelledby="pills-inception-three-tab">
+                            <div class="tabcontent">
+                              <div>
+                                <h4>Three</h4>
+
+
+
+
+                              </div>
+                            </div>
+                          </div>  
+  
+-->
+
+
+                          <div class="tab-pane fade" id="pills-inception-four" role="tabpanel"
+                            aria-labelledby="pills-inception-four-tab">
+                            <div class="tabcontent">
+                              <div>
+                                <h4>Under Construction</h4>
+
+                                <ul class="category-list">
+                                  <li>
+                                    <p><strong>Domain Analysis</strong>: [Business] Common+</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Stakeholder</strong>: [Business]</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Product Backlog</strong>: [Business]</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Scope</strong>: [Business] (modernization,in/out, features+-)</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>System Analysis</strong>: [Technical] Common+</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Governance</strong>: [Technical] (Mandates/Compliance)</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Technology Stack</strong>: [Technical] (high-level architecture)</p>
+                                  </li>
+                                </ul>
+
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </li>
+                    <li>
+                      <p><strong>Planning & Risk Mitigation</strong> <em>Laying the Groundwork</em></p>
+
+                      <div class="card">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-elaboration-one-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-elaboration-one" type="button" role="tab"
+                              aria-controls="pills-elaboration-one" aria-selected="true">Description</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-elaboration-two-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-elaboration-two" type="button" role="tab"
+                              aria-controls="pills-elaboration-two" aria-selected="false">Phase</button>
+                          </li>
+                          <!--
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-elaboration-three-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-elaboration-three" type="button" role="tab"
+                              aria-controls="pills-elaboration-three" aria-selected="false">Three</button>
+                          </li>                            
+                            
+                          -->
+
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-elaboration-four-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-elaboration-four" type="button" role="tab"
+                              aria-controls="pills-elaboration-four" aria-selected="false">Plays</button>
+                          </li>
+
+                        </ul>
+
+
+                        <div class="tab-content" id="pills-tabContent">
+
+                          <div class="tab-pane fade show active" id="pills-elaboration-one" role="tabpanel"
+                            aria-labelledby="pills-elaboration-one-tab">
+                            <div class="tabcontent">
+                              <div>
+
+                                <p>
+                                  The <strong>Planning &amp; Risk Mitigation</strong> phase is all about designing the
+                                  roadmap
+                                  to
+                                  success. Starting with the creation of a robust solution architecture, it also
+                                  emphasizes the
+                                  importance of UX/UI design tailored for
+                                  end-users. Database and infrastructure designs are set up to ensure scalability and
+                                  performance.
+                                  Proper resource allocation is pivotal at this stage, as is the development of a
+                                  feasible
+                                  project
+                                  timeline. Potential risks are
+                                  identified early on, allowing the team to develop preemptive mitigation strategies. A
+                                  comprehensive plan in this phase ensures that the project has a solid foundation
+                                  moving
+                                  forward,
+                                  with minimal unforeseen challenges.
+                                </p>
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tab-pane fade" id="pills-elaboration-two" role="tabpanel"
+                            aria-labelledby="pills-elaboration-two-tab">
+                            <div class="tabcontent">
+                              <div class="phase">
+                                <h3>Planning &amp; Risk Mitigation</h3>
+                                <h4>Objectives</h4>
+                                <ul>
+                                  <li>
+                                    <p><strong>Remediate Risk to Acceptable Levels</strong>: The planning phase involves
+                                      identifying all possible risks and creating strategies to either eliminate or
+                                      minimize them to an acceptable level.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Demonstrate Architectural/Design Efficacy</strong>: Establish the
+                                      viability of your architectural and design choices by means of prototypes, models,
+                                      or empirical data.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Transition Plan (Progress, Quality, Metrics, etc.)</strong>: Develop a
+                                      clear plan outlining how you will transition from one phase to the next,
+                                      specifying metrics for progress, quality, and other critical factors.</p>
+                                  </li>
+                                </ul>
+                                <h4>Activities</h4>
+                                <ul>
+                                  <li>
+                                    <p><strong>Dev &amp; QA Team Members, Roles, Responsibilities</strong>:</p>
+                                    <ul>
+                                      <li>Ramp up, familiarization &amp; planning: Establish the development and quality
+                                        assurance teams, outlining specific roles and responsibilities for each team
+                                        member.</li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <p><strong>Transition Plan</strong>:</p>
+                                    <ul>
+                                      <li>Devise transition execution strategy: Measure progress,
+                                        correctness/completeness, and handle exceptional events.</li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <p><strong>Compliance &amp; Mandate (Alignment With)</strong>: Ensure the project
+                                      aligns with all legal and organizational requirements.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Architecture/Design Acceptance</strong>:</p>
+                                    <ul>
+                                      <li>Align design with Domain E/R analysis and non-functional expectations to
+                                        secure stakeholder acceptance.</li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <p><strong>Risk List Refinement, Risk Remediation</strong>: Revisit the risk list to
+                                      ensure all risks are being appropriately managed.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Scope Refinement</strong>: Revisit and, if necessary, adjust the project
+                                      scope.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Populate a Product Backlog</strong>: List all the components/features
+                                      that need to be implemented.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Construction Planning</strong>:</p>
+                                    <ul>
+                                      <li>
+                                        <strong>Quality Assurance</strong>:
+                                        <ul>
+                                          <li>Publish/share coding guidelines, including coding standards, naming
+                                            conventions, and best practices.</li>
+                                          <li>Set unit test code coverage thresholds and expectations.</li>
+                                          <li>Plan code review strategies.</li>
+                                        </ul>
+                                      </li>
+                                      <li>Group product backlog items into construction phases.</li>
+                                      <li>Define construction phase deliverables &amp; milestones.</li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <p><strong>Architectural Prototype</strong>: Design a working prototype to mitigate
+                                      design risks.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Security Risks</strong>: Make sure all security risks and threats are
+                                      adequately addressed.</p>
+                                  </li>
+                                </ul>
+                                <h4>Questions</h4>
+                                <ul>
+                                  <li>
+                                    <p><strong>How are Risks Identified and Mitigated?</strong>: Ensure you have a
+                                      concrete plan for identifying and handling risks.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>What are the Construction and Transition Plans?</strong>: Make clear what
+                                      the road map looks like for building and transitioning the product.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>How are Roles and Responsibilities Defined for the Dev and QA
+                                        Teams?</strong>: Confirm that every team member knows their role and what is
+                                      expected of them.</p>
+                                  </li>
+                                  <li>
+                                    <p>
+                                      <strong>How is Compliance Ensured, and Architecture/Design Accepted?</strong>:
+                                      Validate that the project will comply with all legal and organizational mandates,
+                                      and that its architecture and design are sound and accepted by
+                                      stakeholders.
+                                    </p>
+                                  </li>
+                                </ul>
+                                <p>
+                                  The Planning &amp; Risk Mitigation phase serves as the blueprint for the project,
+                                  guiding all subsequent activities and serving as a reference for decision-making. It
+                                  plays a pivotal role in ensuring that the project stays on track
+                                  and achieves its objectives while minimizing risks and obstacles.
+                                </p>
+                              </div>
+
+                            </div>
+                          </div>
+<!--
+                           <div class="tab-pane fade" id="pills-elaboration-three" role="tabpanel"
+                            aria-labelledby="pills-elaboration-three-tab">
+                            <div class="tabcontent">
+
+                            </div>
+                          </div> 
+  
+-->
+
+
+                          <div class="tab-pane fade" id="pills-elaboration-four" role="tabpanel"
+                            aria-labelledby="pills-elaboration-four-tab">
+                            <div class="tabcontent">
+                              <div>
+                                <h4>Under Construction</h4>
+
+                                <ul class="category-list">
+                                  <li>
+                                    <p><strong>Construction Planning</strong>: [Technical]
+                                      (Sprints,Milestones,Deliverables, Q/A)</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Delivery PLanning</strong>: [Technical] (Stages, Pipeline, Config/Secrets
+                                      Management)</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Migration Planning</strong>: [Technical] (V&V, Communication Plan)</p>
+                                  </li>
+                                </ul>
+
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </li>
+                    <li>
+                      <p><strong>Construction & Migration</strong> <em>Building the Solution</em></p>
+
+
+                      <div class="card">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-construction-one-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-construction-one" type="button" role="tab"
+                              aria-controls="pills-construction-one" aria-selected="true">Description</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-construction-two-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-construction-two" type="button" role="tab"
+                              aria-controls="pills-construction-two" aria-selected="false">Phase</button>
+                          </li>
+                          <!--
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-construction-three-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-construction-three" type="button" role="tab"
+                              aria-controls="pills-construction-three" aria-selected="false">Three</button>
+                          </li>                            
+                            
+                          -->
+
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-construction-four-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-construction-four" type="button" role="tab"
+                              aria-controls="pills-construction-four" aria-selected="false">Plays</button>
+                          </li>
+
+                        </ul>
+
+
+                        <div class="tab-content" id="pills-tabContent">
+
+                          <div class="tab-pane fade show active" id="pills-construction-one" role="tabpanel"
+                            aria-labelledby="pills-construction-one-tab">
+                            <div class="tabcontent">
+                              <div>
+
+                                <p>
+                                  At the heart of the <strong>Construction &amp; Migration</strong> phase is the actual
+                                  development of the solution. The team delves into code development, maintaining
+                                  consistent
+                                  standards and practices throughout. As features are
+                                  built, initial unit testing ensures that each component functions as intended. If the
+                                  project
+                                  involves transitioning from an older system, data migration becomes an essential step,
+                                  ensuring
+                                  that legacy data is seamlessly integrated
+                                  into the new system. The parallel path of Quality Assurance involves thorough manual
+                                  and
+                                  automated testing. Performance and security assessments are crucial to ensure the
+                                  solution's
+                                  robustness and readiness for deployment.
+                                </p>
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tab-pane fade" id="pills-construction-two" role="tabpanel"
+                            aria-labelledby="pills-construction-two-tab">
+                            <div class="tabcontent">
+                              <div class="phase">
+                                <h3>Construction &amp; Transition</h3>
+                                <h4>Construction</h4>
+                                <h5>Objectives</h5>
+                                <ul>
+                                  <li>
+                                    <p><strong>Build, Test, Integrate</strong>: The primary goals during the
+                                      construction phase are to write the code, test it at various levels, and integrate
+                                      it into the existing system or architecture.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Adjust Risk, Cost, Progress, Delivery Schedule</strong>: Continuously
+                                      monitor and adjust risk levels, project costs, progress, and the delivery schedule
+                                      based on real-world metrics and findings.</p>
+                                  </li>
+                                </ul>
+                                <h5>Activities</h5>
+                                <ul>
+                                  <li>
+                                    <p><strong>Code Implementation</strong>: Developers write the code based on approved
+                                      designs and architecture.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Testing (Unit, Integration)</strong>: Rigorous unit and integration tests
+                                      are conducted to ensure code quality and functionality.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Review and Integrate Changes</strong>:</p>
+                                    <ul>
+                                      <li>Monitor construction progress and velocity.</li>
+                                      <li>Monitor Transition Plan Execution, Verification &amp; Validation metrics.</li>
+                                      <li>Adjust estimated cost and delivery schedule based on real-world data.</li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <p><strong>Inform Stakeholders</strong>: Keep all stakeholders updated about
+                                      progress, challenges, and the overall health of the project.</p>
+                                  </li>
+                                </ul>
+                                <h5>Questions</h5>
+                                <ul>
+                                  <li>
+                                    <p><strong>What is the Development and Testing Process?</strong>: Are there
+                                      established methodologies and procedures for development and testing?</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>How are Milestones Tracked and Met?</strong>: What mechanisms are in
+                                      place to track progress against milestones?</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>What Quality Assurance Measures are in Place?</strong>: What steps are
+                                      being taken to ensure the highest quality output?</p>
+                                  </li>
+                                </ul>
+                                <h4>Transition</h4>
+                                <h5>Objectives</h5>
+                                <ul>
+                                  <li>
+                                    <p><strong>Migrate Data</strong>: Safely transfer all necessary data from the old
+                                      system to the new one, if applicable.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Transition Users</strong>: Train and move users from the old system to
+                                      the new one.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Monitor Transition Progress</strong>: Keep a close eye on how the
+                                      transition is progressing, and make adjustments as necessary.</p>
+                                  </li>
+                                </ul>
+                                <h5>Activities</h5>
+                                <ul>
+                                  <li>
+                                    <p><strong>Data Migration Strategy</strong>: What approach will be used to move data
+                                      from the old system to the new one?</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>User Transition and Training</strong>: How will users be moved to the new
+                                      system, and what training will be provided?</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Transition Integrity Validation</strong>: Ensure that the transition has
+                                      been carried out accurately, and all systems function as expected.</p>
+                                  </li>
+                                </ul>
+                                <h5>Questions</h5>
+                                <ul>
+                                  <li>
+                                    <p><strong>What Data Validation Techniques Will Be Used During Migration?</strong>:
+                                      How will you ensure the integrity of data during its migration?</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>How Will User Training and Adoption Be Managed?</strong>: What strategies
+                                      are in place for making sure users can easily transition to the new system?</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>What Metrics Are Being Used to Monitor Transition Success?</strong>: How
+                                      will you know if the transition has been successful?</p>
+                                  </li>
+                                </ul>
+                                <p>
+                                  The Construction &amp; Transition phase is critical for bringing the planned software
+                                  to life and ensuring its successful integration into the existing ecosystem. It's a
+                                  multifaceted stage where coding, testing, and transitioning
+                                  all need to be managed effectively to ensure the project's overall success.
+                                </p>
+                              </div>
+
+                            </div>
+                          </div>
+<!--
+  
+                          <div class="tab-pane fade" id="pills-construction-three" role="tabpanel"
+                            aria-labelledby="pills-construction-three-tab">
+                            <div class="tabcontent">
+                              <div>
+                                <h4>Three</h4>
+
+
+
+
+                              </div>
+                            </div>
+                          </div>  
+-->
+
+
+                          <div class="tab-pane fade" id="pills-construction-four" role="tabpanel"
+                            aria-labelledby="pills-construction-four-tab">
+                            <div class="tabcontent">
+                              <div>
+                                <h4>Under Construction</h4>
+
+
+
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </li>
+                    <li>
+                      <p><strong>Deployment & Stabilization</strong> <em>Releasing and Supporting</em></p>
+
+                      <div class="card">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-deploy-one-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-deploy-one" type="button" role="tab"
+                              aria-controls="pills-deploy-one" aria-selected="true">Description</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-deploy-two-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-deploy-two" type="button" role="tab"
+                              aria-controls="pills-deploy-two" aria-selected="false">Phase</button>
+                          </li>
+                          <!--
+                            
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-deploy-three-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-deploy-three" type="button" role="tab"
+                              aria-controls="pills-deploy-three" aria-selected="false">Three</button>
+                          </li>                            
+                          -->
+
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-deploy-four-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-deploy-four" type="button" role="tab"
+                              aria-controls="pills-deploy-four" aria-selected="false">Plays</button>
+                          </li>
+
+                        </ul>
+
+
+                        <div class="tab-content" id="pills-tabContent">
+
+                          <div class="tab-pane fade show active" id="pills-deploy-one" role="tabpanel"
+                            aria-labelledby="pills-deploy-one-tab">
+                            <div class="tabcontent">
+                              <div>
+                                <p>
+                                  The <strong>Deployment &amp; Stabilization</strong> phase marks the transition of the
+                                  project
+                                  from a development environment to real-world usage. This involves integrating all the
+                                  constructed components, setting up the production
+                                  environment, and initiating the first deployment. But the work doesn't end with
+                                  deployment.
+                                  The
+                                  initial days post-deployment are critical for monitoring the system, addressing any
+                                  teething
+                                  issues, and ensuring stable performance. An
+                                  essential aspect of this phase is the continuous support provided to end-users,
+                                  assisting them
+                                  in adapting to the new system, and promptly addressing any challenges they face.
+                                </p>
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tab-pane fade" id="pills-deploy-two" role="tabpanel"
+                            aria-labelledby="pills-deploy-two-tab">
+                            <div class="tabcontent">
+                              <div class="phase">
+                                <h3>Deployment &amp; Stabilization</h3>
+                                <h4>Deployment</h4>
+                                <h5>Objectives</h5>
+                                <ul>
+                                  <li>
+                                    <p><strong>Deploy to Target Environment</strong>: The foremost goal is to
+                                      successfully deploy the newly built or updated software to the target environment.
+                                    </p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Validate Deployment Success</strong>: Verify that the deployment has
+                                      succeeded and that the new system or feature is functioning as expected.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Ensure SLA Compliance</strong>: Ensure that the deployment meets any
+                                      Service Level Agreements (SLAs) that may be in place.</p>
+                                  </li>
+                                </ul>
+                                <h5>Activities</h5>
+                                <ul>
+                                  <li>
+                                    <p><strong>Deploy Artifacts</strong>: Physically move all necessary code, data, and
+                                      other artifacts to the target environment.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Monitor Deployment Success</strong>: Continuously watch for any issues
+                                      that may arise during or immediately after the deployment process.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Validate Performance Metrics</strong>: Assess whether the new deployment
+                                      meets the predetermined performance metrics and KPIs.</p>
+                                  </li>
+                                </ul>
+                                <h5>Questions</h5>
+                                <ul>
+                                  <li>
+                                    <p><strong>What is the Deployment Process?</strong>: What are the steps to move from
+                                      a staging environment to production?</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>How is the Success/Failure of the Deployment Validated?</strong>: What
+                                      metrics or indicators are being used to confirm a successful deployment?</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>How are SLA Compliance and Performance Metrics Ensured?</strong>: What
+                                      checks are in place to make sure the deployment is compliant with SLAs and
+                                      performance expectations?</p>
+                                  </li>
+                                </ul>
+                                <h4>Stabilization</h4>
+                                <h5>Objectives</h5>
+                                <ul>
+                                  <li>
+                                    <p><strong>Ensure System Stability</strong>: Make certain that the deployed system
+                                      is stable and not causing disruptions.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Optimize Performance</strong>: Make any necessary tweaks to improve the
+                                      system's performance.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Resolve any Outstanding Issues</strong>: Address any remaining problems
+                                      or imperfections in the deployed system.</p>
+                                  </li>
+                                </ul>
+                                <h5>Activities</h5>
+                                <ul>
+                                  <li>
+                                    <p><strong>Monitor System Stability</strong>: Keep an eye on various system metrics
+                                      to ensure ongoing stability.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Optimize as Needed</strong>: Fine-tune the system to improve performance,
+                                      based on real-world data.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Address Any Post-Deployment Issues</strong>: Handle any issues that
+                                      become evident after the deployment is complete.</p>
+                                  </li>
+                                </ul>
+                                <h5>Questions</h5>
+                                <ul>
+                                  <li>
+                                    <p><strong>How is System Stability Ensured?</strong>: What metrics or indicators are
+                                      used to monitor system stability?</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>What Measures are Taken to Optimize Performance?</strong>: What tools or
+                                      techniques are employed to enhance system performance?</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>How are Post-Deployment Issues Resolved?</strong>: What is the process
+                                      for identifying and addressing issues that arise after deployment?</p>
+                                  </li>
+                                </ul>
+                                <p>
+                                  The Deployment &amp; Stabilization phase is critical for transitioning from a software
+                                  product that works "on paper" or in a controlled environment to one that successfully
+                                  serves its intended audience in the real world. It involves
+                                  not only the technical activities of deploying software but also the often-overlooked
+                                  yet equally vital activities of monitoring and optimizing it to ensure it meets both
+                                  functional and business goals.
+                                </p>
+                              </div>
+
+                            </div>
+                          </div>
+<!--
+                          <div class="tab-pane fade" id="pills-deploy-three" role="tabpanel"
+                            aria-labelledby="pills-deploy-three-tab">
+                            <div class="tabcontent">
+                              <div>
+                                <h4>Three</h4>
+
+
+
+
+                              </div>
+                            </div>
+                          </div>  
+  
+-->
+
+
+                          <div class="tab-pane fade" id="pills-deploy-four" role="tabpanel"
+                            aria-labelledby="pills-deploy-four-tab">
+                            <div class="tabcontent">
+                              <div>
+                                <h4>Under Construction</h4>
+
+
+
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </li>
+                    <li>
+                      <p><strong>Retrospective</strong> <em>Reflection and Growth</em></p>
+
+                      <div class="card">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-retro-one-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-retro-one" type="button" role="tab" aria-controls="pills-retro-one"
+                              aria-selected="true">Description</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-retro-two-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-retro-two" type="button" role="tab" aria-controls="pills-retro-two"
+                              aria-selected="false">Phase</button>
+                          </li>
+                          <!--
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-retro-three-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-retro-three" type="button" role="tab"
+                              aria-controls="pills-retro-three" aria-selected="false">Three</button>
+                          </li>                            
+                          -->
+
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-retro-four-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-retro-four" type="button" role="tab"
+                              aria-controls="pills-retro-four" aria-selected="false">Plays</button>
+                          </li>
+
+                        </ul>
+
+
+                        <div class="tab-content" id="pills-tabContent">
+
+                          <div class="tab-pane fade show active" id="pills-retro-one" role="tabpanel"
+                            aria-labelledby="pills-retro-one-tab">
+                            <div class="tabcontent">
+                              <div>
+
+                                <p>
+                                  After the dust settles, the <strong>Retrospective</strong> phase provides an
+                                  opportunity for
+                                  introspection. It's a time to analyze the journey, understanding what strategies
+                                  worked well
+                                  and
+                                  which areas need improvement. Feedback is
+                                  gathered from all stakeholders, offering insights into areas of success and potential
+                                  enhancement. This phase is not just about reflection; it's also about action.
+                                  Performance
+                                  tuning, code refactoring, and implementing
+                                  feedback-based changes become crucial steps to refine and optimize the solution. By
+                                  embracing
+                                  the lessons learned, the team ensures continuous improvement and readiness for future
+                                  challenges.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tab-pane fade" id="pills-retro-two" role="tabpanel"
+                            aria-labelledby="pills-retro-two-tab">
+                            <div class="tabcontent">
+                              <div class="phase">
+                                <h5>Objectives</h5>
+                                <ul>
+                                  <li>
+                                    <p><strong>Evaluate Project Success</strong>: Assess whether the project met its
+                                      stated goals, including timelines, budget, and scope.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Identify Lessons Learned</strong>: Document what worked well and what
+                                      didn't, to improve future projects.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Measure ROI</strong>: Evaluate the return on investment and whether the
+                                      project delivered on its value proposition.</p>
+                                  </li>
+                                </ul>
+                                <h5>Activities</h5>
+                                <ul>
+                                  <li>
+                                    <p><strong>Project Review</strong>: Conduct a comprehensive review with stakeholders
+                                      to evaluate the success of the project based on predefined criteria.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Gather Feedback</strong>: Collect feedback from team members,
+                                      stakeholders, and users to understand the strengths and weaknesses of the project.
+                                    </p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Documentation</strong>: Create a formal 'lessons learned' document or
+                                      database entry for institutional knowledge.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>ROI Analysis</strong>: Compare the benefits gained against the costs
+                                      incurred in the project to calculate the Return on Investment.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Stakeholder Communication</strong>: Share the outcomes, lessons learned,
+                                      and ROI with all stakeholders to close the loop.</p>
+                                  </li>
+                                </ul>
+                                <h5>Questions</h5>
+                                <ul>
+                                  <li>
+                                    <p><strong>Was the Project Successful by Predefined Metrics?</strong>: Did the
+                                      project meet its goals in terms of timeline, budget, and quality?</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>What Lessons Have Been Learned for Future Projects?</strong>: What
+                                      insights can be carried forward to future initiatives?</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>How Has the Project Affected Business Metrics or KPIs?</strong>: Has
+                                      there been a measurable impact on the business, either positive or negative?</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>What Would You Do Differently Next Time?</strong>: Based on the
+                                      retrospective, what changes would you implement in future projects?</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Was the ROI in Line with Expectations?</strong>: Was the return on
+                                      investment as predicted, better, or worse?</p>
+                                  </li>
+                                </ul>
+                                <p>
+                                  The Retrospection phase serves as a closing chapter that allows the team and
+                                  stakeholders to pause and evaluate how the project went. It provides an opportunity
+                                  for introspection, learning, and even course-correction for future
+                                  projects. The activities in this phase ensure that the project's impact is measured,
+                                  that lessons are learned and documented, and that the project's success or failure is
+                                  understood in a nuanced way that benefits future endeavors.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+<!--
+                          <div class="tab-pane fade" id="pills-retro-three" role="tabpanel"
+                            aria-labelledby="pills-retro-three-tab">
+                            <div class="tabcontent">
+                              <div>
+                                <h4>Three</h4>
+
+
+
+
+                              </div>
+                            </div>
+                          </div>  
+-->
+
+
+                          <div class="tab-pane fade" id="pills-retro-four" role="tabpanel"
+                            aria-labelledby="pills-retro-four-tab">
+                            <div class="tabcontent">
+                              <div>
+                                <h4>Under Construction</h4>
+
+
+
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </li>
+                  </ul>
+
+
+
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-overview-four" role="tabpanel"
+              aria-labelledby="pills-overview-four-tab">
+              <div class="tabcontent">
+                <div>
+                  <h4>Perspectives & Phases</h4>
+
+                  <div>
+                    <table id="matrix" class="table table-bordered checkmarx">
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th class="phase-1">
+                            Purpose & Discovery
+                          </th>
+                          <th class="phase-2">
+                            Planning & Risk Mitigation
+                          </th>
+                          <th class="phase-3">
+                            Construction & Migration
+                          </th>
+                          <th class="phase-4">
+                            Deployment & Stabilization
+                          </th>
+                          <th class="phase-5">
+                            Retrospective
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr data-group="project-management" class="group-header indent-0 expanded">
+                          <td colspan="6" class="indent-0">Project Management</td>
+                        </tr>
+                        <tr data-group="project-management" class="indent-1">
+                          <td data-col="1" class="indent-1">Funding</td>
+                          <td class="phase-1 checkmarx">
+                            <span></span>
+                          </td>
+                          <td class="phase-2">
+                            <span></span>
+                          </td>
+                          <td class="phase-3"></td>
+                          <td class="phase-4"></td>
+                          <td class="phase-5"></td>
+                        </tr>
+                        <tr data-group="project-management" class="indent-1">
+                          <td data-col="1" class="indent-1">Scope</td>
+                          <td class="phase-1"><span></span></td>
+                          <td class="phase-2"><span></span></td>
+                          <td class="phase-3"></td>
+                          <td class="phase-4"></td>
+                          <td class="phase-5"></td>
+                        </tr>
+                        <tr data-group="project-management" class="indent-1">
+                          <td data-col="1" class="indent-1">Estimates</td>
+                          <td class="phase-1"><span></span></td>
+                          <td class="phase-2"><span></span></td>
+                          <td class="phase-3"></td>
+                          <td class="phase-4"></td>
+                          <td class="phase-5"></td>
+                        </tr>
+                        <tr data-group="project-management" class="indent-2">
+                          <td data-col="1" class="indent-2">Sizing, High-level</td>
+                          <td class="phase-1"><span></span></td>
+                          <td class="phase-2"></td>
+                          <td class="phase-3"></td>
+                          <td class="phase-4"></td>
+                          <td class="phase-5"></td>
+                        </tr>
+                        <tr data-group="project-management" class="indent-2">
+                          <td data-col="1" class="indent-2">Granular, Level of Effort</td>
+                          <td class="phase-1"></td>
+                          <td class="phase-2"><span></span></td>
+                          <td class="phase-3"></td>
+                          <td class="phase-4"></td>
+                          <td class="phase-5"></td>
+                        </tr>
+                        <tr data-group="project-management" class="indent-1">
+                          <td data-col="1" class="indent-1">Product Backlog</td>
+                          <td class="phase-1"><span></span></td>
+                          <td class="phase-2"></td>
+                          <td class="phase-3"></td>
+                          <td class="phase-4"></td>
+                          <td class="phase-5"></td>
+                        </tr>
+                        <tr data-group="project-management" class="indent-2">
+                          <td data-col="1" class="indent-2">Product Backlog: Major Features</td>
+                          <td class="phase-1"><span></span></td>
+                          <td class="phase-2"></td>
+                          <td class="phase-3"></td>
+                          <td class="phase-4"></td>
+                          <td class="phase-5"></td>
+                        </tr>
+                        <tr data-group="project-management" class="indent-2">
+                          <td data-col="1" class="indent-2">Product Backlog: Groomed & Grouped</td>
+                          <td class="phase-1"></td>
+                          <td class="phase-2"><span></span></td>
+                          <td class="phase-3"></td>
+                          <td class="phase-4"></td>
+                          <td class="phase-5"></td>
+                        </tr>
+                        <tr data-group="project-management" class="indent-1">
+                          <td data-col="1" class="indent-1">Construction Planning</td>
+                          <td class="phase-1"></td>
+                          <td class="phase-2"><span></span></td>
+                          <td class="phase-3"></td>
+                          <td class="phase-4"></td>
+                          <td class="phase-5"></td>
+                        </tr>
+                        <tr data-group="project-management" class="indent-2">
+                          <td data-col="1" class="indent-2">Team Roles, Members, Responsibilities</td>
+                          <td class="phase-1"></td>
+                          <td class="phase-2"><span></span></td>
+                          <td class="phase-3"></td>
+                          <td class="phase-4"></td>
+                          <td class="phase-5"></td>
+                        </tr>
+                        <tr data-group="project-management" class="indent-2">
+                          <td data-col="1" class="indent-2">Sprint Planning</td>
+                          <td class="phase-1"></td>
+                          <td class="phase-2"><span></span></td>
+                          <td class="phase-3"></td>
+                          <td class="phase-4"></td>
+                          <td class="phase-5"></td>
+                        </tr>
+                        <tr data-group="project-management" class="indent-1">
+                          <td data-col="1" class="indent-1">Communication</td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="project-management" class="indent-2">
+                          <td data-col="1" class="indent-2">Stakeholder alignment, agreement &amp; signoffs</td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                        </tr>
+                        <tr data-group="project-management" class="indent-2">
+                          <td data-col="1" class="indent-2">Orchestration of Lifecycle Phases, Stakeholders, Progress
+                          </td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="ea-governance" class="group-header indent-0 expanded">
+                          <td colspan="6" class="indent-0">EA Governance</td>
+                        </tr>
+                        <tr data-group="ea-governance" class="indent-1">
+                          <td data-col="1" class="indent-1">Guidance</td>
+                          <td class=""> <span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="ea-governance" class="indent-2">
+                          <td data-col="1" class="indent-2">Technology Stack</td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="ea-governance" class="indent-2">
+                          <td data-col="1" class="indent-2">Architecture Patterns</td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="ea-governance" class="indent-2">
+                          <td data-col="1" class="indent-2">Code Patterns</td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="ea-governance" class="indent-2">
+                          <td data-col="1" class="indent-2">Data Patterns</td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="mandates-compliance" class="group-header indent-0 expanded">
+                          <td colspan="6" class="indent-0">Mandates &amp; Compliance</td>
+                        </tr>
+                        <tr data-group="mandates-compliance" class="indent-1">
+                          <td data-col="1" class="indent-1">Accessibility: Section 508</td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="mandates-compliance" class="indent-1">
+                          <td data-col="1" class="indent-1">PII</td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="migration" class="group-header indent-0 expanded">
+                          <td colspan="6" class="indent-0">Migration</td>
+                        </tr>
+                        <tr data-group="migration" class="indent-1">
+                          <td data-col="1" class="indent-1">Data Migration</td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="migration" class="indent-2">
+                          <td data-col="1" class="indent-2">Migration Strategy</td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="migration" class="indent-1">
+                          <td data-col="1" class="indent-1">User Migration</td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="migration" class="indent-2">
+                          <td data-col="1" class="indent-2">Orchestrate activities, report
+                            progress/metrics/exceptional
+                            events to Stakeholders</td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="transition" class="group-header indent-0 expanded">
+                          <td colspan="6" class="indent-0">Transition</td>
+                        </tr>
+                        <tr data-group="transition" class="indent-1">
+                          <td data-col="1" class="indent-1">Transition Strategy</td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="transition" class="indent-2">
+                          <td data-col="1" class="indent-2">Big Bang (all at once, cutover, etl between stop/start)
+                          </td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="transition" class="indent-2">
+                          <td data-col="1" class="indent-2">Side-by-Side (dual operation)</td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="transition" class="indent-2">
+                          <td data-col="1" class="indent-2">Lazy-Load (as we go)</td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="transition" class="indent-1">
+                          <td data-col="1" class="indent-1">Communication Plan</td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="transition" class="indent-2">
+                          <td data-col="1" class="indent-2">Orchestrate activities, report
+                            progress/metrics/exceptional
+                            events to Stakeholders</td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="technical-debt" class="group-header indent-0 expanded">
+                          <td colspan="6" class="indent-0">Technical Debt</td>
+                        </tr>
+                        <tr data-group="technical-debt" class="indent-1">
+                          <td data-col="1" class="indent-1">Abandonement of Obsolete Technology Stack</td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="technical-debt" class="indent-1">
+                          <td data-col="1" class="indent-1">Misalignment of Architecture &amp; Design with Business
+                            Domain</td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="technical-debt" class="indent-1">
+                          <td data-col="1" class="indent-1">Inadequate Code Quality Practices</td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="technical-debt" class="indent-2">
+                          <td data-col="1" class="indent-2">Coding Conventions, Naming Conventions</td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="technical-debt" class="indent-2">
+                          <td data-col="1" class="indent-2">Code Reviews</td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="technical-debt" class="indent-2">
+                          <td data-col="1" class="indent-2">Unit Testing, Integration Testing</td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="technical-debt" class="indent-2">
+                          <td data-col="1" class="indent-1">Dead code, partial feature implementations</td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="risks-remediation" class="group-header indent-0 expanded">
+                          <td colspan="6" class="indent-0">Risks &amp; Remediation</td>
+                        </tr>
+                        <tr data-group="risks-remediation" class="indent-1">
+                          <td data-col="1" class="indent-1">Technical Risks</td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="risks-remediation" class="indent-1">
+                          <td data-col="1" class="indent-1">Organizational Risks</td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="sla-nonfunctional-requirements" class="group-header indent-0 expanded">
+                          <td colspan="6" class="indent-0">SLA &amp; Nonfunctional Requirements</td>
+                        </tr>
+                        <tr data-group="domain-knowledge-understanding" class="group-header indent-0 expanded">
+                          <td colspan="6" class="indent-0">Domain Knowledge/Understanding</td>
+                        </tr>
+                        <tr data-group="domain-knowledge-understanding" class="indent-1">
+                          <td data-col="1" class="indent-1">Business E/R Analysis (business viewpoint)</td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="domain-knowledge-understanding" class="indent-1">
+                          <td data-col="1" class="indent-1">Personas</td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="domain-knowledge-understanding" class="indent-1">
+                          <td data-col="1" class="indent-1">User Stories &amp; Use Cases</td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="domain-knowledge-understanding" class="indent-1">
+                          <td data-col="1" class="indent-1">Workflows</td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="domain-knowledge-understanding" class="indent-1">
+                          <td data-col="1" class="indent-1">Functional Requirements</td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="domain-knowledge-understanding" class="indent-1">
+                          <td data-col="1" class="indent-1">Dataflows</td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="domain-knowledge-understanding" class="indent-1">
+                          <td data-col="1" class="indent-1">Reporting</td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="domain-knowledge-understanding" class="indent-2">
+                          <td data-col="1" class="indent-2">Periodic</td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="domain-knowledge-understanding" class="indent-2">
+                          <td data-col="1" class="indent-2">Ad Hoc</td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="operational-environment" class="group-header indent-0 expanded">
+                          <td colspan="6" class="indent-0">Operational Environment</td>
+                        </tr>
+                        <tr data-group="operational-environment" class="indent-1">
+                          <td data-col="1" class="indent-1">PAAS</td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="operational-environment" class="indent-2">
+                          <td data-col="1" class="indent-2">Hosting</td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="operational-environment" class="indent-2">
+                          <td data-col="1" class="indent-2">Devops Pipeline</td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="operational-environment" class="indent-1">
+                          <td data-col="1" class="indent-1">Adjacent Systems</td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="architecture-design" class="group-header indent-0 expanded">
+                          <td colspan="6" class="indent-0">Architecture &amp; Design</td>
+                        </tr>
+                        <tr data-group="architecture-design" class="indent-1">
+                          <td data-col="1" class="indent-1">Alignment with Business Domain</td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="architecture-design" class="indent-2">
+                          <td data-col="1" class="indent-2">Domain E/R Analysis (architect viewpoint)</td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="architecture-design" class="indent-2">
+                          <td data-col="1" class="indent-2">Non-functional requirements</td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="architecture-design" class="indent-2">
+                          <td data-col="1" class="indent-2">Expected Growth</td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="architecture-design" class="indent-1">
+                          <td data-col="1" class="indent-1">Technology Stack Choices</td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="architecture-design" class="indent-1">
+                          <td data-col="1" class="indent-1">Design/Architecture</td>
+                          <td class=""><span></span></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="architecture-design" class="indent-2">
+                          <td data-col="1" class="indent-2">Working POC (Technology Risk Remediation)</td>
+                          <td class=""></td>
+                          <td class=""><span></span></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                          <td class=""></td>
+                        </tr>
+                        <tr data-group="stakeholders" class="group-header indent-0 expanded">
+                          <td colspan="6" class="indent-0">Stakeholders</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-five" role="tabpanel" aria-labelledby="pills-five-tab">
+              <div class="tabcontent">
+                <div>
+                  <h4>Technical Debt</h4>
+
+                  <div class="markdown prose w-full break-words dark:prose-invert light">
+                    <p>
+                      If left unchecked, technical debt can lead to a range of adverse outcomes. It can inhibit
+                      the system's capacity to incorporate new features or technological improvements and can make
+                      it increasingly difficult to troubleshoot or add
+                      functionality to the system. On the technical front, it can lead to everything from brittle
+                      architecture and scalability issues to security vulnerabilities. These issues don't just
+                      impact developers; they have significant
+                      repercussions for business stakeholders and can compromise a project's long-term viability.
+                    </p>
+                    <h4>Technology Stack</h5>
+                    <ul class="category-list">
+                      <li>
+                        <p><strong>Mis-applied, Mis-aligned</strong>: Using a technology for purposes it was not
+                          well-suited for, or using a technology that doesn't align well with the project's goals.</p>
+                        <ul>
+                          <li><strong>Importance</strong>: This can lead to inefficiencies and limitations that hinder
+                            future development and scalability.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p><strong>Obsolete</strong>: Using outdated technologies that are no longer supported or are
+                          inferior to current options.</p>
+                        <ul>
+                          <li><strong>Importance</strong>: This can expose the system to security vulnerabilities and
+                            make it difficult to find developers familiar with the technology.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p><strong>End of life, end of support</strong>: Using technologies that are no longer updated
+                          or supported by their vendors.</p>
+                        <ul>
+                          <li><strong>Importance</strong>: This poses security risks and can lead to incompatibility
+                            issues with newer systems or technologies.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p><strong>Not Sanctioned (EA Governance)</strong>: Utilizing technologies that have not been
+                          approved by Enterprise Architecture Governance.</p>
+                        <ul>
+                          <li><strong>Importance</strong>: This could lead to conflicts with existing technologies,
+                            complicating the architecture and potentially violating compliance standards.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p><strong>Not Approved (EA Governance)</strong>: Similar to 'Not Sanctioned,' this involves
+                          using technologies that haven't received formal approval.</p>
+                        <ul>
+                          <li><strong>Importance</strong>: This can result in inefficiencies, lack of support, and
+                            potential non-compliance with enterprise or regulatory standards.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p><strong>Cost Value Deficit</strong>: The total cost of using a specific technology outweighs
+                          its benefits.</p>
+                        <ul>
+                          <li><strong>Importance</strong>: This leads to poor ROI and can be a drain on resources,
+                            diverting them from more valuable areas.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <h5>Architecture &amp; Design</h5>
+                    <ul class="category-list">
+                      <li>
+                        <p><strong>Coupling, lack of cohesiveness/componentization</strong>: Tight coupling between
+                          components, or lacking clear boundaries between components.</p>
+                        <ul>
+                          <li><strong>Importance</strong>: This makes the system hard to modify, test, and maintain.
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p><strong>Scalability</strong>: Systems that cannot handle an increase in users or load.</p>
+                        <ul>
+                          <li><strong>Importance</strong>: A non-scalable system will suffer from performance issues as
+                            it grows, affecting user experience and potentially leading to system failure.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p><strong>Performance</strong>: Failing to meet benchmarks in data consistency, transaction
+                          velocity, and elasticity.</p>
+                        <ul>
+                          <li><strong>Importance</strong>: Poor performance directly affects user experience and can
+                            result in loss of users or business.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p><strong>Design Misalignment</strong>:</p>
+                        <ul>
+                          <li><strong>With Domain E/R Analysis</strong>: The system's design doesn't accurately
+                            represent the business domain.</li>
+                          <li><strong>With Expected Growth/Change</strong>: Design isn't flexible enough to adapt to
+                            expected changes in the business domain.</li>
+                          <li><strong>Importance for both</strong>: These issues can lead to a system that is both hard
+                            to maintain and not fit for its intended purpose.</li>
+                        </ul>
+                      </li>
+                      </ol>
+                      <h5>Code</h5>
+                      <ul class="category-list">
+                        <li>
+                          <p><strong>Coding Standards</strong>: Lack of or not following coding standards.</p>
+                          <ul>
+                            <li><strong>Importance</strong>: This results in inconsistent and hard-to-read code, making
+                              it difficult to maintain and extend.</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <p><strong>Coding Style</strong>: Poor naming conventions or improper use of namespacing.</p>
+                          <ul>
+                            <li><strong>Importance</strong>: These issues make the code less understandable and more
+                              error-prone, affecting maintainability.</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <p><strong>Look &amp; Feel (UX)</strong>: Inconsistent or outdated user interface.</p>
+                          <ul>
+                            <li><strong>Importance</strong>: Affects user experience and can lead to reduced user
+                              satisfaction and engagement.</li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <h5>Data</h5>
+                      <ul class="category-list">
+                        <li>
+                          <strong>Data Consistency (CQRS, Search, Microservices)</strong>: Issues with maintaining data
+                          integrity across different services or database systems.
+                          <ul>
+                            <li><strong>Importance</strong>: Inconsistent data can lead to incorrect analysis and
+                              decision-making, negatively affecting business operations.</li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <p>By acknowledging and addressing these types of technical debt, organizations can significantly
+                        improve the maintainability, scalability, and overall health of their software projects.</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-six" role="tabpanel" aria-labelledby="pills-six-tab">
+              <div class="tabcontent">
+                <div>
+                  <h4>Takeaways</h4>
+
+
+
+                </div>
+              </div>
+            </div>
+
+            <!-- END TAB CONTENT -->
+          </div>
+
+          <!-- END CONTAINER CONTENT -->
+        </div>
+
+      </div>
+    </div>
+</body>
+
+</html>
