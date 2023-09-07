@@ -1,0 +1,208 @@
+
+<style>
+  
+ul.card-list > li {
+  background-color: ghostwhite;
+  margin: 2em 1em;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 0;
+}
+ul.cardlist {
+  list-style: none;
+}
+
+ul.card-list li div {
+  background-color: gainsboro;
+  padding: 1em 3em 0.25em 3em;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+ul.card-list li ul {
+
+  margin: 1em  3em;
+}
+</style>
+
+
+<ul class="card-list">
+
+  <li>
+    <div>
+      <p><strong>Id</strong>: id</p>
+      <p><strong>Name</strong>:  Tool</p>
+      <p><strong>Description</strong>: Provides</p>
+      <p><strong>Rationale</strong>: Familiarity </p>
+    </div>
+
+    <ul>
+      <li><strong>Core Functionality</strong>: Search & Business Intelligence</li>
+      <li><strong>Impact to Agency</strong>: 1-Low impact</li>
+      <li><strong>Initial Production Date</strong>: 2099-12</li>
+      <li><strong>Lines of code</strong>: 10000</li>
+      <li><strong>Users</strong>: Intranet</li>
+      <li><strong>User Count</strong>: &lt; 1000</li>
+      <li><strong>Owner</strong>: </li>
+      <li><strong>Contact</strong>: </li>
+    </ul>
+  </li>
+
+  <li>
+    <div>
+      <p><strong>Id</strong>: </p>
+      <p><strong>Name</strong>: Skills Inventory</p>
+      <p><strong>Description</strong>: Inventory of  skills and competencies</p>
+      <p><strong>Rationale</strong>: Domain not complex, low impact, little to to integration points</p>
+    </div>
+
+    <ul>
+      <li><strong>Core Functionality</strong>: </li>
+      <li><strong>Impact to Agency</strong>: </li>
+      <li><strong>Initial Production Date</strong>: 2019-11-16</li>
+      <li><strong>Lines of code</strong>: </li>
+      <li><strong>Users</strong>: </li>
+      <li><strong>User Count</strong>: </li>
+      <li><strong>Owner</strong>: </li>
+      <li><strong>Contact</strong>: </li>
+    </ul>
+  </li>
+
+  <li>
+    <div>
+      <p><strong>Id</strong>: </p>
+      <p><strong>Name</strong>: IT Asset Management</p>
+      <p><strong>Description</strong>: Manages IT assets </p>
+      <p><strong>Rationale</strong>: No Integration points, limited domain</p>
+    </div>
+
+    <ul>
+      <li><strong>Core Functionality</strong>: Asset Management</li>
+      <li><strong>Impact to Agency</strong>: 1-Low impact</li>
+      <li><strong>Initial Production Date</strong>: 2007-10</li>
+      <li><strong>Lines of code</strong>: </li>
+      <li><strong>Users</strong>: Intranet</li>
+      <li><strong>User Count</strong>: &lt; 1000</li>
+      <li><strong>Owner</strong>: </li>
+      <li><strong>Contact</strong>: </li>
+    </ul>
+  </li>
+  <li>
+    <div>
+      <p><strong>Id</strong>: </p>
+      <p><strong>Name</strong>: Moon</p>
+      <p><strong>Description</strong>: </p>
+      <p><strong>Rationale</strong>: Medium Complexity and Possible dependencies, recent vintage</p>
+    </div>
+
+    <ul>
+      <li><strong>Core Functionality</strong>: Issue Tracker / Workflow</li>
+      <li><strong>Impact to Agency</strong>: 1-Low impact</li>
+      <li><strong>Initial Production Date</strong>: 2009-06</li>
+      <li><strong>Lines of code</strong>: 10000</li>
+      <li><strong>Users</strong>: Intranet</li>
+      <li><strong>User Count</strong>: &lt; 1000</li>
+      <li><strong>Owner</strong>: </li>
+      <li><strong>Contact</strong>: </li>
+    </ul>
+  </li>
+</ul>
+
+
+<div class="markdown prose w-full break-words dark:prose-invert dark">
+	<h2>Curating the Application Inventory</h2>
+	<p>Curating an application inventory begins with understanding important aspects of each application, aspects that reveal the nature, criticality, interconnectedness, and complexity of each application.</p>
+	<p>The following list is designed to elicit enough knowledge &amp; understanding to enable effective triage & prioritization for the purpose of candidate selection for the initial rounds of testing the TRiM Playbook.</p>
+    <hr />
+    <h3>1. <strong>Size &amp; Scope of Application</strong></h3>
+    <ul>
+        <li><strong>Number of Users, concurrent users</strong></li>
+        <li><strong>Lines of code</strong></li>
+        <li><strong>Load, peak/valley usage, transaction velocity</strong></li>
+        <li><strong>Size of development/support team</strong></li>
+        <li><strong>Maintenance/Modification frequency</strong></li>
+        <li><strong>Availability (SLA, downtimes, maintenance windows)</strong></li>
+    </ul>
+    <p>The size and scope provide a lens to understand the reach, importance, and overall demand of the application within the organization.</p>
+    <p>
+        Starting with a moderately-sized application might be wise. It shouldn't be too small (as that won't truly test the new process) or too large (as that brings
+        in a lot of risks if things don't go smoothly).
+    </p>
+    <p>The application size and scope will largely determine the success of the trial.</p>
+    <hr />
+    <h3>2. <strong>Business Criticality of Application</strong></h3>
+    <ul>
+        <li><strong>Impact on business</strong></li>
+        <li><strong>Criticality to users daily activity</strong></li>
+    </ul>
+    <p>Business-critical applications directly impact the core functions of the organization and its ability to serve its clients or stakeholders.</p>
+    <p>Ideally, the chosen applications for the initial test of TRiM should not be extremely business-critical, reducing risk in case of any unforeseen issues.</p>
+    <p>Mitigating disruption risks during the trial phase of TRiM is essential.</p>
+    <hr />
+    <h3>3. <strong>Basic Nature of the System</strong></h3>
+    <ul>
+        <li><strong>Application type</strong> (e.g., Workflow, Dashboard, Tracking/Scheduling, etc.)</li>
+        <li><strong>Architecture</strong> (Web, API, ETL/Batch)</li>
+        <li><strong>Technology Stack</strong></li>
+        <li><strong>Datastores</strong> (RDBMS, Document, Graph)</li>
+    </ul>
+    <p>Understanding the core functionality and underlying technologies of the system gives insights into its complexity and intricacies.</p>
+    <p>For the initial validation of TRiM, it's wise to pick applications of a nature that are well-understood and for which there is expertise within the team.</p>
+    <p>While the basic nature helps in selection, the focus here is more on the effectiveness of TRiM Plays rather than the specific type of system.</p>
+    <hr />
+    <h3>4. <strong>Operational Health &amp; Efficiency</strong></h3>
+    <ul>
+        <li><strong>Known performance bottlenecks</strong></li>
+        <li><strong>Known security vulnerabilities</strong></li>
+        <li><strong>Uptime/downtime statistics</strong></li>
+        <li><strong>Efficiency of processes</strong></li>
+    </ul>
+    <p>Operational health determines how efficiently the application serves its purpose and meets its objectives.</p>
+    <p>It might be strategic to select an application that already shows signs of inefficiencies or is known to have operational issues.</p>
+    <p>It presents an opportunity to showcase improvements through the new TRiM Playbook.</p>
+    <hr />
+    <h3>5. <strong>Adjacent Dependencies</strong></h3>
+    <ul>
+        <li><strong>Upstream/downstream services</strong></li>
+        <li><strong>Dataflows (in/out of system)</strong></li>
+    </ul>
+    <p>Dependencies impact the complexity of the retirement &amp; replacement process and dictate the ripple effect changes might have on other systems.</p>
+    <p>To limit variables and complications, selecting an application with fewer dependencies might be ideal for the first trial run of the TRiM Playbook.</p>
+    <p>Minimizing dependencies reduces potential complications during the initial run.</p>
+    <hr />
+    <h3>6. <strong>Financial Perspective</strong></h3>
+    <ul>
+        <li><strong>Current operational costs</strong></li>
+        <li><strong>Estimated replacement costs</strong></li>
+        <li><strong>ROI calculations</strong></li>
+    </ul>
+    <p>Every decision in an organization has a financial impact, and understanding these numbers is crucial for informed decisions.</p>
+    <p>Initial system to test the TRiM Playbook should ideally not be those with high replacement costs.</p>
+    <p>While cost is always a factor, the primary goal here is to validate the TRiM Playbook.</p>
+    <hr />
+    <h3>7. <strong>Lifecycle Perspective</strong></h3>
+    <ul>
+        <li><strong>Age of the application</strong></li>
+        <li><strong>Time since last major update</strong></li>
+        <li><strong>Known end-of-life dates for components/technologies</strong></li>
+    </ul>
+    <p>The lifecycle stage of an application can indicate its current relevance, the need for an upgrade or replacement, and potential challenges in the near future.</p>
+    <p>Picking an application that's nearing its end-of-life but is not extremely outdated may be a good test case.</p>
+    <p>The TRiM Playbook validation remains the primary objective.</p>
+    <hr />
+    <h3>8. <strong>Regulatory &amp; Compliance Perspective</strong></h3>
+    <ul>
+        <li><strong>Compliance requirements</strong></li>
+        <li><strong>Data handling and privacy regulations</strong></li>
+        <li><strong>Industry-specific regulations</strong></li>
+    </ul>
+    <p>Non-compliance can result in legal repercussions, fines, and reputational damage.</p>
+    <p>Given the trial nature, it might be best to stay away from systems where compliance and regulations are too complex or stringent.</p>
+    <p>While always crucial, for the sake of the trial, the emphasis might be on other factors.</p>
+    <hr />
+	
+	<h3>Conclusions</h3>
+    <p>For the first validation attempt of the TRiM Playbook, we should assume that course correction modifications to the Plays will be more significant than in future validation attempts. </p>
+	<p>Validation of the TRiM Playbook will be an iterative endeavor.  Lessons will be learned, refinements made, and the quality & usefulness of the Plays will be strengthened.  </p><p>For the first round, given inherent uncertainties and learning curve, it would be prudent to select an application that while representative of common systems, doesn't carry overwhelming complexity, criticality, or integration points.  This ensures that risks are minimized, and focuses on the mechanics & efficacy of the TRiM Playbook itself.</p><p> With the focus on the development of the TRiM Playbook, selection should center on the overall representiveness and expected timeliness of the feedback loop. Maintaining a tight feedback loop, through careful selection of systems of manageable scope will quicken the development of the TRiM Playbook Playlist.</p>
+</div>
+
