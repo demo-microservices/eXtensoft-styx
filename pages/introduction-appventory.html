@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <title>BrainStorm</title>
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="../css/site.css" />
+
+</head>
+
+<body>
+  <!-- h-100 takes the full height of the body-->
+  <div class="container-fluid h-100">
+    <!-- h-100 takes the full height
+				of the container-->
+    <div class="row h-100">
+      <div class="col-2" id="green">
+        <a href="../index.html">Home</a>
+        <hr />
+        <!-- Navigation links in sidebar-->
+        <a href="introduction.html">Introduction</a><br />
+        <br />
+        <a href="lifecycles.html">Lifecycles</a><br />
+        <br />
+        <a href="artifacts.html">Artifacts</a><br />
+        <br />
+        <a href="playbook.html" >Playbook</a><br />
+        <div class="hierarchical-nav" style="margin-left: 1em;">
+          <a href="playbook-play.html">The Play</a><br />
+          <a href="playbook-playlist.html">Playlist</a><br />
+        </div>
+        <br />
+        <a href="resources.html">Resources</a>
+        <br />
+
+      </div>
+      <div class="col-10" style="padding: 0;">
+        <!-- Top navbar -->
+        <nav class="navbar navbar-expand-lg
+								navbar-light bg-primary">
+          <a class="navbar-brand" href="../index.html">Home</a>
+          <!-- Hamburger button that toggles the navbar-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link
+								active" href="resources.html">
+                Resources
+              </a>
+              <a class="nav-item nav-link" href="software-development-lifecycle.html">SDLC</a>
+              <a class="nav-item nav-link" href="patterns-practices.html">Patterns & Practices</a>
+              <a class="nav-item nav-link" href="getting-started.html">Getting Started</a>
+            </div>
+          </div>
+        </nav>
+        <!-- Contains the main content of the webpage-->
+        <div class="container container-content">
+          <a href="javascript:history.back()" class="back-button">&larr;</a>
+
+
+          <div>
+
+
+            <div class="markdown prose w-full break-words dark:prose-invert dark">
+              <h2>Curating the Application Inventory</h2>
+              <p>Curating an application inventory begins with understanding important aspects of each application,
+                aspects that reveal the nature, criticality, interconnectedness, and complexity of each application.</p>
+              <p>The following list is designed to elicit enough knowledge &amp; understanding to enable effective
+                triage & prioritization for the purpose of candidate selection for the initial rounds of testing the
+                TRiM Playbook.</p>
+              <hr />
+              <h4>1. <strong>Size &amp; Scope of Application</strong></h4>
+              <ul>
+                <li><strong>Number of Users, concurrent users</strong></li>
+                <li><strong>Lines of code</strong></li>
+                <li><strong>Load, peak/valley usage, transaction velocity</strong></li>
+                <li><strong>Size of development/support team</strong></li>
+                <li><strong>Maintenance/Modification frequency</strong></li>
+                <li><strong>Availability (SLA, downtimes, maintenance windows)</strong></li>
+              </ul>
+              <p>The size and scope provide a lens to understand the reach, importance, and overall demand of the
+                application within the organization.</p>
+              <p>
+                Starting with a moderately-sized application might be wise. It shouldn't be too small (as that won't
+                truly test the new process) or too large (as that brings
+                in a lot of risks if things don't go smoothly).
+              </p>
+              <p>The application size and scope will largely determine the success of the trial.</p>
+              <hr />
+              <h4>2. <strong>Business Criticality of Application</strong></h4>
+              <ul>
+                <li><strong>Impact on business</strong></li>
+                <li><strong>Criticality to users daily activity</strong></li>
+              </ul>
+              <p>Business-critical applications directly impact the core functions of the organization and its ability
+                to serve its clients or stakeholders.</p>
+              <p>Ideally, the chosen applications for the initial test of TRiM should not be extremely
+                business-critical, reducing risk in case of any unforeseen issues.</p>
+              <p>Mitigating disruption risks during the trial phase of TRiM is essential.</p>
+              <hr />
+              <h4>3. <strong>Basic Nature of the System</strong></h4>
+              <ul>
+                <li><strong>Application type</strong> (e.g., Workflow, Dashboard, Tracking/Scheduling, etc.)</li>
+                <li><strong>Architecture</strong> (Web, API, ETL/Batch)</li>
+                <li><strong>Technology Stack</strong></li>
+                <li><strong>Datastores</strong> (RDBMS, Document, Graph)</li>
+              </ul>
+              <p>Understanding the core functionality and underlying technologies of the system gives insights into its
+                complexity and intricacies.</p>
+              <p>For the initial validation of TRiM, it's wise to pick applications of a nature that are well-understood
+                and for which there is expertise within the team.</p>
+              <p>While the basic nature helps in selection, the focus here is more on the effectiveness of TRiM Plays
+                rather than the specific type of system.</p>
+              <hr />
+              <h4>4. <strong>Operational Health &amp; Efficiency</strong></h4>
+              <ul>
+                <li><strong>Known performance bottlenecks</strong></li>
+                <li><strong>Known security vulnerabilities</strong></li>
+                <li><strong>Uptime/downtime statistics</strong></li>
+                <li><strong>Efficiency of processes</strong></li>
+              </ul>
+              <p>Operational health determines how efficiently the application serves its purpose and meets its
+                objectives.</p>
+              <p>It might be strategic to select an application that already shows signs of inefficiencies or is known
+                to have operational issues.</p>
+              <p>It presents an opportunity to showcase improvements through the new TRiM Playbook.</p>
+              <hr />
+              <h4>5. <strong>Adjacent Dependencies</strong></h4>
+              <ul>
+                <li><strong>Upstream/downstream services</strong></li>
+                <li><strong>Dataflows (in/out of system)</strong></li>
+              </ul>
+              <p>Dependencies impact the complexity of the retirement &amp; replacement process and dictate the ripple
+                effect changes might have on other systems.</p>
+              <p>To limit variables and complications, selecting an application with fewer dependencies might be ideal
+                for the first trial run of the TRiM Playbook.</p>
+              <p>Minimizing dependencies reduces potential complications during the initial run.</p>
+              <hr />
+              <h4>6. <strong>Financial Perspective</strong></h4>
+              <ul>
+                <li><strong>Current operational costs</strong></li>
+                <li><strong>Estimated replacement costs</strong></li>
+                <li><strong>ROI calculations</strong></li>
+              </ul>
+              <p>Every decision in an organization has a financial impact, and understanding these numbers is crucial
+                for informed decisions.</p>
+              <p>Initial system to test the TRiM Playbook should ideally not be those with high replacement costs.</p>
+              <p>While cost is always a factor, the primary goal here is to validate the TRiM Playbook.</p>
+              <hr />
+              <h4>7. <strong>Lifecycle Perspective</strong></h4>
+              <ul>
+                <li><strong>Age of the application</strong></li>
+                <li><strong>Time since last major update</strong></li>
+                <li><strong>Known end-of-life dates for components/technologies</strong></li>
+              </ul>
+              <p>The lifecycle stage of an application can indicate its current relevance, the need for an upgrade or
+                replacement, and potential challenges in the near future.</p>
+              <p>Picking an application that's nearing its end-of-life but is not extremely outdated may be a good test
+                case.</p>
+              <p>The TRiM Playbook validation remains the primary objective.</p>
+              <hr />
+              <h4>8. <strong>Regulatory &amp; Compliance Perspective</strong></h4>
+              <ul>
+                <li><strong>Compliance requirements</strong></li>
+                <li><strong>Data handling and privacy regulations</strong></li>
+                <li><strong>Industry-specific regulations</strong></li>
+              </ul>
+              <p>Non-compliance can result in legal repercussions, fines, and reputational damage.</p>
+              <p>Given the trial nature, it might be best to stay away from systems where compliance and regulations are
+                too complex or stringent.</p>
+              <p>While always crucial, for the sake of the trial, the emphasis might be on other factors.</p>
+              <hr />
+
+              <h3>Conclusions</h3>
+              <p>For the first validation attempt of the TRiM Playbook, we should assume that course correction
+                modifications to the Plays will be more significant than in future validation attempts. </p>
+              <p>Validation of the TRiM Playbook will be an iterative endeavor. Lessons will be learned, refinements
+                made, and the quality & usefulness of the Plays will be strengthened. </p>
+              <p>For the first round, given inherent uncertainties and learning curve, it would be prudent to select an
+                application that while representative of common systems, doesn't carry overwhelming complexity,
+                criticality, or integration points. This ensures that risks are minimized, and focuses on the mechanics
+                & efficacy of the TRiM Playbook itself.</p>
+              <p> With the focus on the development of the TRiM Playbook, selection should center on the overall
+                representiveness and expected timeliness of the feedback loop. Maintaining a tight feedback loop,
+                through careful selection of systems of manageable scope will quicken the development of the TRiM
+                Playbook Playlist.</p>
+            </div>
+
+            <hr />
+
+            <div class="card-header">
+              <h4>Considerations</h4>
+              <p>For the first validation attempt of the TRiM Playbook, we should assume that course correction
+                modifications to the
+                Plays will be more significant than in future validation attempts. </p>
+              <p>Lessons will be learned, refinements made, and the
+                quality & usefulness of the Plays will be strengthened. It would be prudent to select an application
+                that while representative of common systems, doesn't carry overwhelming complexity, criticality, or
+                integration
+                points. This ensures that risks are minimized, and focuses on the mechanics & efficacy of the TRiM
+                Playbook itself.
+              </p>
+              <p> Maintaining a tight feedback loop, through careful selection of
+                systems of manageable scope will quicken the development of the TRiM Playbook Playlist.</p>
+
+            </div>
+            <ol class="card-list">
+
+              <li>
+                <div>
+                  <p><strong>Id</strong>: E779DF09-C8E7-4937-A434-D549AB3F6060</p>
+                  <p><strong>Name</strong>: Trust Fund Draw Tool</p>
+                  <p><strong>Description</strong>: Provides Trust Fund details for the monthly draw in order to more
+                    accurately reflect the financial activities and position of the Social Security Administration (SSA)
+                    Trust
+                    Funds</p>
+                  <p><strong>Rationale</strong>: Familiarity with the SHE infrastructure, medium complexity and possible
+                    Dependencies</p>
+                </div>
+
+                <ul>
+                  <li><strong>Core Functionality</strong>: Search & Business Intelligence</li>
+                  <li><strong>Impact to Agency</strong>: 1-Low impact</li>
+                  <li><strong>Initial Production Date</strong>: 2019-12-02</li>
+                  <li><strong>Lines of code</strong>: 10000</li>
+                  <li><strong>Users</strong>: Intranet-SSA employees</li>
+                  <li><strong>User Count</strong>: &lt; 1000</li>
+                  <li><strong>Owner</strong>: DCBFM</li>
+                  <li><strong>Contact</strong>: Shrake, James</li>
+                </ul>
+              </li>
+
+              <li>
+                <div>
+                  <p><strong>Id</strong>: 229D8443-7787-4026-8A54-5E3C1DE84A29</p>
+                  <p><strong>Name</strong>: Agency Skills Inventory</p>
+                  <p><strong>Description</strong>: Allows SSA supervisors to take an inventory of their employeesÃ¢??
+                    current
+                    competencies and skills for job series within their own organization, to determine what training
+                    courses
+                    to offer in the upcoming year, what specific skills to look for when hiring new employees, and what
+                    kind
+                    of skilled labor needs to be contracted in the future to fulfill the expected workload for their
+                    employees. In addition, employees are now able to take inventory of their skills and competencies
+                  </p>
+                  <p><strong>Rationale</strong>: Domain not complex, low impact, little to to integration points</p>
+                </div>
+
+                <ul>
+                  <li><strong>Core Functionality</strong>: </li>
+                  <li><strong>Impact to Agency</strong>: </li>
+                  <li><strong>Initial Production Date</strong>: 2019-11-16</li>
+                  <li><strong>Lines of code</strong>: </li>
+                  <li><strong>Users</strong>: </li>
+                  <li><strong>User Count</strong>: </li>
+                  <li><strong>Owner</strong>: DCS/OEIS/DFAS</li>
+                  <li><strong>Contact</strong>: Castellow, Mike</li>
+                </ul>
+              </li>
+
+              <li>
+                <div>
+                  <p><strong>Id</strong>: 21EC9326-A687-4793-AFA0-21C8291F39D8</p>
+                  <p><strong>Name</strong>: IT Asset Management System</p>
+                  <p><strong>Description</strong>: Manages IT assets that OHO HQ employees use this application has been
+                    coded
+                    in ColdFusion using SQL Server backend</p>
+                  <p><strong>Rationale</strong>: No Integration points, limited domain</p>
+                </div>
+
+                <ul>
+                  <li><strong>Core Functionality</strong>: Asset Management</li>
+                  <li><strong>Impact to Agency</strong>: 1-Low impact</li>
+                  <li><strong>Initial Production Date</strong>: 2017-10-01</li>
+                  <li><strong>Lines of code</strong>: </li>
+                  <li><strong>Users</strong>: Intranet-SSA employees</li>
+                  <li><strong>User Count</strong>: &lt; 1000</li>
+                  <li><strong>Owner</strong>: DCHO/OESSI/DITI</li>
+                  <li><strong>Contact</strong>: Kim, Andrew S.|Torres, Chris</li>
+                </ul>
+              </li>
+              <li>
+                <div>
+                  <p><strong>Id</strong>: 9D6BC8E3-9A44-4F63-8AFD-C8D695A5EF52</p>
+                  <p><strong>Name</strong>: SSI TOB Automated Repository Site (STARS)</p>
+                  <p><strong>Description</strong>: The system tracks SSI exceptions that need to be worked manually by
+                    an
+                    analyst</p>
+                  <p><strong>Rationale</strong>: Medium Complexity and Possible dependencies, recent vintage</p>
+                </div>
+
+                <ul>
+                  <li><strong>Core Functionality</strong>: Issue Tracker / Workflow</li>
+                  <li><strong>Impact to Agency</strong>: 1-Low impact</li>
+                  <li><strong>Initial Production Date</strong>: 2021-06-26</li>
+                  <li><strong>Lines of code</strong>: 10000</li>
+                  <li><strong>Users</strong>: Intranet-SSA employees</li>
+                  <li><strong>User Count</strong>: &lt; 1000</li>
+                  <li><strong>Owner</strong>: DCBFM/OFPO</li>
+                  <li><strong>Contact</strong>: Shrake, James</li>
+                </ul>
+              </li>
+
+              <li>
+                <div>
+                  <p><strong>Id</strong>: 2EC72555-8D51-4BCE-8DF5-025AF63F1C08</p>
+                  <p><strong>Name</strong>: National Facilities Space Management System</p>
+                  <p><strong>Description</strong>: Provides managers the ability to submit Network, Equipment/Software
+                    and
+                    Telecommunication requests electronically, as well as reporting Telecom issues. Non-managers will be
+                    able
+                    to access the Telecommunications section and report their own</p>
+                  <p><strong>Rationale</strong>: Low Impact, low complexity, and poossilbe dependencies</p>
+                </div>
+                <ul>
+                  <li><strong>Core Functionality</strong>: </li>
+                  <li><strong>Impact to Agency</strong>: 1-Low impact</li>
+                  <li><strong>Initial Production Date</strong>: 2009-09-01</li>
+                  <li><strong>Lines of code</strong>: </li>
+                  <li><strong>Users</strong>: Intranet-SSA employees</li>
+                  <li><strong>User Count</strong>: &lt; 1000</li>
+                  <li><strong>Owner</strong>: DCHO/OESSI/DITI</li>
+                  <li><strong>Contact</strong>: Rodriguez, Antonio</li>
+                </ul>
+              </li>
+
+
+            </ol>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
