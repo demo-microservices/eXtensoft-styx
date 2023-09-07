@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <title>BrainStorm</title>
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="../css/site.css" />
+
+</head>
+
+<body>
+  <!-- h-100 takes the full height of the body-->
+  <div class="container-fluid h-100">
+    <!-- h-100 takes the full height
+				of the container-->
+    <div class="row h-100">
+      <div class="col-2" id="green">
+        <a href="../index.html">Home</a>
+        <hr />
+        <!-- Navigation links in sidebar-->
+        <a href="introduction.html">Introduction</a><br />
+        <br />
+        <a href="lifecycles.html" class="selected">Lifecycles</a><br />
+        <br />
+        <a href="artifacts.html">Artifacts</a><br />
+        <br />
+        <a href="playbook.html" >Playbook</a><br />
+        <div class="hierarchical-nav" style="margin-left: 1em;">
+          <a href="playbook-play.html">The Play</a><br />
+          <a href="playbook-playlist.html">Playlist</a><br />
+        </div>
+        <br />
+        <a href="resources.html">Resources</a>
+        <br />
+
+      </div>
+      <div class="col-10" style="padding: 0;">
+        <!-- Top navbar -->
+        <nav class="navbar navbar-expand-lg
+								navbar-light bg-primary">
+          <a class="navbar-brand" href="../index.html">Home</a>
+          <!-- Hamburger button that toggles the navbar-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link
+								active" href="resources.html">
+                Resources
+              </a>
+              <a class="nav-item nav-link" href="software-development-lifecycle.html">SDLC</a>
+              <a class="nav-item nav-link" href="patterns-practices.html">Patterns & Practices</a>
+              <a class="nav-item nav-link" href="getting-started.html">Getting Started</a>
+            </div>
+          </div>
+        </nav>
+        <!-- Contains the main content of the webpage-->
+        <div class="container container-artifact">
+          <a href="javascript:history.back()" class="back-button">&larr;</a>
+
+          <table class="lifecycle-tabular">
+            <tr>
+              <th>Lifecycle</th>
+              <th>First Stage</th>
+              <th>Second Stage</th>
+              <th>Third Stage</th>
+              <th>Fourth Stage</th>
+              <th>Fifth Stage</th>
+            </tr>
+            <tr>
+              <td>System</td>
+              <td>Planning</td>
+              <td>Development</td>
+              <td>Implementation</td>
+              <td>Operation</td>
+              <td>Retirement</td>
+            </tr>
+            <tr>
+              <td>Software Development (SDLC)</td>
+              <td>Requirements Gathering</td>
+              <td>Design</td>
+              <td>Development</td>
+              <td>Testing</td>
+              <td>Deployment</td>
+            </tr>
+            <tr>
+              <td>Project Management</td>
+              <td>Initiation</td>
+              <td>Planning</td>
+              <td>Execution</td>
+              <td>Monitoring and Control</td>
+              <td>Closure</td>
+            </tr>
+            <tr>
+              <td>Technology</td>
+              <td>Emerging</td>
+              <td>Mature</td>
+              <td>Legacy</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Technology Adoption</td>
+              <td>Ideation</td>
+              <td>Incubation</td>
+              <td>Pilot</td>
+              <td>Adoption</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>System Retirement & Replacement</td>
+              <td>Purpose & Discovery</td>
+              <td>Planning & Risk Mitigation</td>
+              <td>Construction & Migration</td>
+              <td>Deployment & Stabilization</td>
+              <td>Assessment</td>
+            </tr>
+
+          </table>
+
+          <hr />
+
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-system-tab" data-bs-toggle="pill" data-bs-target="#pills-system"
+                type="button" role="tab" aria-controls="pills-system" aria-selected="true">System</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-software-tab" data-bs-toggle="pill" data-bs-target="#pills-software"
+                type="button" role="tab" aria-controls="pills-software" aria-selected="false">Software</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-project-tab" data-bs-toggle="pill" data-bs-target="#pills-project"
+                type="button" role="tab" aria-controls="pills-project" aria-selected="false">Project</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-technology-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-technology" type="button" role="tab" aria-controls="pills-technology"
+                aria-selected="false">Technology</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-technology-adoption-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-technology-adoption" type="button" role="tab"
+                aria-controls="pills-technology-adoption" aria-selected="false">Technology Adoption</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-retire-replace-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-retire-replace" type="button" role="tab" aria-controls="pills-retire-replace"
+                aria-selected="false">System Retire & Replace</button>
+            </li>
+
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+
+            <div class="tab-pane fade show active" id="pills-system" role="tabpanel" aria-labelledby="pills-system-tab">
+              <div class="tabcontent">
+                <dt>System Lifecycle:</dt>
+                <dd>
+                  The system lifecycle comprises the following stages:
+                  <ul>
+                    <li><strong>Planning</strong>: Defining system goals, requirements, and overall project
+                      planning.
+                    </li>
+                    <li><strong>Development</strong>: Designing, building, and integrating system components.</li>
+                    <li><strong>Implementation</strong>: Deploying, configuring, and testing the system in the production
+                      environment.
+                    </li>
+                    <li><strong>Operation</strong>: Operating and maintaining the system, including monitoring, backups, and
+                      troubleshooting.</li>
+                    <li><strong>Retirement</strong>: Decommissioning or replacing the system at the end of
+                      its useful life.
+                    </li>
+                  </ul>
+                </dd>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-software" role="tabpanel" aria-labelledby="pills-software-tab">
+              <div class="tabcontent">
+                <dt>Software Development Lifecycle (SDLC):</dt>
+                <dd>
+                  The SDLC typically consists of the following stages:
+                  <ul>
+                    <li><strong>Requirements Gathering</strong>:
+                      Understanding and documenting stakeholder needs and project requirements.
+                    </li>
+                    <li><strong>Design</strong>: Creating the software architecture, system design, and user interface layout.</li>
+                    <li><strong>Development</strong>: Writing,
+                      testing, and debugging the actual code to implement the software.
+                    </li>
+                    <li><strong>Testing</strong>: Conducting various tests to ensure quality, functionality, and performance.</li>
+                    <li><strong>Deployment</strong>: Releasing the
+                      software for production use, including installation and configuration.
+                    </li>
+                    <li><strong>Maintenance</strong>: Providing ongoing support, bug fixes, updates, and enhancements throughout the
+                      software's lifespan.</li>
+                  </ul>
+                </dd>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-project" role="tabpanel" aria-labelledby="pills-project-tab">
+              <div class="tabcontent">
+                <dt>Project Management Lifecycle:</dt>
+                <dd>
+                  The project management lifecycle includes the following stages:
+                  <ul>
+                    <li><strong>Initiation</strong>: Defining project objectives, scope, and initial
+                      planning.
+                    </li>
+                    <li><strong>Planning</strong>: Developing a detailed project plan, resource allocation, and risk assessment.</li>
+                    <li><strong>Execution</strong>: Carrying out project activities and tasks according to the project
+                      plan.
+                    </li>
+                    <li><strong>Monitoring and Control</strong>: Tracking progress, managing risks, and making necessary adjustments.
+                    </li>
+                    <li><strong>Closure</strong>: Finalizing the project, documenting lessons learned, and migrating
+                      deliverables.
+                    </li>
+                  </ul>
+                </dd>
+                <hr />
+                <div>
+                  <p>
+                    The Project Management Lifecycle is a systematic approach that guides projects from initiation to
+                    closure, ensuring successful completion. By defining distinct phases like initiation, planning,
+                    executing, and closing, it offers a
+                    structured framework for project delivery. This enables teams to effectively manage their goals and
+                    mitigate risks by predicting and adapting to changes.
+                  </p>
+                  <p>
+                    The benefits of adopting the project management lifecycle are manifold. Firstly, it enhances
+                    communication among team members, leading to better collaboration and understanding of project
+                    objectives. Secondly, it allows for tracking
+                    progress across the organization, ensuring that everyone is aligned and on track. Thirdly, breaking
+                    the project into manageable parts facilitates monitoring, management, and adjustment as needed.
+                  </p>
+                  <p>
+                    The planning phase, a crucial component, organizes the work to be performed and identifies necessary
+                    resources and tools. As the project progresses through its phases, the project management lifecycle
+                    aids in identifying potential
+                    issues and enables proactive adjustments to ensure project success.
+                  </p>
+                  <p>
+                    In conclusion, the project management lifecycle proves to be invaluable for organizations, providing
+                    structure, enhancing communication, and offering adaptability. By implementing this approach,
+                    companies can effectively manage their
+                    projects, achieve their goals, and navigate the dynamic landscape of change and uncertainty.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-technology" role="tabpanel" aria-labelledby="pills-technology-tab">
+              <div class="tabcontent">
+
+                <dt>Technology Lifecycle:</dt>
+                <dd>
+                  The <strong>Technology Lifecycle</strong> consists of the following stages:
+                  <ul>
+                    <li><strong>Emerging</strong>: Newest technologies to hit the software development industry.
+                    </li>
+                    <li><strong>Mature</strong>: Proven technologies that have broad industry support.</li>
+                    <li><strong>Legacy</strong>: 'Long in the tooth' technologies that no longer meet standards.
+                    </li>
+                  </ul>
+                </dd>
+                <br />
+                <div class="table-wrap">
+                  <table class="wrapped confluenceTable" resolved="">
+                    <colgroup>
+                      <col>
+                      <col>
+                      <col>
+                      <col>
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th class="highlight-#b3d4ff confluenceTh" title="Background color : Light blue 100%"
+                          data-highlight-colour="#b3d4ff">Phase</th>
+                        <th class="highlight-#b3d4ff confluenceTh" title="Background color : Light blue 100%"
+                          data-highlight-colour="#b3d4ff">Status</th>
+                        <th class="highlight-#b3d4ff confluenceTh" title="Background color : Light blue 100%"
+                          data-highlight-colour="#b3d4ff">Adoption</th>
+                        <th class="highlight-#b3d4ff confluenceTh" title="Background color : Light blue 100%"
+                          data-highlight-colour="#b3d4ff">Example</th>
+                      </tr>
+                      <tr>
+                        <td class="highlight-#deebff confluenceTd" title="Background color : Light blue 35%" rowspan="2"
+                          data-highlight-colour="#deebff">Emerging</td>
+                        <td class="highlight-#deebff confluenceTd" title="Background color : Light blue 35%"
+                          data-highlight-colour="#deebff">Incubation or Proof-of-Concept</td>
+                        <td class="highlight-#deebff confluenceTd" title="Background color : Light blue 35%"
+                          data-highlight-colour="#deebff">Not Operational</td>
+                        <td class="highlight-#deebff confluenceTd" title="Background color : Light blue 35%"
+                          data-highlight-colour="#deebff">MongoDB Atlas</td>
+                      </tr>
+                      <tr>
+                        <td class="highlight-#deebff confluenceTd" title="Background color : Light blue 35%"
+                          data-highlight-colour="#deebff">Trailblazer or Pilot</td>
+                        <td class="highlight-#deebff confluenceTd" title="Background color : Light blue 35%"
+                          data-highlight-colour="#deebff">First application(s) to operationalize</td>
+                        <td class="highlight-#deebff confluenceTd" title="Background color : Light blue 35%"
+                          data-highlight-colour="#deebff">Amazon-RDS</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="2" class="confluenceTd">Mature</td>
+                        <td class="confluenceTd">Target</td>
+                        <td class="confluenceTd">General Use</td>
+                        <td class="confluenceTd">PostgreSQL</td>
+                      </tr>
+                      <tr>
+                        <td class="confluenceTd">Contained</td>
+                        <td class="confluenceTd">Use by Exception</td>
+                        <td class="confluenceTd">Big Data Platform (BDP)</td>
+                      </tr>
+                      <tr>
+                        <td class="highlight-#deebff confluenceTd" title="Background color : Light blue 35%" rowspan="2"
+                          data-highlight-colour="#deebff">Legacy<br title=""><br title=""></td>
+                        <td class="highlight-#deebff confluenceTd" title="Background color : Light blue 35%"
+                          data-highlight-colour="#deebff">Deprecated</td>
+                        <td class="highlight-#deebff confluenceTd" title="Background color : Light blue 35%"
+                          data-highlight-colour="#deebff">Decreasing usage, continued op support, until all dependencies
+                          are retired</td>
+                        <td class="highlight-#deebff confluenceTd" title="Background color : Light blue 35%"
+                          data-highlight-colour="#deebff">Oracle</td>
+                      </tr>
+                      <tr>
+                        <td class="highlight-#deebff confluenceTd" title="Background color : Light blue 35%"
+                          data-highlight-colour="#deebff">Retired</td>
+                        <td class="highlight-#deebff confluenceTd" title="Background color : Light blue 35%"
+                          data-highlight-colour="#deebff">No longer operational / not used by any legacy applications
+                        </td>
+                        <td class="highlight-#deebff confluenceTd" title="Background color : Light blue 35%"
+                          data-highlight-colour="#deebff">Some Obsolete Tech</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <hr />
+
+                  <p>The table above shows an example of the three stages and five steps of the Technology Lifecycle
+                    as respects database technology.  The image below illustrates the lifecycle.
+                  </p>
+
+              </div>
+            </div>
+
+
+            <div class="tab-pane fade" id="pills-technology-adoption" role="tabpanel"
+              aria-labelledby="pills-technology-adoption-tab">
+              <div class="tabcontent">
+
+                <dt>Technology Adoption:</dt>
+                <dd>
+                  The <strong>Technology Adoption Model</strong> consists of the following stages:
+                  <ul>
+                    <li><strong>Ideation</strong>:
+                      An exercise to test if a specific idea or assumption meets a stated need.
+                    </li>
+                    <li><strong>Incubation</strong>: An effort to determine the viability of critical aspects of a specific tech
+                      solution.</li>
+                    <li><strong>Pilot</strong>: An effort to determine if most/all of the solution capabilities can be operational within
+                      our technical and organizational environments, and if it meets the needs of target users.
+                    </li>
+                    <li><strong>Adoption</strong>: An effort to scale and fully implement the solution.
+                    </li>
+                  </ul>
+                </dd>
+                <hr />
+                <p>The Technology Adoption Model provides guidance to development using new technologies.</p>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-retire-replace" role="tabpanel"
+              aria-labelledby="pills-retire-replace-tab">
+              <div class="tabcontent">
+ 
+                  <p>The System Retire & Replace lifecycle includes the following stages:</p>
+                  <ul>
+                    <li><strong>Purpose & Discovery</strong>: Assembling adequate understanding of the legacy system and it's replacement.
+
+                    </li>
+                    <li>
+                      <strong>Planning & Risk Mitigation</strong>: Planning and synchronization of various development, validation, and communication
+                      tasks necessary for migration execution.
+                    </li>
+                    <li>
+                      <strong>Construction & Migration</strong>: Construction of the replacement system, testing the validation strategies & monitoring
+                      methods, Migration of data & Users
+                    </li>
+                    <li>
+                      <strong>Deployment & Stabilization</strong>: Active monitoring of replacement performance, peer application integration
+                      performance, security & logging
+                      & health monitoring implementations, perform corrective deployments as necessary until stabile
+                    </li>
+                    <li>
+                      <strong>Assessment</strong>: Perform overall assessment of the system migration.
+                    </li>
+                  </ul>
+            
+              </div>
+              <hr />
+              <div>
+                <p>The intersection of the Product Management Lifecycle and the Software Development Lifecycle (SDLC)
+                  creates a cohesive and efficient process for replacing a legacy software system with newer technology.
+                </p>
+                <p>
+                  In the initiation and planning phases of the Product Management Lifecycle, the need for the
+                  replacement project is identified and assessed, and a project team is formed. Simultaneously, the SDLC
+                  commences with the design phase,
+                  where architecture and technical specifications are outlined. The requirements gathering phase aligns
+                  the Product Management Lifecycle's detailed functional and non-functional requirements with the SDLC's
+                  design specifications. often
+                  overlooked is the actual migration to the new solution. A carefully considered migration plan should
+                  include quality checks
+                  on any data migrations & user migrations, as well as a communications strategy to inform interested
+                  parties of important events.
+                </p>
+                <p>
+                  During the development and testing phases, the SDLC focuses on building and ensuring the quality of
+                  the new software system, while the Product Management Lifecycle oversees execution and monitoring to
+                  track progress and address any
+                  issues. Deployment marks the joint efforts of both lifecycles, with IT coordination and user training
+                  managed by the SDLC, while the Product Management Lifecycle ensures objectives are met.
+                </p>
+                <p>
+                  Finally, in the closing phase, the Product Management Lifecycle evaluates the success of the
+                  replacement project, gathering feedback for future improvements. The intersection of these lifecycles
+                  ensures a seamless process, with the
+                  Product Management Lifecycle driving strategic decision-making and stakeholder engagement, while the
+                  SDLC manages technical development and implementation. This integrated approach guarantees a
+                  successful replacement of the legacy
+                  software system with the newer technology, meeting business goals, user needs, and project objectives
+                  effectively.
+                </p>
+              </div>
+              <hr />
+
+              <p>
+                When designing the replacement system, newer technologies are often leveraged. The
+                <a href="https://confluence.aci.is.cl.ssa.gov/display/TAP/Getting+Started">Technology Adoption Model
+                  (TAM)</a> may
+                be followed when proving out these technologies during the SDLC for the replacement solution.
+              </p>
+
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
