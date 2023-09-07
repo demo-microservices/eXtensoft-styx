@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <title>BrainStorm</title>
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="../../css/site.css" />
+
+</head>
+
+<body>
+  <!-- h-100 takes the full height of the body-->
+  <div class="container-fluid h-100">
+    <!-- h-100 takes the full height
+				of the container-->
+    <div class="row h-100">
+      <div class="col-2" id="green">
+        <a href="../../index.html">Home</a>
+        <hr />
+        <!-- Navigation links in sidebar-->
+        <a href="../introduction.html">Introduction</a><br />
+        <br />
+        <a href="../lifecycles.html">Lifecycles</a><br />
+        <br />
+        <a href="../artifacts.html">Artifacts</a><br />
+        <br />
+        <a href="../playbook.html" >Playbook</a><br />
+        <div class="hierarchical-nav" style="margin-left: 1em;">
+          <a href="../playbook-play.html">The Play</a><br />
+          <a href="../playbook-playlist.html">Playlist</a><br />
+        </div>
+        <br />
+        <a href="../resources.html">Resources</a>
+        <br />
+
+      </div>
+      <div class="col-10" style="padding: 0;">
+        <!-- Top navbar -->
+        <nav class="navbar navbar-expand-lg
+								navbar-light bg-primary">
+          <a class="navbar-brand" href="../../index.html">Home</a>
+          <!-- Hamburger button that toggles the navbar-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link
+								active" href="../resources.html">
+                Resources
+              </a>
+              <a class="nav-item nav-link" href="../software-development-lifecycle.html">SDLC</a>
+              <a class="nav-item nav-link" href="../patterns-practices.html">Patterns & Practices</a>
+              <a class="nav-item nav-link" href="../getting-started.html">Getting Started</a>
+            </div>
+          </div>
+        </nav>
+        <!-- Contains the main content of the webpage-->
+        <div class="container container-content">
+          <a href="javascript:history.back()" class="back-button">&larr;</a>
+
+          <div class="container container-artifact">
+
+            <h4>Logging for Visibility and Forensics Play</h4>
+            <p>
+              <strong>Name &amp; Purpose:</strong><br />
+              <strong>Logging for Visibility and Forensics Play</strong> - To ensure that application logging is
+              implemented in a manner that facilitates both real-time visibility into system operations and the forensic
+              analysis of past events.
+            </p>
+            <p><strong>Checklist:</strong></p>
+            <ol>
+              <li>Identify the logging needs and standards for different components of the application.</li>
+              <li>Determine the level of granularity for logs (Debug, Info, Warning, Error).</li>
+              <li>Choose the logging tools and storage solutions that align with project requirements.</li>
+              <li>Configure log rotation and archival policies.</li>
+              <li>Implement semantic logging practices for better searchability and analytics.</li>
+              <li>Verify that sensitive information is not being logged inadvertently.</li>
+              <li>Validate the effectiveness of logging through periodic reviews and simulated incidents.</li>
+            </ol>
+            <p><strong>Key Questions:</strong></p>
+            <ol>
+              <li>What are the primary objectives for application logging in this project?</li>
+              <li>How are the logs secured to ensure they don’t become a vulnerability?</li>
+              <li>What is the plan for log analysis and alerting?</li>
+              <li>How does logging integrate with other Plays in the Cross-Cutting Concerns Playbook?</li>
+              <li>Are there regulatory compliance requirements affecting logging, and if so, how are these addressed?
+              </li>
+              <li>How is log storage managed to ensure availability and scalability?</li>
+              <li>What strategies are in place for real-time monitoring and historical analysis?</li>
+            </ol>
+            <p>
+              The <strong>Logging for Visibility and Forensics Play</strong> is a critical part of the
+              <strong>Cross-Cutting Concerns Playbook</strong> as it helps teams establish a foundation for
+              transparency, troubleshooting, and compliance.
+              It's a comprehensive guide that covers best practices for semantic logging that facilitates both real-time
+              system monitoring and forensic investigations. By adhering to the steps and insights of this Play,
+              stakeholders can ensure
+              that their logging strategy aligns with broader project goals and compliance requirements.
+            </p>
+            <hr />
+
+<!--
+  
+            <div class="markdown prose w-full break-words dark:prose-invert light">
+              <h3>Logging Play</h3>
+              <h4>Name &amp; Purpose:</h4>
+              <ul>
+                <li><strong>Name</strong>: Logging Play</li>
+                <li><strong>Purpose</strong>: To implement and maintain a comprehensive logging strategy that aids in
+                  monitoring, debugging, forensics, and ensures semantic and structured logging.</li>
+              </ul>
+              <h4>Checklist:</h4>
+              <ol>
+                <li>Identify the logging needs for different components of the system.</li>
+                <li>Define logging levels (Info, Debug, Warn, Error, etc.).</li>
+                <li>Choose appropriate logging frameworks and tools.</li>
+                <li>Implement semantic logging for easier search and analysis.</li>
+                <li>Ensure logs are stored securely and rotated as needed.</li>
+                <li>Implement real-time logging dashboards for monitoring.</li>
+                <li>Make sure logs comply with any legal or compliance requirements.</li>
+                <li>Create documentation and training for reading and interpreting logs.</li>
+              </ol>
+              <h4>Key Questions:</h4>
+              <ul>
+                <li>What are the specific requirements for logging, both functional and non-functional?</li>
+                <li>How will logs be secured and who will have access?</li>
+                <li>What is the retention policy for logs?</li>
+                <li>Are logs readily available and easy to interpret for developers and operators?</li>
+                <li>Do the logging practices align with compliance and governance guidelines?</li>
+              </ul>
+              <h4>Utility:</h4>
+              <ul>
+                <li><strong>Focus</strong>: Provides a clear strategy for logging, aiding in everything from debugging
+                  to compliance.</li>
+                <li><strong>Flexibility</strong>: The Logging Play serves as both a technical and business resource,
+                  making it easier to adapt as needs change.</li>
+                <li><strong>Cohesion</strong>: Keeps all team members on the same page about how logging is done, why
+                  it’s important, and how to use logs effectively.</li>
+              </ul>
+              <h4>Associated Perspective:</h4>
+              <ul>
+                <li>[Technical Perspective]</li>
+              </ul>
+            </div>
+            
+-->
+
+          </div>
+        </div>
+      </div>
+</body>
+
+</html>

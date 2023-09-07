@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <title>BrainStorm</title>
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="../../css/site.css" />
+
+</head>
+
+<body>
+  <!-- h-100 takes the full height of the body-->
+  <div class="container-fluid h-100">
+    <!-- h-100 takes the full height
+				of the container-->
+    <div class="row h-100">
+      <div class="col-2" id="green">
+        <a href="../../index.html">Home</a>
+        <hr />
+        <!-- Navigation links in sidebar-->
+        <a href="../introduction.html">Introduction</a><br />
+        <br />
+        <a href="../lifecycles.html">Lifecycles</a><br />
+        <br />
+        <a href="../artifacts.html">Artifacts</a><br />
+        <br />
+        <a href="../playbook.html" >Playbook</a><br />
+        <div class="hierarchical-nav" style="margin-left: 1em;">
+          <a href="../playbook-play.html">The Play</a><br />
+          <a href="../playbook-playlist.html">Playlist</a><br />
+        </div>
+        <br />
+        <a href="../resources.html">Resources</a>
+        <br />
+
+      </div>
+      <div class="col-10" style="padding: 0;">
+        <!-- Top navbar -->
+        <nav class="navbar navbar-expand-lg
+								navbar-light bg-primary">
+          <a class="navbar-brand" href="../../index.html">Home</a>
+          <!-- Hamburger button that toggles the navbar-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link
+								active" href="../resources.html">
+                Resources
+              </a>
+              <a class="nav-item nav-link" href="../software-development-lifecycle.html">SDLC</a>
+              <a class="nav-item nav-link" href="../patterns-practices.html">Patterns & Practices</a>
+              <a class="nav-item nav-link" href="../getting-started.html">Getting Started</a>
+            </div>
+          </div>
+        </nav>
+        <!-- Contains the main content of the webpage-->
+        <div class="container container-content">
+          <a href="javascript:history.back()" class="back-button">&larr;</a>
+
+          <div class="container container-artifact">
+
+            <h4>Stakeholder Communication Play</h4>
+            <p>
+                <strong>Name &amp; Purpose:</strong><br />
+                <strong>Stakeholder Communication Play</strong> - To establish effective communication channels among all stakeholders.
+            </p>
+            <p><strong>Checklist:</strong></p>
+            <ol>
+                <li>Identify all the stakeholders involved in the project.</li>
+                <li>Establish primary and secondary communication channels.</li>
+                <li>Create a communication plan and calendar.</li>
+                <li>Determine the frequency of status updates, meetings, and other touchpoints.</li>
+                <li>Prepare templates for common communication scenarios (updates, alerts, announcements).</li>
+            </ol>
+            <p><strong>Key Questions:</strong></p>
+            <ol>
+                <li>Who are the key stakeholders for this project?</li>
+                <li>What are the preferred communication methods for each stakeholder?</li>
+                <li>How often will updates be communicated?</li>
+                <li>What critical events trigger immediate communication?</li>
+                <li>How is sensitive information handled in communications?</li>
+            </ol>
+            <hr />
+            <h4>Technical Debt Play</h4>
+            <p>
+                <strong>Name &amp; Purpose:</strong><br />
+                <strong>Technical Debt Play</strong> - To manage and minimize the accumulation of technical debt over the lifecycle of a project.
+            </p>
+            <p><strong>Checklist:</strong></p>
+            <ol>
+                <li>Identify existing areas of technical debt.</li>
+                <li>Prioritize technical debt items.</li>
+                <li>Establish a schedule for debt repayment.</li>
+                <li>Track new debt items as they are introduced.</li>
+                <li>Update stakeholders on the status of technical debt management.</li>
+            </ol>
+            <p><strong>Key Questions:</strong></p>
+            <ol>
+                <li>What is the current state of technical debt in the project?</li>
+                <li>How are technical debt items prioritized?</li>
+                <li>What is the repayment plan?</li>
+                <li>How is new technical debt prevented or minimized?</li>
+                <li>How are stakeholders kept informed of technical debt status?</li>
+            </ol>
+        
+
+          </div>
+        </div>
+      </div>
+</body>
+
+</html>

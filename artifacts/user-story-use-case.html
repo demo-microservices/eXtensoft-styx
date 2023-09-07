@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <title>BrainStorm</title>
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="../../css/site.css" />
+
+</head>
+
+<body>
+  <!-- h-100 takes the full height of the body-->
+  <div class="container-fluid h-100">
+    <!-- h-100 takes the full height
+				of the container-->
+    <div class="row h-100">
+			<div class="col-2" id="green">
+        <a href="../../index.html">Home</a>
+        <hr />
+        <!-- Navigation links in sidebar-->
+        <a href="../introduction.html">Introduction</a><br />
+        <br />
+        <a href="../lifecycles.html">Lifecycles</a><br />
+        <br />
+        <a href="../artifacts.html">Artifacts</a><br />
+        <br />
+        <a href="../playbook.html" >Playbook</a><br />
+        <div class="hierarchical-nav" style="margin-left: 1em;">
+          <a href="../playbook-play.html">The Play</a><br />
+          <a href="../playbook-playlist.html">Playlist</a><br />
+        </div>
+        <br />
+        <a href="../resources.html">Resources</a>
+        <br />
+
+      </div>
+      <div class="col-10" style="padding: 0;">
+        <!-- Top navbar -->
+        <nav class="navbar navbar-expand-lg
+        navbar-light bg-primary">
+          <a class="navbar-brand" href="../../index.html">Home</a>
+          <!-- Hamburger button that toggles the navbar-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link
+        active" href="../resources.html">
+                Resources
+              </a>
+              <a class="nav-item nav-link" href="../software-development-lifecycle.html">SDLC</a>
+              <a class="nav-item nav-link" href="../patterns-practices.html">Patterns & Practices</a>
+              <a class="nav-item nav-link" href="../getting-started.html">Getting Started</a>
+            </div>
+          </div>
+        </nav>
+        <!-- Contains the main content of the webpage-->
+        <div class="container container-artifact">
+          <a href="javascript:history.back()" class="back-button">&larr;</a>
+          <div>
+            <p>
+              The <strong>User Story</strong> and <strong>Use Case</strong> are both widely used techniques in software development to capture requirements
+              and describe system behavior. However, they differ in their structure, focus, and level of detail. Here's
+              a
+              comparison and contrast of User Stories and Use Cases:
+            </p>
+            <p>
+              <strong>User Story</strong>: A User Story is a brief, high-level description of a system feature or functionality from the
+              user's perspective. It is typically written in a simple sentence format, following the template: "As a
+              &lt;type of user&gt;, I want &lt;goal&gt; so that &lt;reason&gt;". User Stories are commonly associated with Agile
+              methodologies, such as Scrum, and are often written on index cards or in specialized software tools like
+              Jira. Key
+              characteristics of User Stories include:
+            </p>
+            <ul>
+              <li>
+                <p><strong>User-Centric</strong>: User Stories focus on the user's needs, goals, and desired outcomes. They emphasize the
+                  value delivered to the user and the business.</p>
+              </li>
+              <li>
+                <p><strong>Concise and Informal</strong>: User Stories are typically short and written in a natural language style, using
+                  everyday language that is easy to understand.</p>
+              </li>
+              <li>
+                <p><strong>Minimal Detail</strong>: User Stories capture the essence of a requirement without going into extensive
+                  detail. They serve as placeholders for further conversations and collaboration.</p>
+              </li>
+              <li>
+                <p>
+                  <strong>Card, Conversation, Confirmation</strong>: User Stories follow the "Card, Conversation, Confirmation" approach,
+                  where the story card captures the summary, conversations elaborate on the details, and confirmation
+                  criteria
+                  define acceptance criteria for the story to be considered complete.
+                </p>
+              </li>
+            </ul>
+            <p>
+              <strong>Use Case</strong>: A Use Case is a more detailed description of a specific interaction or scenario between the
+              system and its actors (users, systems, or external entities). It outlines the steps or sequences of events
+              that occur
+              to achieve a specific goal. Use Cases provide a structured way to capture requirements and depict system
+              behavior. Key characteristics of Use Cases include:
+            </p>
+            <ul>
+              <li>
+                <p><strong>System-Centric</strong>: Use Cases focus on system behavior and describe how actors interact with the system
+                  to accomplish a goal or task.</p>
+              </li>
+              <li>
+                <p>
+                  <strong>Structured Format</strong>: Use Cases follow a structured format, including a title, description, actors,
+                  preconditions, main flow, alternate flows, and postconditions. They may also include diagrams like Use
+                  Case
+                  diagrams or Activity diagrams.
+                </p>
+              </li>
+              <li>
+                <p><strong>More Detailed</strong>: Use Cases provide more detailed and explicit information about system interactions,
+                  including user actions, system responses, and potential alternative paths.</p>
+              </li>
+              <li>
+                <p><strong>Boundary Conditions</strong>: Use Cases often describe preconditions and postconditions, defining the state of
+                  the system and actors before and after the use case execution.</p>
+              </li>
+            </ul>
+            <p>Comparison:</p>
+            <ul>
+              <li>User Stories and Use Cases both capture requirements from the user's perspective, but User Stories are
+                more concise and informal, while Use Cases provide a structured and detailed representation.</li>
+              <li>User Stories are commonly used in Agile methodologies, while Use Cases have broader applicability and
+                can be used in different software development approaches.</li>
+              <li>User Stories focus on the value delivered to the user and are centered around goals, while Use Cases
+                focus on system behavior and the interactions between actors and the system.</li>
+              <li>User Stories are often used for prioritization and backlog management, while Use Cases are useful for
+                system modeling, design, and test case generation.</li>
+            </ul>
+            <p>
+              In practice, User Stories and Use Cases can complement each other. User Stories provide a high-level view
+              of user needs, while Use Cases provide a more detailed understanding of system behavior and can be used
+              for deeper
+              analysis and design.
+            </p>
+          </div>
+
+
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

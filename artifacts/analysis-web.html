@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <title>BrainStorm</title>
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="../../css/site.css" />
+
+</head>
+
+<body>
+  <!-- h-100 takes the full height of the body-->
+  <div class="container-fluid h-100">
+    <!-- h-100 takes the full height
+				of the container-->
+    <div class="row h-100">
+      <div class="col-2" id="green">
+        <a href="../../index.html">Home</a>
+        <hr />
+        <!-- Navigation links in sidebar-->
+        <a href="../introduction.html">Introduction</a><br />
+        <br />
+        <a href="../lifecycles.html">Lifecycles</a><br />
+        <br />
+        <a href="../artifacts.html">Artifacts</a><br />
+        <br />
+        <a href="../playbook.html" >Playbook</a><br />
+        <div class="hierarchical-nav" style="margin-left: 1em;">
+          <a href="../playbook-play.html">The Play</a><br />
+          <a href="../playbook-playlist.html">Playlist</a><br />
+        </div>
+        <br />
+        <a href="../resources.html">Resources</a>
+        <br />
+
+      </div>
+      <div class="col-10" style="padding: 0;">
+        <!-- Top navbar -->
+        <nav class="navbar navbar-expand-lg
+        navbar-light bg-primary">
+          <a class="navbar-brand" href="../../index.html">Home</a>
+          <!-- Hamburger button that toggles the navbar-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link
+        active" href="../resources.html">
+                Resources
+              </a>
+              <a class="nav-item nav-link" href="../software-development-lifecycle.html">SDLC</a>
+              <a class="nav-item nav-link" href="../patterns-practices.html">Patterns & Practices</a>
+              <a class="nav-item nav-link" href="../getting-started.html">Getting Started</a>
+            </div>
+          </div>
+        </nav>
+        <!-- Contains the main content of the webpage-->
+        <div class="container container-artifact">
+          <a href="javascript:history.back()" class="back-button">&larr;</a>
+
+          <div class="markdown prose w-full break-words dark:prose-invert light">
+            <strong>Website Analysis & Documentation</strong>
+            <hr />
+            <p>
+              The process of upgrading or replacing an existing Wep application demands careful planning, meticulous
+              execution, and seamless transition to ensure the continued
+              success of your digital offering. It is imperative that we recognize the pivotal role that thorough
+              documentation plays in this transformative
+              endeavor.
+            </p>
+            <p>
+              Documentation serves as the cornerstone upon which a replacement web application will be constructed. It
+              provides a
+              bridge between the existing application's functionality and the future iteration's enhancements, enabling
+              us to not only
+              replicate but also refine the user experience. In the following sections, we will delve into the myriad
+              reasons why comprehensive documentation is a strategic necessity, aiding us in delivering a replacement
+              app that seamlessly
+              upholds user expectations, functionality, and security.
+            </p>
+            <p>
+              Documentation is a blueprint that empowers the development team to reconstruct, elevate, and modernize the
+              app while minimizing risks and disruptions. By meticulously
+              recording critical aspects such as the application's structure, user interactions, API endpoints, security
+              measures, and design guidelines, we ensure a synchronized transition that mitigates pitfalls and
+              surprises.
+            </p>
+            <p>
+              It safeguards institutional knowledge and expertise, encapsulates insights acquired over time, providing a
+              valuable resource for the replacement app's development team. As we navigate the complexities
+              of evolving technology and changing user needs, this documentation equips us to make informed decisions,
+              fostering continuity and innovation.
+            </p>
+            <p>
+              In the subsequent sections, we will explore various facets of documentation, illustrating how it
+              contributes to the strategic roadmap that will guide us towards a successful transition.
+              Documentation effort in shaping our replacement Web into a beacon of innovation and user-centric design.
+            </p>
+            <hr />
+
+          </div>
+            <div class="card card-body">
+              <ul class="category-list">
+                <li>
+                  <div class="markdown prose w-full break-words dark:prose-invert light">
+                    <p>
+                      <a href="analysis-web-sitemap.html"><strong>Sitemap</strong></a>: A representation of the web application's structure, illustrating the
+                      hierarchy of pages and sections.
+                    </p>
+                    <p>The sitemap offers a visual roadmap that aids developers in comprehending the
+                      app's layout and navigation, enabling them to replicate and enhance this structure in the replacement
+                      app efficiently.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <p>
+                    <a href="analysis-user-story-use-case.html"><strong>User Story / Use Case Library</strong></a>: A compilation of user-focused scenarios or detailed
+                    cases describing interactions with the application.
+                  </p>
+                  <p>User stories provide a user-centered view of the
+                    application's features, ensuring the replacement app maintains essential functionalities that align
+                    with user needs and expectations.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="analysis-api-endpoints.html"><strong>API Call Endpoint Listing</strong></a>: An inventory of downstream or hosted API endpoints, outlining their
+                    inputs, outputs, authentication requirements, and permissions.
+                  </p>
+                  <p>This listing acts as a guide for developers,
+                    allowing them to integrate existing functionalities seamlessly into the replacement app's APIs,
+                    ensuring consistency and reliability.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="analysis-web-landing-pages.html"><strong>Major Landing Pages</strong></a>: The primary entry points that users encounter when accessing the app.
+                  </p>
+                  <p>Identifying major landing pages helps maintain a smooth transition for users by ensuring that
+                    familiar
+                    access points remain intact in the replacement app.
+                  </p>
+                </li>
+                <li>
+                  <p><a href="analysis-web-landing-pages-mapping.html"><strong>Landing Page Mapping to Use Cases</strong></a>: Connecting landing pages to specific user stories or use cases they support.
+                  </p>
+                  <p>This mapping clarifies the relationships between app sections and user
+                    functionalities, facilitating a structured approach to replicating these interactions in the new app.
+                  </p>
+                </li>
+                <li>
+                  <p><strong>Security:</strong></p>
+                  <ul class="category-list">
+                    <li><a href="analysis-web-authentication.html"><strong>Authentication</strong></a>: The process through which users verify their identities to access the app. </p>
+                      <p>Understanding authentication methods ensures that user accounts remain secure during the
+                        transition to the replacement app.
+                    </li>
+                    <li>
+                      <a href="analysis-web-authorization.html"><strong>Authorization</strong></a>: A mechanism controlling user permissions and actions based on their roles. </p>
+                      <p>Documenting authorization rules maintains data security and user access controls, providing a
+                        secure experience in the replacement app.
+                    </li>
+                    <li>
+                      <strong>Session Management:</strong> How user sessions are established, maintained, and terminated.
+                      </p>
+                      <p>Proper session management guarantees a seamless and secure user experience during the migration
+                        to the new
+                        app.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <p>
+                    <strong>Error Handling:</strong> The app's approach to managing errors, exceptions, and unexpected
+                    situations.
+                  </p>
+                  <p>Documenting error handling strategies helps developers maintain user-friendly error messages,
+                    preserving the app's reliability and user satisfaction in the new version.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Maintenance Message/Behavior:</strong> How the app behaves during maintenance periods and
+                    communicates such events to users.
+                  </p>
+                  <p>This documentation ensures a consistent approach to communicating maintenance
+                    periods, minimizing disruption and confusion during both the existing and new app's lifecycles.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Notifications:</strong> The methods through which the app communicates important messages or
+                    updates to users.
+                  </p>
+                  <p>Understanding notification mechanisms ensures that users continue to receive relevant
+                    information in the replacement app, maintaining user engagement and satisfaction.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Personalization:</strong> Features allowing users to customize their experience based on
+                    preferences.
+                  </p>
+                  <p>Documenting personalization aspects helps preserve user satisfaction by replicating tailored
+                    experiences in the replacement app.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Help (In-Application):</strong> Resources or assistance provided within the app to guide users
+                    in using its features.
+                  </p>
+                  <p>Documenting help resources ensures that users can access assistance and guidance
+                    seamlessly in the replacement app, enhancing usability and reducing user frustration.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="analysis-web-style-guide.html"><strong>UX Style &amp; Design Guide</strong></a>: Guidelines for the app's visual design, including elements like colors, typography, and layout.
+                  </p>
+                  <p>Replicating the design guide maintains consistency in user
+                    experience and branding, providing a familiar and coherent interface for users in the replacement app.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Content (Logos, Icons, Images):</strong> Visual assets used in the app, including branding
+                    elements.
+                  </p>
+                  <p>Documenting these assets facilitates the maintenance of a consistent visual identity, ensuring a
+                    seamless transition for users to the replacement app.
+                  </p>
+                </li>
+              </ul>              
+            </div>
+
+            </div>
+
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

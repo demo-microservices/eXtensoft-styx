@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <title>BrainStorm</title>
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="../../css/site.css" />
+
+</head>
+
+<body>
+  <!-- h-100 takes the full height of the body-->
+  <div class="container-fluid h-100">
+    <!-- h-100 takes the full height
+				of the container-->
+    <div class="row h-100">
+      <div class="col-2" id="green">
+        <a href="../../index.html">Home</a>
+        <hr />
+        <!-- Navigation links in sidebar-->
+        <a href="../introduction.html">Introduction</a><br />
+        <br />
+        <a href="../lifecycles.html">Lifecycles</a><br />
+        <br />
+        <a href="../artifacts.html">Artifacts</a><br />
+        <br />
+        <a href="../playbook.html" >Playbook</a><br />
+        <div class="hierarchical-nav" style="margin-left: 1em;">
+          <a href="../playbook-play.html">The Play</a><br />
+          <a href="../playbook-playlist.html">Playlist</a><br />
+        </div>
+        <br />
+        <a href="../resources.html">Resources</a>
+        <br />
+
+      </div>
+      <div class="col-10" style="padding: 0;">
+        <!-- Top navbar -->
+        <nav class="navbar navbar-expand-lg
+								navbar-light bg-primary">
+          <a class="navbar-brand" href="../../index.html">Home</a>
+          <!-- Hamburger button that toggles the navbar-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link
+								active" href="../resources.html">
+                Resources
+              </a>
+              <a class="nav-item nav-link" href="../software-development-lifecycle.html">SDLC</a>
+              <a class="nav-item nav-link" href="../patterns-practices.html">Patterns & Practices</a>
+              <a class="nav-item nav-link" href="../getting-started.html">Getting Started</a>
+            </div>
+          </div>
+        </nav>
+        <!-- Contains the main content of the webpage-->
+        <div class="container container-content">
+          <a href="javascript:history.back()" class="back-button">&larr;</a>
+
+          <div class="container container-artifact">
+
+            <div class="markdown prose w-full break-words dark:prose-invert light">
+              <h3>Play Name:</h3>
+              <p><strong>System Analysis Play</strong></p>
+              <h3>Purpose:</h3>
+              <p>
+                  The purpose of the "System Analysis Play" is to understand the technical landscape surrounding the project. This includes evaluating current systems, identifying gaps, and understanding how the new or modified system will fit into
+                  the existing architecture.
+              </p>
+              <h3>Checklist:</h3>
+              <ol>
+                  <li>
+                      <p><strong>Current System Evaluation</strong>: Conduct a thorough analysis of the existing systems, data flows, and technological stack.</p>
+                  </li>
+                  <li>
+                      <p><strong>Gap Identification</strong>: Identify functional and technical gaps in the current system that the new project aims to fill.</p>
+                  </li>
+                  <li>
+                      <p><strong>Interoperability Assessment</strong>: Assess how the new system will interact with existing systems, services, and data stores.</p>
+                  </li>
+                  <li>
+                      <p><strong>Technology Stack Decision</strong>: Based on analysis, finalize the technology stack that will be used in the project.</p>
+                  </li>
+                  <li>
+                      <p><strong>Compliance Check</strong>: Ensure that the chosen technologies and designs comply with industry regulations and organizational policies.</p>
+                  </li>
+                  <li>
+                      <p><strong>Documentation</strong>: Create or update system architecture diagrams, data models, and other relevant documentation.</p>
+                  </li>
+                  <li>
+                      <p><strong>Stakeholder Review</strong>: Share findings and recommendations with stakeholders for validation.</p>
+                  </li>
+                  <li>
+                      <p><strong>Revision and Approval</strong>: Make any necessary revisions and obtain formal approvals.</p>
+                  </li>
+              </ol>
+              <h3>Key Questions:</h3>
+              <ul>
+                  <li>
+                      <p><strong>What are the current systems in place, and how do they interact with each other?</strong></p>
+                  </li>
+                  <li>
+                      <p><strong>What gaps or inefficiencies exist in the current system landscape?</strong></p>
+                  </li>
+                  <li>
+                      <p><strong>How will the new system integrate with or replace the existing ones?</strong></p>
+                  </li>
+                  <li>
+                      <p><strong>Are there any compliance or governance issues to be considered?</strong></p>
+                  </li>
+                  <li>
+                      <p><strong>What technologies are most suitable for addressing the identified needs and gaps?</strong></p>
+                  </li>
+              </ul>
+              <h3>Primary Utility:</h3>
+              <ul>
+                  <li>
+                      <p><strong>Focus</strong>: This play provides a roadmap for analyzing the existing systems, ensuring the project is well-integrated into the existing technological landscape.</p>
+                  </li>
+                  <li>
+                      <p><strong>Flexibility</strong>: While contributing to the project’s overall strategy, this play can also be a stand-alone guide for system analysis in other contexts.</p>
+                  </li>
+                  <li>
+                      <p><strong>Cohesion</strong>: Adhering to the System Analysis Play ensures that the project fits within the broader ecosystem, aligning with the aims of the "Purpose &amp; Discovery Playbook."</p>
+                  </li>
+              </ul>
+              <p>
+                  Executing the System Analysis Play enables teams to make informed decisions, reducing the risks associated with system integration, scalability, and compliance. It ensures that the new system will not only meet the functional
+                  requirements but also be a well-fitted piece in the existing technology puzzle.
+              </p>
+          </div>
+          
+
+
+          </div>
+        </div>
+      </div>
+</body>
+
+</html>
