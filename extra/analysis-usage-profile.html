@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <title>BrainStorm</title>
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="../../css/site.css" />
+
+</head>
+
+<body>
+  <!-- h-100 takes the full height of the body-->
+  <div class="container-fluid h-100">
+    <!-- h-100 takes the full height
+				of the container-->
+    <div class="row h-100">
+      <div class="col-2" id="green">
+        <a href="../../index.html">Home</a>
+        <hr />
+        <!-- Navigation links in sidebar-->
+        <a href="../introduction.html">Introduction</a><br />
+        <br />
+        <a href="../lifecycles.html">Lifecycles</a><br />
+        <br />
+        <a href="../artifacts.html">Artifacts</a><br />
+        <br />
+        <a href="../playbook.html" >Playbook</a><br />
+        <div class="hierarchical-nav" style="margin-left: 1em;">
+          <a href="../playbook-play.html">The Play</a><br />
+          <a href="../playbook-playlist.html">Playlist</a><br />
+        </div>
+        <br />
+        <a href="../resources.html">Resources</a>
+        <br />
+
+      </div>
+      <div class="col-10" style="padding: 0;">
+        <!-- Top navbar -->
+        <nav class="navbar navbar-expand-lg
+        navbar-light bg-primary">
+          <a class="navbar-brand" href="../../index.html">Home</a>
+          <!-- Hamburger button that toggles the navbar-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link
+        active" href="../resources.html">
+                Resources
+              </a>
+              <a class="nav-item nav-link" href="../software-development-lifecycle.html">SDLC</a>
+              <a class="nav-item nav-link" href="../patterns-practices.html">Patterns & Practices</a>
+              <a class="nav-item nav-link" href="../getting-started.html">Getting Started</a>
+            </div>
+          </div>
+        </nav>
+        <!-- Contains the main content of the webpage-->
+        <div class="container container-artifact">
+          <a href="javascript:history.back()" class="back-button">&larr;</a>
+          <div>
+
+            <div class="markdown prose w-full break-words dark:prose-invert dark">
+              <strong>Usage Profile</strong>
+              <p>
+                Understanding the Usage Profile of a system provides invaluable insights into user behavior, system efficiency, and potential areas for improvement. Here are the key points to consider when analyzing the Usage Profile as part of
+                Business Domain analysis:
+            </p>
+            
+            
+              <p>Each point in the Usage Profile can have multiple layers and nuances, which can be explored for deeper
+                insights. Let's delve into some of the bullet points and tease out more intricate details:</p>
+              <ol>
+                <li>
+                  <p><strong>Most-Used Features:</strong></p>
+                  <ul>
+                    <li>
+                      <strong>Feature Evolution:</strong> Are there features that were popular at some point but have
+                      witnessed a decrease in usage? What caused this change? This could be due to external factors,
+                      changes in user needs, or
+                      system updates.
+                    </li>
+                    <li><strong>Comparative Value:</strong> If two features serve similar purposes, which one is
+                      preferred by users, and why? This could be due to ease of use, efficiency, or better alignment
+                      with user goals.</li>
+                  </ul>
+                </li>
+                <li>
+                  <p><strong>Duration of Sessions:</strong></p>
+                  <ul>
+                    <li><strong>Interruptions:</strong> Are there points in the user journey where they often pause or
+                      get sidetracked? Understanding this can help in streamlining the user flow.</li>
+                    <li><strong>Extended Engagements:</strong> If users spend a longer time than expected on certain
+                      tasks, it might indicate either deep engagement or potential complexities.</li>
+                  </ul>
+                </li>
+                <li>
+                  <p><strong>Entry and Exit Points:</strong></p>
+                  <ul>
+                    <li><strong>Unexpected Landings:</strong> Are users landing on pages or sections you didn't
+                      anticipate as primary entry points? This could be due to external referrals or search engine
+                      results.</li>
+                    <li><strong>Forced Exits:</strong> Are users frequently exiting due to session timeouts or other
+                      system constraints?</li>
+                  </ul>
+                </li>
+                <li>
+                  <p><strong>User Flow and Navigation:</strong></p>
+                  <ul>
+                    <li><strong>Shortcuts and Workarounds:</strong> Users often find unofficial ways to achieve their
+                      goals faster. Identifying these can highlight opportunities for system optimization.</li>
+                    <li><strong>Repeated Actions:</strong> If users frequently redo certain actions, it might indicate
+                      confusion, lack of clarity, or system inefficiencies.</li>
+                  </ul>
+                </li>
+                <li>
+                  <p><strong>Multichannel Usage:</strong></p>
+                  <ul>
+                    <li>
+                      <strong>Contextual Use:</strong> Perhaps the system is accessed via mobile while users are on the
+                      go, but desktop usage is for more detailed tasks. Understanding these contexts can guide feature
+                      development for each
+                      platform.
+                    </li>
+                    <li><strong>Transition Fluidity:</strong> How easy is it for users to switch between devices and
+                      continue their tasks? This could indicate the effectiveness of a unified user experience across
+                      platforms.</li>
+                  </ul>
+                </li>
+                <li>
+                  <p><strong>Error or Abandonment Rates:</strong></p>
+                  <ul>
+                    <li>
+                      <strong>Anticipation vs. Reality:</strong> Users might anticipate a feature to work in a certain
+                      way based on their experiences with other systems. High error rates might indicate a misalignment
+                      between user expectations
+                      and system design.
+                    </li>
+                    <li><strong>Recovery Pathways:</strong> After encountering an error, how easy is it for users to
+                      recover and continue? A smooth recovery can mitigate user frustration.</li>
+                  </ul>
+                </li>
+                <li>
+                  <p><strong>Integration with Other Systems:</strong></p>
+                  <ul>
+                    <li><strong>Data Consistency:</strong> If users have to manually input data from one system into
+                      another, is there consistency in the data formats? Inconsistencies can lead to errors and
+                      increased effort.</li>
+                    <li><strong>Interruption Points:</strong> As you mentioned, moments when a user has to switch to
+                      another system (or a manual process) to complete a task. This can highlight potential areas for
+                      integration or automation.</li>
+                  </ul>
+                </li>
+                <li>
+                  <p><strong>Training and Onboarding Patterns:</strong></p>
+                  <ul>
+                    <li><strong>Revisits:</strong> How often do users revisit training modules or help sections? This
+                      could indicate complex features that might need simplification.</li>
+                    <li>
+                      <strong>User Adaptation:</strong> How quickly do users adapt to system updates or changes? Rapid
+                      adaptation might indicate intuitive design, while prolonged adaptation might signal a need for
+                      better communication or
+                      training.
+                    </li>
+                  </ul>
+                </li>
+              </ol>
+              <p>By diving deeper into each of these points, businesses can obtain a granular view of their system's
+                interaction patterns, enabling them to better cater to user needs and optimize the overall experience.
+              </p>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
