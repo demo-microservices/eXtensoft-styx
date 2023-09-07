@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <title>BrainStorm</title>
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="../css/site.css" />
+
+</head>
+
+<body>
+  <!-- h-100 takes the full height of the body-->
+  <div class="container-fluid h-100">
+    <!-- h-100 takes the full height
+				of the container-->
+    <div class="row h-100">
+      <div class="col-2" id="green">
+        <a href="../index.html">Home</a>
+        <hr />
+        <!-- Navigation links in sidebar-->
+        <a href="introduction.html">Introduction</a><br />
+        <br />
+        <a href="lifecycles.html">Lifecycles</a><br />
+        <br />
+        <a href="artifacts.html">Artifacts</a><br />
+        <br />
+        <a href="playbook.html" class="selected">Playbook</a><br />
+        <div class="hierarchical-nav" style="margin-left: 1em;">
+          <a href="playbook-play.html">The Play</a><br />
+          <a href="playbook-playlist.html">Playlist</a><br />
+        </div>
+        <br />
+        <a href="resources.html">Resources</a>
+        <br />
+
+      </div>
+      <div class="col-10" style="padding: 0;">
+        <!-- Top navbar -->
+        <nav class="navbar navbar-expand-lg
+								navbar-light bg-primary">
+          <a class="navbar-brand" href="../index.html">Home</a>
+          <!-- Hamburger button that toggles the navbar-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link
+								active" href="resources.html">
+                Resources
+              </a>
+              <a class="nav-item nav-link" href="software-development-lifecycle.html">SDLC</a>
+              <a class="nav-item nav-link" href="patterns-practices.html">Patterns & Practices</a>
+              <a class="nav-item nav-link" href="getting-started.html">Getting Started</a>
+            </div>
+          </div>
+        </nav>
+        <!-- Contains the main content of the webpage-->
+        <div class="container container-content">
+          <a href="javascript:history.back()" class="back-button">&larr;</a>
+
+          <div class="container container-artifact">
+
+            <div class="markdown prose w-full break-words dark:prose-invert dark">
+              <h3>Introduction to the Playbook</h3>
+              <p>
+                In the dynamic and multifaceted world of software development, guiding teams and stakeholders through
+                the intricate processes and phases can be daunting. The <strong>Playbook</strong> has been developed to
+                guide those involved through the challenges of the Software Development Life Cycle (SDLC).
+              </p>
+              <p>
+                <strong>What is a Playbook?</strong> A Playbook is a structured collection of <strong>Plays</strong>.
+                Like a coach’s strategy guide in sports, it provides teams and stakeholders with essential guidance on
+                how to navigate various phases and activities within the SDLC.
+                Each Play within the Playbook addresses specific concerns,
+                activities, or steps pivotal to the successful execution of a project.
+              </p>
+              <p><strong>Components of a Playbook:</strong></p>
+              <ol>
+
+                <li><strong>Name</strong>: The title of the Playbook provides a succinct representation of its focus or
+                  the
+                  main challenges it addresses, ensuring immediate clarity for the intended audience.</li>
+                <li><strong>Description</strong>: A Playbook is a strategic guide tailored for software development,
+                  encompassing a clear purpose, defined scope, and a curated list of Plays. It provides actionable
+                  strategies for funding and implementation, ensuring streamlined progression throughout the SDLC.
+                  Serving
+                  as a comprehensive manual, it equips stakeholders with the tools and insights necessary to navigate
+                  challenges and drive projects to success.</li>
+                <li>
+                  <strong>Purpose</strong>: This lays down the main objectives of the Playbook – what it aims to
+                  achieve,
+                  and the problems it intends to solve. The purpose provides direction, ensuring that all strategies and
+                  actions delineated in the
+                  Playbook serve the primary goal.
+                </li>
+                <li>
+                  <strong>Scope</strong>: This outlines the boundaries and extent of the Playbook's application. It
+                  defines the specific challenges it addresses, and potentially even the types of projects,
+                  concerns, or contexts where it is most applicable. Basically it covers what's in, and what's out.
+                </li>
+                <li>
+                  <strong>Plays</strong>: An integral part of the Playbook, this section provides a curated list
+                  of 'Plays' – individual guides or strategies tailored for specific scenarios or challenges within the
+                  SDLC. Each Play has a distinct focus,
+                  centered around the unique needs and interests of specific stakeholders. It serves as a strategy or a
+                  set of actionable steps aimed at achieving specific outcomes.
+                </li>
+                <li><strong>Funding Strategies</strong>: Software development requires capital, and a Playbook offers
+                  strategic insights into funding mechanisms. This section delves into:</li>
+                <ul>
+                  <li><strong>Risk-based Funding</strong>: Allocating funds based on potential risks, ensuring risk
+                    mitigation.</li>
+                  <li><strong>Cost-based Funding</strong>: Capital allocation based on project costs and budgetary
+                    constraints.</li>
+                  <li><strong>Revenue-based Funding</strong>: Strategies that focus on directing funds from anticipated
+                    revenue streams or profitability of the project.</li>
+                </ul>
+                <li>
+                  <strong>Implementation Strategy</strong>: Beyond just planning, a successful project requires a robust
+                  strategy for putting plans into action. This segment offers a structured approach to ensure that all
+                  elements of the Playbook,
+                  from individual Plays to funding strategies, are executed efficiently and effectively. It can detail
+                  methodologies, best practices, timelines, and resource allocation strategies.
+                </li>
+
+              </ol>
+              <p><strong>Purpose and Utility of the Playbook:</strong> The Playbook aims to simplify and streamline the
+                process by providing clear and actionable guidance. Its utility lies in:</p>
+              <ul>
+                <li><strong>Direction</strong>: Offering targeted advice to specific stakeholders, ensuring tasks align
+                  with the project's overall objectives.</li>
+                <li><strong>Standardization</strong>: Ensuring consistent approaches and best practices are applied
+                  across the board, promoting uniformity and efficiency.</li>
+                <li><strong>Mitigation</strong>: Helping teams anticipate and navigate potential pitfalls and
+                  challenges, ensuring smoother project execution.</li>
+              </ul>
+              <p>In essence, the Playbook serves as an invaluable tool, ensuring clarity, consistency, and success in
+                the multifarious journey of software development.  A Playbook is not just a guide but a
+                comprehensive strategy manual. It ensures that all stakeholders, from Project Managers to Technical Leads, 
+                are equipped with the tools, insights, and strategies they need to drive the
+                project to success. The Playbook, with its clear structure and actionable guidance, is an invaluable
+                asset for any software development endeavor.
+              </p>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+</body>
+
+</html>
