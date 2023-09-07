@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <title>BrainStorm</title>
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="../../css/site.css" />
+
+</head>
+
+<body>
+  <!-- h-100 takes the full height of the body-->
+  <div class="container-fluid h-100">
+    <!-- h-100 takes the full height
+				of the container-->
+    <div class="row h-100">
+      <div class="col-2" id="green">
+        <a href="../../index.html">Home</a>
+        <hr />
+        <!-- Navigation links in sidebar-->
+        <a href="../introduction.html">Introduction</a><br />
+        <br />
+        <a href="../lifecycles.html">Lifecycles</a><br />
+        <br />
+        <a href="../artifacts.html">Artifacts</a><br />
+        <br />
+        <a href="../playbook.html">Playbook</a><br />
+        <div class="hierarchical-nav" style="margin-left: 1em;">
+          <a href="../playbook-play.html">The Play</a><br />
+          <a href="../playbook-playlist.html">Playlist</a><br />
+        </div>
+        <br />
+        <a href="../resources.html">Resources</a>
+        <br />
+
+      </div>
+      <div class="col-10" style="padding: 0;">
+        <!-- Top navbar -->
+        <nav class="navbar navbar-expand-lg
+        navbar-light bg-primary">
+          <a class="navbar-brand" href="../../index.html">Home</a>
+          <!-- Hamburger button that toggles the navbar-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link
+        active" href="../resources.html">
+                Resources
+              </a>
+              <a class="nav-item nav-link" href="../software-development-lifecycle.html">SDLC</a>
+              <a class="nav-item nav-link" href="../patterns-practices.html">Patterns & Practices</a>
+              <a class="nav-item nav-link" href="../getting-started.html">Getting Started</a>
+            </div>
+          </div>
+        </nav>
+        <!-- Contains the main content of the webpage-->
+        <div class="container container-artifact">
+          <a href="javascript:history.back()" class="back-button">&larr;</a>
+
+          <div>
+            <div class="markdown prose w-full break-words dark:prose-invert light">
+              <p><strong>Introduction: Navigating the Web with Sitemaps</strong></p>
+              <p>
+                In the world of websites, finding one's way through a maze of content can be akin to searching
+                for a needle in a haystack. This is where sitemaps step in as essential guides, offering a clear path
+                for users and search
+                engines to follow. A sitemap acts as a structured roadmap, laying out the hierarchy of a website's pages
+                and aiding in efficient navigation.
+              </p>
+              <p>
+                Sitemaps hold dual importance – for human users, they simplify the journey by presenting a logical
+                arrangement of content, while search engines use them to crawl and index the site. As we explore various
+                methods of documenting
+                sitemaps, from XML formats to visual representations, we uncover how these guides facilitate seamless
+                user experiences and ensure websites remain accessible and organized in an ever-evolving digital
+                landscape.
+              </p>
+            </div>
+            <div class="markdown prose w-full break-words dark:prose-invert light">
+              <p>There are various ways to document a sitemap, each catering to different preferences and requirements.
+                Here are three common methods you can consider:</p>
+              <ol>
+                <li>
+                  <p><strong>Text-Based Sitemap:</strong> A simple text-based sitemap provides a straightforward way to
+                    list URLs and their hierarchical relationships. This format is easy to create and update manually.
+                    Here's an example:</p>
+                  <pre>
+                    <div class="bg-black rounded-md mb-4">
+                <code class="!whitespace-pre hljs language-css">Home
+                    ├── About
+                    ├── Services
+                    │   ├── Service <span class="hljs-selector-tag">A</span>
+                    │   ├── Service <span class="hljs-selector-tag">B</span>
+                    │   └── Service C
+                    ├── Portfolio
+                    │   ├── Project <span class="hljs-number">1</span>
+                    │   ├── Project <span class="hljs-number">2</span>
+                    │   └── Project <span class="hljs-number">3</span>
+                    └── Contact
+                </code>
+                    </div>
+                  </pre>
+                </li>
+                <li>
+                  <p>
+                    <strong>Visual Sitemap:</strong> Visual sitemaps use diagrams or flowcharts to visually represent
+                    the structure and navigation flow of the website. This approach is particularly helpful for
+                    conveying complex structures to
+                    both technical and non-technical stakeholders. Here's an example of a simplified visual sitemap:
+                  </p>
+                  <pre>
+                    <div class="bg-black rounded-md mb-4">
+                <code class="!whitespace-pre hljs language-css"><span class="hljs-selector-attr">[Home]</span> --&gt; <span class="hljs-selector-attr">[About]</span> --&gt; <span class="hljs-selector-attr">[Services]</span>
+                    |            ├── <span class="hljs-selector-attr">[Service A]</span>
+                    |            ├── <span class="hljs-selector-attr">[Service B]</span>
+                    |            └── <span class="hljs-selector-attr">[Service C]</span>
+                    |
+                    --&gt; <span class="hljs-selector-attr">[Portfolio]</span>
+                    |      ├── <span class="hljs-selector-attr">[Project 1]</span>
+                    |      ├── <span class="hljs-selector-attr">[Project 2]</span>
+                    |      └── <span class="hljs-selector-attr">[Project 3]</span>
+                    |
+                    --&gt; <span class="hljs-selector-attr">[Contact]</span>
+                </code>
+                      </div>
+                    </pre>
+                </li>
+                <li>
+                  <p>
+                    <strong>XML Sitemap:</strong> XML sitemaps are a standardized format recognized by search engines to
+                    help index and understand the structure of a website. They provide a clear and organized
+                    representation of URLs, their
+                    relationships, and metadata. Here's an example of how you might document an XML sitemap:
+                  </p>
+                  <pre>
+                    <div class="bg-black rounded-md mb-4">
+                <code class="!whitespace-pre hljs language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">openapi</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/ns/markdown"</span>
+                              <span class="hljs-attr">xmlns:api</span>=<span class="hljs-string">"http://openai.org/ns/markdown/api"</span> <span class="hljs-attr">version</span>=<span class="hljs-string">"3.0.0"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">info</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Sample API<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.0.0<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">info</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">paths</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">path</span>=<span class="hljs-string">"/users"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">get</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>Get list of users<span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">responses</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">response</span> <span class="hljs-attr">status</span>=<span class="hljs-string">"200"</span>&gt;</span>
+                              <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>Successful response<span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span>
+                              <span class="hljs-tag">&lt;<span class="hljs-name">content</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">contentItem</span> <span class="hljs-attr">mediaType</span>=<span class="hljs-string">"application/json"</span>&gt;</span>
+                                  <span class="hljs-tag">&lt;<span class="hljs-name">schema</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">ref</span>&gt;</span>#/components/schemas/User<span class="hljs-tag">&lt;/<span class="hljs-name">ref</span>&gt;</span>
+                                  <span class="hljs-tag">&lt;/<span class="hljs-name">schema</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">contentItem</span>&gt;</span>
+                              <span class="hljs-tag">&lt;/<span class="hljs-name">content</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">response</span>&gt;</span>
+                          <span class="hljs-tag">&lt;/<span class="hljs-name">responses</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">get</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">post</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>Create a new user<span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">requestBody</span> <span class="hljs-attr">required</span>=<span class="hljs-string">"true"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">content</span>&gt;</span>
+                              <span class="hljs-tag">&lt;<span class="hljs-name">contentItem</span> <span class="hljs-attr">mediaType</span>=<span class="hljs-string">"application/json"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">schema</span>&gt;</span>
+                                  <span class="hljs-tag">&lt;<span class="hljs-name">ref</span>&gt;</span>#/components/schemas/User<span class="hljs-tag">&lt;/<span class="hljs-name">ref</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">schema</span>&gt;</span>
+                              <span class="hljs-tag">&lt;/<span class="hljs-name">contentItem</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">content</span>&gt;</span>
+                          <span class="hljs-tag">&lt;/<span class="hljs-name">requestBody</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">responses</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">response</span> <span class="hljs-attr">status</span>=<span class="hljs-string">"201"</span>&gt;</span>
+                              <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>User created successfully<span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span>
+                              <span class="hljs-tag">&lt;<span class="hljs-name">content</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">contentItem</span> <span class="hljs-attr">mediaType</span>=<span class="hljs-string">"application/json"</span>&gt;</span>
+                                  <span class="hljs-tag">&lt;<span class="hljs-name">schema</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">ref</span>&gt;</span>#/components/schemas/User<span class="hljs-tag">&lt;/<span class="hljs-name">ref</span>&gt;</span>
+                                  <span class="hljs-tag">&lt;/<span class="hljs-name">schema</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">contentItem</span>&gt;</span>
+                              <span class="hljs-tag">&lt;/<span class="hljs-name">content</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">response</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">response</span> <span class="hljs-attr">status</span>=<span class="hljs-string">"400"</span>&gt;</span>
+                              <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>Invalid request data<span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">response</span>&gt;</span>
+                          <span class="hljs-tag">&lt;/<span class="hljs-name">responses</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">post</span>&gt;</span>
+                      <span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">paths</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">components</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">schemas</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">schema</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"User"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"object"</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"id"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"integer"</span> /&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"string"</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">schema</span>&gt;</span>
+                      <span class="hljs-tag">&lt;/<span class="hljs-name">schemas</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">components</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">openapi</span>&gt;</span>
+                </code>
+                    </div>
+                  </pre>
+                </li>
+              </ol>
+
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
