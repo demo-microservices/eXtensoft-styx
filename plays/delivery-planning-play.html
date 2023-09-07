@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <title>BrainStorm</title>
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="../../css/site.css" />
+
+</head>
+
+<body>
+  <!-- h-100 takes the full height of the body-->
+  <div class="container-fluid h-100">
+    <!-- h-100 takes the full height
+				of the container-->
+    <div class="row h-100">
+      <div class="col-2" id="green">
+        <a href="../../index.html">Home</a>
+        <hr />
+        <!-- Navigation links in sidebar-->
+        <a href="../introduction.html">Introduction</a><br />
+        <br />
+        <a href="../lifecycles.html">Lifecycles</a><br />
+        <br />
+        <a href="../artifacts.html">Artifacts</a><br />
+        <br />
+        <a href="../playbook.html" >Playbook</a><br />
+        <div class="hierarchical-nav" style="margin-left: 1em;">
+          <a href="../playbook-play.html">The Play</a><br />
+          <a href="../playbook-playlist.html">Playlist</a><br />
+        </div>
+        <br />
+        <a href="../resources.html">Resources</a>
+        <br />
+
+      </div>
+      <div class="col-10" style="padding: 0;">
+        <!-- Top navbar -->
+        <nav class="navbar navbar-expand-lg
+								navbar-light bg-primary">
+          <a class="navbar-brand" href="../../index.html">Home</a>
+          <!-- Hamburger button that toggles the navbar-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link
+								active" href="../resources.html">
+                Resources
+              </a>
+              <a class="nav-item nav-link" href="../software-development-lifecycle.html">SDLC</a>
+              <a class="nav-item nav-link" href="../patterns-practices.html">Patterns & Practices</a>
+              <a class="nav-item nav-link" href="../getting-started.html">Getting Started</a>
+            </div>
+          </div>
+        </nav>
+        <!-- Contains the main content of the webpage-->
+        <div class="container container-content">
+          <a href="javascript:history.back()" class="back-button">&larr;</a>
+
+          <div class="container container-artifact">
+            <div class="markdown prose w-full break-words dark:prose-invert light">
+              <h3>Delivery Planning Play</h3>
+              <hr />
+              <h4>Name &amp; Purpose:</h4>
+              <p>
+                  <strong>Name</strong>: Delivery Planning Play<br />
+                  <strong>Purpose</strong>: To outline and streamline the deployment process, ensuring that the software is delivered efficiently and securely to the target environment. This play focuses on the stages of delivery, pipeline
+                  management, and configuration and secrets management.
+              </p>
+              <hr />
+              <h4>Checklist:</h4>
+              <ol>
+                  <li>Define the stages involved in the software delivery process, from code completion to deployment.</li>
+                  <li>Design and document the deployment pipeline, including build, test, and release stages.</li>
+                  <li>Identify tools and platforms to be used for continuous integration and continuous deployment (CI/CD).</li>
+                  <li>Set up configuration and secrets management protocols to ensure secure delivery.</li>
+                  <li>Develop a rollback plan in case of unsuccessful deployment.</li>
+              </ol>
+              <hr />
+              <h4>Key Questions:</h4>
+              <ol>
+                  <li>What are the critical stages in the delivery process, and what steps are involved in each stage?</li>
+                  <li>How is the deployment pipeline structured for efficient and reliable delivery?</li>
+                  <li>What CI/CD tools are in use, and how do they align with the overall delivery objectives?</li>
+                  <li>How is configuration and secrets management handled to ensure secure deployment?</li>
+                  <li>What is the contingency plan in case the deployment process fails or needs to be rolled back?</li>
+              </ol>
+              <hr />
+              <p>
+                  The Delivery Planning Play serves to concentrate efforts on the often-overlooked, but critical, aspects of deploying software to its operational environment. By paying attention to the details of the deployment pipeline and the
+                  stages involved in the delivery, this play ensures that the software is delivered efficiently, reliably, and securely. While designed to be a standalone guide, this play is most effective when executed as a part of the Planning
+                  &amp; Risk Mitigation Playbook, contributing to a cohesive and comprehensive planning strategy.
+              </p>
+          </div>
+          
+
+          </div>
+        </div>
+      </div>
+</body>
+
+</html>
