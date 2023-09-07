@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <title>BrainStorm</title>
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="../../css/site.css" />
+
+</head>
+
+<body>
+  <!-- h-100 takes the full height of the body-->
+  <div class="container-fluid h-100">
+    <!-- h-100 takes the full height
+				of the container-->
+    <div class="row h-100">
+      <div class="col-2" id="green">
+        <a href="../../index.html">Home</a>
+        <hr />
+        <!-- Navigation links in sidebar-->
+        <a href="../introduction.html">Introduction</a><br />
+        <br />
+        <a href="../lifecycles.html">Lifecycles</a><br />
+        <br />
+        <a href="../artifacts.html">Artifacts</a><br />
+        <br />
+        <a href="../playbook.html" >Playbook</a><br />
+        <div class="hierarchical-nav" style="margin-left: 1em;">
+          <a href="../playbook-play.html">The Play</a><br />
+          <a href="../playbook-playlist.html">Playlist</a><br />
+        </div>
+        <br />
+        <a href="../resources.html">Resources</a>
+        <br />
+
+      </div>
+      <div class="col-10" style="padding: 0;">
+        <!-- Top navbar -->
+        <nav class="navbar navbar-expand-lg
+        navbar-light bg-primary">
+          <a class="navbar-brand" href="../../index.html">Home</a>
+          <!-- Hamburger button that toggles the navbar-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link
+        active" href="../resources.html">
+                Resources
+              </a>
+              <a class="nav-item nav-link" href="../software-development-lifecycle.html">SDLC</a>
+              <a class="nav-item nav-link" href="../patterns-practices.html">Patterns & Practices</a>
+              <a class="nav-item nav-link" href="../getting-started.html">Getting Started</a>
+            </div>
+          </div>
+        </nav>
+        <!-- Contains the main content of the webpage-->
+        <div class="container container-artifact">
+          <a href="javascript:history.back()" class="back-button">&larr;</a>
+          <div class="markdown prose w-full break-words dark:prose-invert dark">
+            <p>
+              When documenting a typical service API, you would want to include various properties, elements, and
+              details to comprehensively document its structure and functionality. Here's a list of key elements that
+              can be used to document a
+              service API:
+            </p>
+            <ol>
+              <li><strong>API Name</strong>: A clear and concise name for the API.</li>
+              <li><strong>API Description</strong>: A brief description of the API's purpose and functionality.</li>
+              <li><strong>API Version</strong>: The version number or identifier of the API.</li>
+              <li><strong>Base URL</strong>: The base URL that serves as the entry point for the API.</li>
+              <li><strong>Endpoints</strong>: A list of endpoints provided by the API, including their URLs, HTTP
+                methods, and descriptions.</li>
+              <li><strong>Request Parameters</strong>: The parameters required for each endpoint, including their names,
+                types, and descriptions.</li>
+              <li><strong>Request Headers</strong>: The headers expected by the API endpoints, including their names,
+                types, and descriptions.</li>
+              <li><strong>Request Body</strong>: The data contract or payload structure expected in the request body for
+                relevant endpoints.</li>
+              <li><strong>Response Status Codes</strong>: The allowable HTTP status codes returned by the API,
+                indicating the success or failure of the request.</li>
+              <li><strong>Response Body</strong>: The data contract or payload structure returned in the response body
+                for relevant endpoints.</li>
+              <li><strong>Error Handling</strong>: Information about how errors and exceptions are handled by the API,
+                including error codes, messages, and formats.</li>
+              <li><strong>Authentication and Authorization</strong>: Details about the authentication and authorization
+                mechanisms supported by the API.</li>
+              <li><strong>Rate Limiting</strong>: Any rate-limiting or throttling mechanisms in place to control API
+                usage.</li>
+              <li><strong>Data Validation</strong>: Details about the validation rules applied to incoming data and the
+                response data.</li>
+              <li><strong>Pagination</strong>: If applicable, information about pagination mechanisms for large result
+                sets.</li>
+              <li><strong>Security Considerations</strong>: Any security considerations, best practices, or
+                recommendations specific to the API.</li>
+              <li><strong>Sample Requests and Responses</strong>: Example requests and responses to demonstrate the
+                usage of the API endpoints.</li>
+              <li><strong>API Dependencies</strong>: Any external services, libraries, or databases required for the API
+                to function properly.</li>
+              <li><strong>Documentation Versioning</strong>: Information about the versioning strategy used for the API
+                documentation.</li>
+            </ol>
+            <p>These elements provide a comprehensive overview of the service API, its endpoints, data contracts, and
+              other relevant details. You can adapt and expand this list based on your specific requirements and the
+              complexity of the API.</p>
+          </div>
+
+
+
+
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
